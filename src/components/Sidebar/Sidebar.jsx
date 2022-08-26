@@ -1,0 +1,26 @@
+import React from "react";
+
+import * as FaIcons from "react-icons/fa";
+import * as AiFaIcons from "react-icons/ai";
+import * as IoIcons from "react-icons/io";
+
+export const SidebarData = [
+  {
+    title: "SuasReservas",
+    path: "/",
+    icon: <AiFaIcons.AiFillHome />,
+    cName: "nav-text",
+  },
+  {
+    title: "Atualize",
+    path: "/",
+    icon: <IoIcons.IoIosPaper />,
+    cName: "nav-text",
+  },
+  {
+    title: "Exclua",
+    path: "/",
+    icon: <FaIcons.FaCartPlus />,
+    cName: "nav-text",
+  },
+];
