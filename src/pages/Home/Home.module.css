@@ -1,0 +1,63 @@
+.header {
+    grid-area: header;
+    background-color: white;
+    color: black;
+    padding: 2px;
+    gap: 20px
+}
+
+.sidenav {
+    grid-area: sidenav;
+    position: fixed;
+    margin-left: 0;
+    margin-top: 80px;
+    /* transform: translateX(-300px); */
+    height: 80%;
+    width: 300px;
+
+    text-align: center;
+    background: #12c2e9;
+    background: -webkit-linear-gradient(0deg, #447a37, #6a9b5b, #8fbd80);
+    background: linear-gradient(0deg, #447a37, #6a9b5b, #8fbd80);
+    background-size: 175%;
+    /* border-right: 1px solid white; */
+    /* transition: all .50s ease-in; */
+    justify-content: start;
+    align-items: center;
+    padding: 2px;
+    grid-column: 1 /2;
+
+}
+
+.content {
+    grid-area: content;
+    background-color: white;
+    padding: 2px;
+    gap: 20px
+}
+
+.footer {
+    grid-area: footer;
+    background-color: white;
+    padding: 2px;
+    grid-column: 1 /4;
+    gap: 20px
+}
+
+.container {
+    grid-template-areas: "header header header"
+        "sidenav ",
+        "content "
+        "footer footer ";
+}
+
+.container {
+    display:
+        grid;
+    grid-template-columns:
+        300px auto 0px;
+    grid-template-rows:
+        100px 300% 90px;
+    grid-template-areas:
+        "header header""sidenav content""footer footer"
+}
