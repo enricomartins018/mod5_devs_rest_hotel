@@ -1,26 +1,16 @@
 import React from "react";
+import S from "./Sidebar.module.css";
+import { Link } from "react-router-dom";
 
-import * as FaIcons from "react-icons/fa";
-import * as AiFaIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
-
-export const SidebarData = [
-  {
-    title: "SuasReservas",
-    path: "/",
-    icon: <AiFaIcons.AiFillHome />,
-    cName: "nav-text",
-  },
-  {
-    title: "Atualize",
-    path: "/",
-    icon: <IoIcons.IoIosPaper />,
-    cName: "nav-text",
-  },
-  {
-    title: "Exclua",
-    path: "/",
-    icon: <FaIcons.FaCartPlus />,
-    cName: "nav-text",
-  },
-];
+export const Sidebar = () => {
+  return (
+    <nav className={S.sidebar}>
+      <div className={S.brand}>
+        <h2 className={S.h2Side}>
+          Para acessar suas reservas, atualizar ou deletar, acese o link abaixo
+        </h2>
+        <Link to="/suasreservas">Reservas</Link>
+      </div>
+    </nav>
+  );
+};
