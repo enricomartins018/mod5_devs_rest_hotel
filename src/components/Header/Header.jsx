@@ -3,13 +3,14 @@ import S  from './Header.module.css'
 
 export const Header = () => {
   return (
-    <head >
+    <header>
         <h1>Dev's Rest</h1>
         <nav>
-            <a href="#">Sobre</a>
+            <a href="#">Sobre nós</a>
             <a href="#">Contato</a>
             <a href="#">Serviços</a>
         </nav>
-    </head>
+            <button>Reservar</button>
+    </header>
   )
 }

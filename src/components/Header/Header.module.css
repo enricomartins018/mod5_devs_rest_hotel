@@ -1,0 +1,55 @@
+header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: #437a37;
+}
+
+h1 {
+  width: 50%;
+  margin-left: 20px;
+}
+
+nav {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000;
+}
+
+nav a:hover {
+  color: black;
+  font-size: 18px;
+  color: #daffc9
+
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+background-color:#b5dea4
+
+;
+}
+
+button:hover {
+  width: 120px;
+  height: 60px;
+  transition: width 2s, height 4s;
+  color: #8fbd7f;
+
+  background-color: #fff
+  ;
+}
