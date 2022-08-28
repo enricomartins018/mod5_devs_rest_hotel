@@ -30,7 +30,7 @@ nav a:hover {
   color: #daffc9;
 }
 
-button {
+.Button {
   width: 100px;
   height: 40px;
   border-radius: 15px;
@@ -41,10 +41,7 @@ button {
   background-color: #b5dea4;
 }
 
-button:hover {
-  width: 120px;
-  height: 60px;
-  transition: width 2s, height 4s;
+.Button:hover {
   color: #000000;
   background-color: #fff;
 }
