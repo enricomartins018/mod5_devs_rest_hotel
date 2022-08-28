@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '../Button/Button'
 import S  from './Header.module.css'
 
 export const Header = () => {
@@ -10,7 +11,8 @@ export const Header = () => {
             <a href="#">Contato</a>
             <a href="#">Serviços</a>
         </nav>
-            <button>Reservar</button>
+            {/* <button>Reservar</button> */}
+            <Button className={S.Button}  texto='Reservar'/>
     </header>
   )
 }
