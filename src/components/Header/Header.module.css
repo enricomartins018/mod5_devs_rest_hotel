@@ -27,8 +27,7 @@ nav a {
 nav a:hover {
   color: black;
   font-size: 18px;
-  color: #daffc9
-
+  color: #daffc9;
 }
 
 button {
@@ -39,17 +38,13 @@ button {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
-background-color:#b5dea4
-
-;
+  background-color: #b5dea4;
 }
 
 button:hover {
   width: 120px;
   height: 60px;
   transition: width 2s, height 4s;
-  color: #8fbd7f;
-
-  background-color: #fff
-  ;
+  color: #000000;
+  background-color: #fff;
 }
