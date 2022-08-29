@@ -47,7 +47,7 @@ const SuasReservas = () => {
           return (
             <Reservas
               id={item.id}
-              idhospede={item.idhospede}
+              id_Hospede={item.id_Hospede}
               quarto={item.quarto}
               quantLeitos={item.quantLeitos}
               quantAdultos={item.quantAdultos}

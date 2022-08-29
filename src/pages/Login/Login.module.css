@@ -1,18 +1,47 @@
-.section1 {
+.loginPage {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* .section1 {
     position: absolute;
-    width: 720px;
-    height: 1024px;
+    width: 100%;
+    height: 100%;
     left: 0px;
     top: -1px;
 
     background: rgba(255, 255, 255, 0.9);
-}
+} */
 
 .section2 {
     position: absolute;
-    width: 100px;
-    height: 1024px;
-    background: url(../../assets/pexels-taryn-elliott-4099354.jpg);
-    mix-blend-mode: normal;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 
 }
+
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 4);
+} */

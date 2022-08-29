@@ -4,7 +4,7 @@ import { api } from "../../services/api";
 
 const Reservas = ({
   id,
-  idhospede,
+  id_Hospede,
   quarto,
   quantLeitos,
   quantAdultos,
@@ -23,7 +23,7 @@ const Reservas = ({
       <h1>Reservas</h1>
       <div className={S.text}>
         <h2>Id da reserva: {id}</h2>
-        <h2>Seu Id: {idhospede}</h2>
+        <h2>Seu Id: {id_Hospede}</h2>
         <h2>Número do seu quarto: {quarto}</h2>
         <h2>Quantidade de camas: {quantLeitos}</h2>
         <h2>Quantidade de adultos: {quantAdultos}</h2>

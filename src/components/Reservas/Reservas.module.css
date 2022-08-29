@@ -1,12 +1,12 @@
-body {
+/* body {
     background-color: #CDE2C5;
-    /* background-image: url("../../assets/reserva.jpg"); */
+    background-image: url("../../assets/reserva.jpg");
     z-index: 1;
     opacity: 0.8;
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size: cover;
-}
+} */
 
 .container {
     position: absolute;
