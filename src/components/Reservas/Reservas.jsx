@@ -1,5 +1,6 @@
 import React from "react";
 import S from "./Reservas.module.css";
+import { api } from "../../services/api";
 
 const Reservas = ({
   id,
@@ -12,8 +13,11 @@ const Reservas = ({
   dataSaida,
 }) => {
   function deletar() {
-    alert(`deletado ${id}`);
+    api.delete(`reservas/${id}`).then((response) => {
+      console.log(response);
+    });
   }
+
   return (
     <div className={S.container}>
       <h1>Reservas</h1>

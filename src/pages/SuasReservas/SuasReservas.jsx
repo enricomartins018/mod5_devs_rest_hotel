@@ -3,6 +3,10 @@ import Reservas from "../../components/Reservas/Reservas";
 import { api } from "../../services/api";
 
 const SuasReservas = () => {
+  if (!localStorage.getItem("id_Hospede")) {
+    window.location.href = "login";
+  }
+
   const [reserva, setReserva] = useState([]);
 
   // async function handleRequisicao() {
@@ -17,27 +21,25 @@ const SuasReservas = () => {
   // }
 
   useEffect(() => {
-    api.get("/reservas?idhospede=7").then((response) => {
-      console.log(response);
-      // para buscar por id
-      const filtro = response.data.Reservas.filter((item) => {
-        return item.idhospede == 7;
-      });
-      setReserva(filtro);
-    });
+    try {
+      api
+        .get("/reservas/hospede/" + localStorage.getItem("id_Hospede"))
+        .then((response) => {
+          console.log(response);
+          // para buscar por id
+          // const filtro = response.data.Reservas.filter((item) => {
+          //   return item.idhospede == localStorage.getItem("id_Hospede");
+          // });
+          // setReserva(response.data.Reservas);
+        });
+    } catch (e) {
+      console.log(e);
+    }
     //
     // para buscar tudo
     // setReserva(resoponse.data.Reservas)
   }, []);
-  // useEffect(() => {
-  //   api.delete("reservas/:id").then((response) => {
-  //     console.log(response);
-  //     // para buscar por id
-  //   });
-  //   //
-  //   // para buscar tudo
-  //   // setReserva(resoponse.data.Reservas)
-  // }, []);
+
   return (
     <main>
       <section>

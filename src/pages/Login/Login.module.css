@@ -1,0 +1,18 @@
+.section1 {
+    position: absolute;
+    width: 720px;
+    height: 1024px;
+    left: 0px;
+    top: -1px;
+
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.section2 {
+    position: absolute;
+    width: 100px;
+    height: 1024px;
+    background: url(../../assets/pexels-taryn-elliott-4099354.jpg);
+    mix-blend-mode: normal;
+
+}
