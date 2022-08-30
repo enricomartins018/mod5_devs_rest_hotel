@@ -1,30 +1,51 @@
-.formlogin {
-
-    width: 289.09px;
-    height: 254.85px;
-    margin-left: 225px;
-    margin-top: 380px;
+.formCadastroHospede {
+    background: -webkit-linear-gradient(0deg, #b5dea4, #8fbd80, rgba(255, 255, 255, 0.692));
+    background: linear-gradient(0deg, #b5dea4, #8fbd805b, rgba(255, 255, 255, 0.363));
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    border-radius: 0.5em;
+    width: 65%;
+    height: 80%;
+    opacity: 9;
+    font-weight: bold;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
 }
 
 .input1 {
-
-    width: 289px;
-    height: 51px;
-
-    background: #F5F5F5;
+    margin-top: 10px;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+    outline: none;
+    color: #fff;
 }
 
-.input2 {
-
-    width: 289px;
-    height: 51px;
-
-    background: #F5F5F5;
+::placeholder {
+    color: #fff;
 }
 
 .btnLogin {
 
-    width: 288.09px;
-    height: 51.22px;
+    width: 30%;
+    height: 40px;
+    background-color: #b5dea4;
+    border: none;
+
+    color: black;
+
+    margin: 10px 0;
+    /* position: absolute; */
+    /* width: 288.09px;
+    height: 51.22px; */
+    /* margin-left: 15px;
+    margin-top: 140px; */
+    border-color: #b5dea4;
+    border-radius: 5px;
 
 }

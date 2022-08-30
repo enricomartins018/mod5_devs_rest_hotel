@@ -41,29 +41,37 @@ const FormLogin = () => {
         </h4>
       </div>
       <form className={S.formlogin}>
-        <input
-          className={S.input1}
-          type="text"
-          placeholder="email"
-          value=""
-          onChange={(e) => handleChange(e, "email")}
-        />
+        <div className={S.cardLogin}>
+          {/* <label for="usuario">Email</label> */}
+          <label>Email</label>
+          <input
+            className={S.input}
+            type="text"
+            value={dadosForm.nome}
+            onChange={(e) => handleChange(e, "email")}
+          />
+        </div>
+
         {/* <BsPerson />
       </input> */}
-        <input
-          className={S.input2}
-          type="text"
-          placeholder="senha"
-          value=""
-          onChange={(e) => handleChange(e, "senha")}
-        />
+        <div className={S.cardLogin}>
+          <label>Senha</label>
+          <input
+            className={S.input}
+            type="text"
+            value={dadosForm.senha}
+            onChange={(e) => handleChange(e, "senha")}
+          />
+        </div>
+
         {/* <AiOutlineEyeInvisible />
       </input> */}
         <button className={S.btnLogin} onClick={handleClick}>
           Entrar
         </button>
         <div className={S.linkCadastro}>
-          <Link to="/cadastro">Cadastro</Link>
+          <h5>Don`t have an account?</h5>
+          <Link to="/cadastro">Sign Up</Link>
         </div>
       </form>
     </section>

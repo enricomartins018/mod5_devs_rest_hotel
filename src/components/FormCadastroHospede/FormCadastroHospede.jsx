@@ -46,64 +46,66 @@ const FormCadastroHospede = () => {
   }
 
   return (
-    <form className={S.formlogin}>
-      <input
-        className={S.input1}
-        type="text"
-        placeholder="nome"
-        value={dadosForm.nome}
-        onChange={(e) => handleChange(e, "nome")}
-      />
-      <input
-        className={S.input1}
-        type="text"
-        placeholder="genero"
-        value={dadosForm.genero}
-        onChange={(e) => handleChange(e, "genero")}
-      />
-      <input
-        className={S.input1}
-        type="text"
-        placeholder="data de nascimento"
-        value={dadosForm.nasc}
-        onChange={(e) => handleChange(e, "nasc")}
-      />
-      <input
-        className={S.input1}
-        type="text"
-        placeholder="email"
-        value={dadosForm.email}
-        onChange={(e) => handleChange(e, "email")}
-      />
-      <input
-        className={S.input1}
-        type="text"
-        placeholder="celular"
-        value={dadosForm.celular}
-        onChange={(e) => handleChange(e, "celular")}
-      />
-      {/* <BsPerson />
+    <div>
+      <form className={S.formCadastroHospede}>
+        <input
+          className={S.input1}
+          type="text"
+          placeholder="nome"
+          value={dadosForm.nome}
+          onChange={(e) => handleChange(e, "nome")}
+        />
+        <input
+          className={S.input1}
+          type="text"
+          placeholder="genero"
+          value={dadosForm.genero}
+          onChange={(e) => handleChange(e, "genero")}
+        />
+        <input
+          className={S.input1}
+          type="date"
+          placeholder="data de nascimento"
+          value={dadosForm.nasc}
+          onChange={(e) => handleChange(e, "nasc")}
+        />
+        <input
+          className={S.input1}
+          type="text"
+          placeholder="email"
+          value={dadosForm.email}
+          onChange={(e) => handleChange(e, "email")}
+        />
+        <input
+          className={S.input1}
+          type="text"
+          placeholder="celular"
+          value={dadosForm.celular}
+          onChange={(e) => handleChange(e, "celular")}
+        />
+        {/* <BsPerson />
           </input> */}
-      <input
-        className={S.input1}
-        type="text"
-        placeholder="senha"
-        value={dadosForm.senha}
-        onChange={(e) => handleChange(e, "senha")}
-      />
-      {/* <AiOutlineEyeInvisible />
+        <input
+          className={S.input1}
+          type="text"
+          placeholder="senha"
+          value={dadosForm.senha}
+          onChange={(e) => handleChange(e, "senha")}
+        />
+        {/* <AiOutlineEyeInvisible />
           </input> */}
-      <button className={S.btnLogin} onClick={handleClick}>
-        Entrar
-      </button>
+        <button className={S.btnLogin} onClick={handleClick}>
+          Entrar
+        </button>
 
-      <Popup open={open} closeOnDocumentClick onClose={closeModal}>
+        {/* <Popup open={open} closeOnDocumentClick onClose={closeModal}>
         <div>
           <a onClick={closeModal}>&times;</a>
           Sucesso
         </div>
-      </Popup>
-    </form>
+      </Popup> */}
+      </form>
+    </div>
   );
 };
 
