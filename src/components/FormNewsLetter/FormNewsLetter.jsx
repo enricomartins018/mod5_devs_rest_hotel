@@ -2,6 +2,8 @@ import React from 'react'
 
 export const FormNewsLetter = () => {
   return (
-    <div>FormNewsLetter</div>
+    <div>
+      <input type="text" placeholder='E-mail'/>
+    </div>
   )
 }
