@@ -2,46 +2,55 @@ header {
   width: 100vw;
   display: flex;
   align-items: center;
-  background-color: #437a37;
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1), 0px 10px 40px rgba(0, 0, 0, 0.06);
 }
 
-h1 {
-  width: 50%;
-  margin-left: 20px;
+header .logo {
+  width: 10%;
+  margin: 0;
+}
+
+.logo {
+  width: 86px;
+  height: 83px;
+  top: 21px;
+  left: 62px;
 }
 
 nav {
-  width: 35%;
+  width: 75%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  gap: 20px;
+  justify-content: flex-end;
 }
 
 nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  color: #000;
-}
-
-nav a:hover {
-  color: black;
-  font-size: 18px;
-  color: #daffc9;
+  color: #000000;
 }
 
 .Button {
   width: 100px;
-  height: 40px;
-  border-radius: 15px;
+  height: 35px;
+  border-radius: 10px;
   align-items: center;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
-  background-color: #b5dea4;
+  background-color: #447a37;
 }
 
-.Button:hover {
-  color: #000000;
-  background-color: #fff;
+
+div .btnReserva {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  margin-left: 15px;
 }

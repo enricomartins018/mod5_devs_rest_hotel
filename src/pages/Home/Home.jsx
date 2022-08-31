@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Header } from "../../components/Header/Header";
+import { Main } from "../../components/Main/Main";
 import { Sidebar } from "../../components/Sidebar/Sidebar";
 import S from "./Home.module.css";
 const Home = () => {
@@ -11,7 +12,9 @@ const Home = () => {
       <div className={S.sidenav}>
         <Sidebar />
       </div>
-      <div className={S.content}>Main</div>
+      <div className={S.content}>Main
+      <Main />
+      </div>
       <div className={S.footer}>Footer</div>
     </div>
   );
