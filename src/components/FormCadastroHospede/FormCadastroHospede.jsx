@@ -64,7 +64,7 @@ const FormCadastroHospede = () => {
         />
         <input
           className={S.input1}
-          type="date"
+          type="text"
           placeholder="data de nascimento"
           value={dadosForm.nasc}
           onChange={(e) => handleChange(e, "nasc")}

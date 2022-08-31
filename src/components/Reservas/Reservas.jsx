@@ -22,14 +22,14 @@ const Reservas = ({
     <div className={S.container}>
       <h1>Reservas</h1>
       <div className={S.text}>
-        <h2>Id da reserva: {id}</h2>
-        <h2>Seu Id: {id_Hospede}</h2>
-        <h2>Número do seu quarto: {quarto}</h2>
-        <h2>Quantidade de camas: {quantLeitos}</h2>
-        <h2>Quantidade de adultos: {quantAdultos}</h2>
-        <h2>Quantidade de crianças: {quantCrian}</h2>
-        <h2>Data de entrada: {dataEntrada}</h2>
-        <h2>Data de saída: {dataSaida}</h2>
+        <h2 className={S.h2Reservas}>Id da reserva: {id}</h2>
+        <h2 className={S.h2Reservas}>Seu Id: {id_Hospede}</h2>
+        <h2 className={S.h2Reservas}>Número do seu quarto: {quarto}</h2>
+        <h2 className={S.h2Reservas}>Quantidade de camas: {quantLeitos}</h2>
+        <h2 className={S.h2Reservas}>Quantidade de adultos: {quantAdultos}</h2>
+        <h2 className={S.h2Reservas}>Quantidade de crianças: {quantCrian}</h2>
+        <h2 className={S.h2Reservas}>Data de entrada: {dataEntrada}</h2>
+        <h2 className={S.h2Reservas}>Data de saída: {dataSaida}</h2>
         <button className={S.btn}>Atualizar</button>
         <button onClick={deletar} className={S.btnDelete}>
           Deletar

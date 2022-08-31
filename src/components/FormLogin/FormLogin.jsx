@@ -2,10 +2,11 @@ import React from "react";
 import S from "./FormLogin.module.css";
 import { useState } from "react";
 import { api } from "../../services/api";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 
 const FormLogin = () => {
+  const navigate = useNavigate();
   //1 - Crie um estado para o forms
   const [dadosForm, setDadosForm] = useState({
     email: "",
@@ -27,6 +28,7 @@ const FormLogin = () => {
         console.log(response);
 
         localStorage.setItem("id_Hospede", response.data.id);
+        navigate("/");
       });
     } catch (e) {}
   }
@@ -50,10 +52,10 @@ const FormLogin = () => {
             value={dadosForm.nome}
             onChange={(e) => handleChange(e, "email")}
           />
+          {/* <BsPerson />
+      </input> */}
         </div>
 
-        {/* <BsPerson />
-      </input> */}
         <div className={S.cardLogin}>
           <label>Senha</label>
           <input

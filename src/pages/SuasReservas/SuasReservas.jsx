@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useNavigate } from "react";
 import Reservas from "../../components/Reservas/Reservas";
 import { api } from "../../services/api";
 
 const SuasReservas = () => {
   if (!localStorage.getItem("id_Hospede")) {
-    window.location.href = "login";
+    const navigate = useNavigate();
+    navigate("/login");
   }
 
   const [reserva, setReserva] = useState([]);
@@ -21,16 +22,18 @@ const SuasReservas = () => {
   // }
 
   useEffect(() => {
+    console.log(localStorage.getItem("id_Hospede"));
     try {
       api
         .get("/reservas/hospede/" + localStorage.getItem("id_Hospede"))
+
         .then((response) => {
           console.log(response);
           // para buscar por id
           // const filtro = response.data.Reservas.filter((item) => {
           //   return item.idhospede == localStorage.getItem("id_Hospede");
           // });
-          // setReserva(response.data.Reservas);
+          setReserva(response.data.mensage);
         });
     } catch (e) {
       console.log(e);

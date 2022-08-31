@@ -9,13 +9,14 @@
 } */
 
 .container {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 640px;
     height: 400px;
     margin-left: 450px;
     margin-top: 266px;
-    background: #ABCE9F;
-    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25);
+    background: -webkit-linear-gradient(0deg, #447a3767, #8fbd8044, #b6dea42f);
+    background: linear-gradient(0deg, #447a3749, #8fbd803d, #b6dea455);
     border-radius: 16px;
 }
 
@@ -26,8 +27,8 @@
     margin-top: 0;
 }
 
-h1 {
-    padding: 10px;
+.h2Reservas {
+    padding: 0%;
 }
 
 .btn {
