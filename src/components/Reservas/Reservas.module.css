@@ -1,58 +1,35 @@
-/* body {
-    background-color: #CDE2C5;
-    background-image: url("../../assets/reserva.jpg");
-    z-index: 1;
-    opacity: 0.8;
-    background-repeat: no-repeat;
-    background-position: 100% 0;
-    background-size: cover;
-} */
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 640px;
-    height: 400px;
-    margin-left: 450px;
-    margin-top: 266px;
-    background: -webkit-linear-gradient(0deg, #447a3767, #8fbd8044, #b6dea42f);
-    background: linear-gradient(0deg, #447a3749, #8fbd803d, #b6dea455);
-    border-radius: 16px;
-}
-
 .text {
-    padding: 5px;
     align-items: center;
-    margin-left: 200px;
-    margin-top: 0;
+    justify-content: center;
 }
 
 .h2Reservas {
     padding: 0%;
+    color: rgb(92, 90, 90);
+    font-size: 15px;
+    padding: 3px;
 }
 
 .btn {
     box-sizing: border-box;
-    position: absolute;
-    width: 232px;
-    height: 70px;
-    margin-left: 150px;
-    margin-top: 50px;
-    background: #1F3019;
-    border-radius: 30px;
-    color: white;
-
+    width: 70px;
+    height: 30px;
+    margin-left: 50px;
+    background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
+    background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
+    border-radius: 5px;
+    color: rgb(92, 90, 90);
 }
-
 
 .btnDelete {
     box-sizing: border-box;
-    position: absolute;
-    width: 232px;
-    height: 70px;
-    margin-left: -150px;
-    margin-top: 50px;
-    background: #1F3019;
-    border-radius: 30px;
-    color: white;
+    width: 70px;
+    height: 30px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
+    background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
+    border-radius: 5px;
+    color: rgb(92, 90, 90);
 }
