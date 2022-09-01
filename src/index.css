@@ -1,5 +1,16 @@
-*{
-  margin: 0%;
-  padding: 0%;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: HelveticaNeue;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url(./Font/Helvetica\ Neue\ W01\ 66\ Medium\ It.otf)
 }

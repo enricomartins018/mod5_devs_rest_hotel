@@ -1,0 +1,23 @@
+.cardContainer {
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px;
+    transition: 0.5s;
+    animation: ease-in;
+}
+
+.cardContainer:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px -5px;
+}
+
+.imageContainer img {
+    overflow: hidden;
+    height: 200px;
+
+}
+
+.cardcontent {
+    margin: 1rem;
+    margin-top: 0.5rem;
+}
