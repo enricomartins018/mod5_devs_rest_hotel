@@ -7,4 +7,10 @@
 body {
   width: 100%;
   min-height: 100vh;
+  font-family: HelveticaNeue;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url(./Font/Helvetica\ Neue\ W01\ 66\ Medium\ It.otf)
 }
