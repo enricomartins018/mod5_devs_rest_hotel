@@ -1,0 +1,43 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90vw;
+    gap: 5rem;
+}
+
+.selectDate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 50vw;
+    height: 50vh;
+}
+
+.containerSelectPattern {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.selectPattern {
+    height: 3rem;
+    width: 20rem;
+}
+
