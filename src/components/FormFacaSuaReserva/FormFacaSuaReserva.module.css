@@ -6,6 +6,7 @@ section {
     width: 100vw;
     height: 99.9vh;
     background: linear-gradient(0deg, #447a37, #6a9b5b, #8fbd80);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 form {
@@ -13,8 +14,6 @@ form {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
     width: 90vw;
     height: 70vh;
     gap: 2rem;
@@ -36,6 +35,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    text-align: left;
 }
 
 .selectPattern {
@@ -61,3 +61,9 @@ form {
     height: 2rem;
     width: 10rem;
 }
+
+.inputCheckbox{
+    margin-top: 0.6rem;
+    margin-left: 2rem;
+}
+
