@@ -1,0 +1,63 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 99.9vh;
+    background: linear-gradient(0deg, #447a37, #6a9b5b, #8fbd80);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90vw;
+    height: 70vh;
+    gap: 2rem;
+    background: linear-gradient(0deg, #447a37, #6a9b5b, #8fbd80);
+}
+
+.selectDate {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    width: 50vw;
+    height: 50vh;
+}
+
+
+.containerSelectPattern {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.selectPattern {
+    height: 3rem;
+    width: 20rem;
+}
+
+.dataEntrada{
+    display: flex;
+    flex-direction: column;
+}
+
+.dataSaida{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputPattern{
+    width: 20rem;
+}
+
+.btnEnviarReserva{
+    height: 2rem;
+    width: 10rem;
+}
