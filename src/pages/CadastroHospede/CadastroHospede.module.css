@@ -1,0 +1,65 @@
+.div {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+    display: flex;
+
+}
+
+.quarto {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 9;
+}
+
+.section2 {
+    flex: 50%;
+    padding: 40px;
+
+}
+
+.section1 {
+    flex: 70%;
+    padding: 40px;
+    /* margin-left: 50px; */
+
+}
+
+.sectionForm {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    margin-left: -100px;
+}
+
+.sectionText {
+    position: absolute;
+    width: 35vw;
+    height: 80%;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    background: -webkit-linear-gradient(0deg, #b5dea4, #8fbd80, rgba(255, 255, 255, 0.692));
+    background: linear-gradient(0deg, #b5dea4, #8fbd805b, rgba(255, 255, 255, 0.15));
+    gap: 20px;
+    border-radius: 0.5em;
+
+}
+
+.h2Hospede {
+    color: rgb(58, 57, 57);
+    padding: 100px;
+    font-size: large;
+}
