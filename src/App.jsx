@@ -7,7 +7,7 @@ import Login from "./pages/Login/Login";
 import CadastroHospede from "./pages/CadastroHospede/CadastroHospede";
 
 function App() {
-  return (
+   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,5 +20,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
