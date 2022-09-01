@@ -18,7 +18,7 @@
 }
 
 .section2 {
-    flex: 30%;
+    flex: 50%;
     padding: 40px;
 
 }
@@ -26,6 +26,7 @@
 .section1 {
     flex: 70%;
     padding: 40px;
+    /* margin-left: 50px; */
 
 }
 
@@ -57,7 +58,8 @@
 
 }
 
-h2 {
-    color: white;
+.h2Hospede {
+    color: rgb(58, 57, 57);
     padding: 100px;
+    font-size: large;
 }

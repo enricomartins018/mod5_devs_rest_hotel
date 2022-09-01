@@ -27,7 +27,7 @@
 }
 
 ::placeholder {
-    color: #fff;
+    color: rgb(49, 48, 48)
 }
 
 .btnLogin {

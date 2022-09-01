@@ -4,6 +4,7 @@ import S from "./FormCadastroHospede.module.css";
 import { api } from "../../services/api";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import TextField from "@mui/material/TextField";
 
 const FormCadastroHospede = () => {
   const [open, setOpen] = useState(false);
@@ -48,35 +49,57 @@ const FormCadastroHospede = () => {
   return (
     <div>
       <form className={S.formCadastroHospede}>
-        <input
+        <TextField
+          id="standard-basic"
+          label="Nome"
+          variant="standard"
           className={S.input1}
           type="text"
           placeholder="nome"
           value={dadosForm.nome}
           onChange={(e) => handleChange(e, "nome")}
         />
-        <input
+        {/* <input
+          className={S.input1}
+          type="text"
+          placeholder="nome"
+          value={dadosForm.nome}
+          onChange={(e) => handleChange(e, "nome")}
+        /> */}
+        <TextField
+          id="standard-basic"
+          label="Gênero"
+          variant="standard"
           className={S.input1}
           type="text"
           placeholder="genero"
           value={dadosForm.genero}
           onChange={(e) => handleChange(e, "genero")}
         />
-        <input
+        <TextField
+          id="standard-basic"
+          label="Data de nascimento"
+          variant="standard"
           className={S.input1}
           type="text"
           placeholder="data de nascimento"
           value={dadosForm.nasc}
           onChange={(e) => handleChange(e, "nasc")}
         />
-        <input
+        <TextField
+          id="standard-basic"
+          label="email"
+          variant="standard"
           className={S.input1}
           type="text"
           placeholder="email"
           value={dadosForm.email}
           onChange={(e) => handleChange(e, "email")}
         />
-        <input
+        <TextField
+          id="standard-basic"
+          label="celular"
+          variant="standard"
           className={S.input1}
           type="text"
           placeholder="celular"
@@ -85,7 +108,10 @@ const FormCadastroHospede = () => {
         />
         {/* <BsPerson />
           </input> */}
-        <input
+        <TextField
+          id="standard-basic"
+          label="Senha"
+          variant="standard"
           className={S.input1}
           type="text"
           placeholder="senha"
@@ -95,7 +121,7 @@ const FormCadastroHospede = () => {
         {/* <AiOutlineEyeInvisible />
           </input> */}
         <button className={S.btnLogin} onClick={handleClick}>
-          Entrar
+          Cadastrar
         </button>
 
         {/* <Popup open={open} closeOnDocumentClick onClose={closeModal}>
