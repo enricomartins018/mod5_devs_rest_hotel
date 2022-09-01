@@ -45,6 +45,14 @@ const FacaSuaReserva = () => {
                         <option value="quantCrian">4 Crianças</option>
                         <option value="quantCrian">5 Crianças</option>
                     </select>
+                    <div className={S.containerCheckbox}>
+                        <input className={S.inputCheckbox} type="checkbox" name="" id="" />
+                        <label className={S.labelCheckbox}>Casas e apartamentos inteiros</label>
+                    </div>
+                    <div className={S.containerCheckbox}>
+                        <input className={S.inputCheckbox} type="checkbox" name="" id="" />
+                        <label className={S.labelCheckbox}>Vou viajar a trabalho</label>
+                    </div>
                     <button className={S.btnEnviarReserva} type="submit" id="enviarReserva" >Reservar Agora</button>
                 </div>
             </form>
