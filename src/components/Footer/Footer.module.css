@@ -1,7 +1,7 @@
 .footer{
     width: 100%;
-    height: 200%;
-    background-color: #8fbd7f  /*#ffffff*/;
+    height: 400%;
+    background-color:#daffc9;
     /*display: flex;
     flex-direction: row;
     justify-content: space-between;*/
@@ -26,4 +26,30 @@
     flex-direction: row;
     justify-content: space-between;
 
+}
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icons{
+    color: black;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.direitos{
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.nav{
+    margin-top: 23px;
 }
