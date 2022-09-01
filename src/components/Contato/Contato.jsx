@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../Button/Button";
+import Button from "../Button/Button";
 import S from "./Contato.module.css";
 
 export const Contato = () => {
