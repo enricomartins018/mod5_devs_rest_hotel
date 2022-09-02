@@ -9,7 +9,11 @@ export const Sidebar = () => {
         <h2 className={S.h2Side}>
           Para acessar suas reservas, atualizar ou deletar, acese o link abaixo
         </h2>
-        <Link to="/suasreservas">Reservas</Link>
+        {localStorage ? (
+          <Link to="/suasreservas">Reservas</Link>
+        ) : (
+          <h1>Reservas</h1>
+        )}
       </div>
     </nav>
   );

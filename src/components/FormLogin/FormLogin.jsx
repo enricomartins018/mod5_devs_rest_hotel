@@ -4,7 +4,7 @@ import { useState } from "react";
 import { api } from "../../services/api";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.svg";
-
+import { BsPerson } from "react-icons/bs";
 const FormLogin = () => {
   const navigate = useNavigate();
   //1 - Crie um estado para o forms
@@ -22,15 +22,21 @@ const FormLogin = () => {
 
   function handleClick(e) {
     e.preventDefault();
-    console.log("response");
     try {
       api.post("/hospede/login", dadosForm).then((response) => {
         console.log(response);
 
-        localStorage.setItem("id_Hospede", response.data.id);
-        navigate("/");
+        if (response.data.erro != true) {
+          localStorage.setItem("id_Hospede", response.data.id);
+          navigate("/");
+        } else {
+          throw new Error("Login inválido");
+        }
+        //console.log("teste: " + localStorage.getItem("id_Hospede"));
       });
-    } catch (e) {}
+    } catch (e) {
+      // usestate para guardar a mensagem do erro e depois chamar na div depois do button(fazer para cadastro tbm)
+    }
   }
 
   return (
@@ -45,6 +51,7 @@ const FormLogin = () => {
       <form className={S.formlogin}>
         <div className={S.cardLogin}>
           {/* <label for="usuario">Email</label> */}
+          <BsPerson />
           <label>Email</label>
           <input
             className={S.input}
@@ -52,15 +59,14 @@ const FormLogin = () => {
             value={dadosForm.nome}
             onChange={(e) => handleChange(e, "email")}
           />
-          {/* <BsPerson />
-      </input> */}
         </div>
 
         <div className={S.cardLogin}>
           <label>Senha</label>
           <input
             className={S.input}
-            type="text"
+            type="password"
+            // colocar botao para visualizar a senha, se der tempo
             value={dadosForm.senha}
             onChange={(e) => handleChange(e, "senha")}
           />

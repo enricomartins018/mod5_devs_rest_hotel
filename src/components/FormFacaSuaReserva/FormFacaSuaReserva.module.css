@@ -1,0 +1,117 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, #447a37, #6a9b5b, #8fbd80);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 5rem;
+    background: linear-gradient(0deg, #447a37, #6a9b5b, #8fbd80);
+}
+
+.selectDate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    width: 40vw;
+    height: 80vh;
+    border-radius: 10%;
+    background-color: white;
+}
+
+.dataEntrada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+}
+
+.containerSelectPattern {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40vw;
+    height: 80vh;
+    border-radius: 10%;
+    color: black;
+    background-color: white;
+
+}
+
+.selectPattern {
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20vw;
+    height: 4rem;
+    color: black;
+    background-color: white;
+    border: solid 0.1rem #447a37;
+    text-align: left;
+    border-radius: 1rem;
+}
+
+.dataEntrada{
+    display: flex;
+    flex-direction: column;
+}
+
+.dataSaida{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputPattern{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20vw;
+    height: 4rem;
+    color: black;
+    background-color: white;
+    border: solid 0.1rem #447a37;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.btnEnviarReserva{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20vw;
+    height: 4rem;
+    color: black;
+    background-color: white;
+    border: solid 0.1rem #447a37;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.containerCheckBox{
+    color: black;
+}
+
+.inputCheckbox{
+    margin-top: 0.6rem;
+    margin-left: 2rem;
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+}
+
