@@ -1,46 +1,71 @@
-section {
+.section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 99.9vh;
+    height: 100vh;
     background: linear-gradient(0deg, #447a37, #6a9b5b, #8fbd80);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 90vw;
-    height: 70vh;
-    gap: 2rem;
+    width: 100vw;
+    height: 100vh;
+    gap: 5rem;
     background: linear-gradient(0deg, #447a37, #6a9b5b, #8fbd80);
 }
 
 .selectDate {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    color: white;
-    width: 50vw;
-    height: 50vh;
+    text-align: center;
+    color: black;
+    width: 40vw;
+    height: 80vh;
+    border-radius: 10%;
+    background-color: white;
 }
 
+.dataEntrada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+}
 
 .containerSelectPattern {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
-    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40vw;
+    height: 80vh;
+    border-radius: 10%;
+    color: black;
+    background-color: white;
+
 }
 
 .selectPattern {
-    height: 3rem;
-    width: 20rem;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20vw;
+    height: 4rem;
+    color: black;
+    background-color: white;
+    border: solid 0.1rem #447a37;
+    text-align: left;
+    border-radius: 1rem;
 }
 
 .dataEntrada{
@@ -55,18 +80,38 @@ form {
 
 .inputPattern{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
+    width: 20vw;
+    height: 4rem;
+    color: black;
+    background-color: white;
+    border: solid 0.1rem #447a37;
     text-align: center;
-    width: 20rem;
+    border-radius: 1rem;
 }
 
 .btnEnviarReserva{
-    height: 2rem;
-    width: 10rem;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20vw;
+    height: 4rem;
+    color: black;
+    background-color: white;
+    border: solid 0.1rem #447a37;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.containerCheckBox{
+    color: black;
 }
 
 .inputCheckbox{
     margin-top: 0.6rem;
     margin-left: 2rem;
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
 }
 
