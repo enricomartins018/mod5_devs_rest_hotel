@@ -11,12 +11,11 @@ const Home = () => {
       <Header />
       <div className={S.sidenav}>
         <Sidebar />
-  </div>
+      </div>
       <div className={S.content}>
         Main
         {/* <Main /> */}
       </div>
-      <div className={S.footer}>Footer</div>
 
       <div className={S.content}>Main</div>
       <div className={S.footer}>
