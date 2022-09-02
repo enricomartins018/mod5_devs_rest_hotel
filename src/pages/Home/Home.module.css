@@ -16,9 +16,9 @@
     width: 300px;
 
     text-align: center;
-    background: #12c2e9;
-    background: -webkit-linear-gradient(0deg, #447a37, #6a9b5b, #8fbd80);
-    background: linear-gradient(0deg, #447a37, #6a9b5b, #8fbd80);
+
+    /* background: -webkit-linear-gradient(0deg, #447a37, #6a9b5b, #8fbd80);
+    background: linear-gradient(0deg, #447a37, #6a9b5b, #8fbd80); */
     background-size: 175%;
     /* border-right: 1px solid white; */
     /* transition: all .50s ease-in; */
