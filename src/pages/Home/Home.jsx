@@ -11,7 +11,7 @@ const Home = () => {
       <Header />
       <div className={S.sidenav}>
         <Sidebar />
-      </div>
+  </div>
       <div className={S.content}>
         Main
         {/* <Main /> */}
