@@ -25,11 +25,11 @@ const SuasReservas = () => {
   // }
 
   useEffect(() => {
-    console.log(localStorage.getItem("id_Hospede"));
+    //console.log("teste: " + localStorage.getItem("id_Hospede"));
+
     try {
       api
         .get("/reservas/hospede/" + localStorage.getItem("id_Hospede"))
-
         .then((response) => {
           console.log(response);
           // para buscar por id
@@ -50,6 +50,7 @@ const SuasReservas = () => {
     <main>
       <section>
         {reserva.map((item, index) => {
+          console.log(reserva);
           return (
             <div className={S.loginPage}>
               <div className={S.overlay}></div>

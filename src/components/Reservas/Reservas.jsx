@@ -22,7 +22,9 @@ const Reservas = ({
       navigate("/");
     });
   }
-
+  function setAtualizar() {
+    navigate("/facasuareserva");
+  }
   return (
     <div>
       <div className={S.text}>
@@ -34,8 +36,11 @@ const Reservas = ({
         <h2 className={S.h2Reservas}>Quant. de crianças: {quantCrian}</h2>
         <h2 className={S.h2Reservas}>Data de entrada: {dataEntrada}</h2>
         <h2 className={S.h2Reservas}>Data de saída: {dataSaida}</h2>
-        <button className={S.btn}>Atualizar</button>
+        <button onClick={setAtualizar} className={S.btn}>
+          Atualizar
+        </button>
         <button onClick={deletar} className={S.btnDelete}>
+          {/* colocar deletar dentro do pop up */}
           Deletar
         </button>
       </div>
