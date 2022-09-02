@@ -8,7 +8,7 @@ const CadastroHospede = () => {
     <div className={S.div}>
       <img className={S.quarto} src={quarto} />
 
-      <div className={S.section2}>
+      <div className={S.sectionContent}>
         <div className={S.sectionText}>
           <h2 className={S.h2Hospede}>
             O K-DRH Hotel está localizado no coração do Rio. São 12
@@ -23,7 +23,7 @@ const CadastroHospede = () => {
         </div>
       </div>
 
-      <div className={S.section1}>
+      <div className={S.sectionFormHospede}>
         <div className={S.sectionForm}>
           <FormCadastroHospede />
         </div>

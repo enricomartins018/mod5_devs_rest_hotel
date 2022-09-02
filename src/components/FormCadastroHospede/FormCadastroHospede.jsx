@@ -5,10 +5,12 @@ import { api } from "../../services/api";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import TextField from "@mui/material/TextField";
+import { useNavigate } from "react-router-dom";
 
 const FormCadastroHospede = () => {
   const [open, setOpen] = useState(false);
   const closeModal = () => setOpen(false);
+  const navigate = useNavigate();
   const [dadosForm, setDadosForm] = useState({
     nome: "",
     genero: "",
@@ -25,21 +27,17 @@ const FormCadastroHospede = () => {
     });
   }
 
-  function handleClick(e) {
+  async function handleClick(e) {
     e.preventDefault();
-    try {
-      api.post("/hospede", dadosForm).then((response) => {
-        console.log(response);
-        if (response.data.id) {
-          localStorage.setItem("id_Hospede", response.hospede.id);
-          setOpen((o) => !o);
-          setTimeout(() => {
-            window.location.href = "home";
-          }, "5000");
-        }
 
-        // todo: verificar como mostrar a mensagem de validacao da api no preenchimento do formulário
-        // window.location.href = "home";
+    try {
+      await api.post("/hospede", dadosForm).then((response) => {
+        console.log(response);
+
+        if (response.data.hospede.id) {
+          localStorage.setItem("id_Hospede", response.data.hospede.id);
+          navigate("/login");
+        }
       });
     } catch (e) {
       console.log(e);
@@ -47,7 +45,7 @@ const FormCadastroHospede = () => {
   }
 
   return (
-    <div>
+    <div className={S.containerCadastro}>
       <form className={S.formCadastroHospede}>
         <TextField
           id="standard-basic"
@@ -113,23 +111,29 @@ const FormCadastroHospede = () => {
           label="Senha"
           variant="standard"
           className={S.input1}
-          type="text"
+          type="password"
           placeholder="senha"
           value={dadosForm.senha}
           onChange={(e) => handleChange(e, "senha")}
         />
         {/* <AiOutlineEyeInvisible />
           </input> */}
-        <button className={S.btnLogin} onClick={handleClick}>
+
+        <button
+          type="button"
+          className={S.btnCadastrar}
+          onClick={() => setOpen((o) => !o)}
+        >
           Cadastrar
         </button>
-
-        {/* <Popup open={open} closeOnDocumentClick onClose={closeModal}>
-        <div>
-          <a onClick={closeModal}>&times;</a>
-          Sucesso
-        </div>
-      </Popup> */}
+        <Popup open={open} closeOnDocumentClick onClose={closeModal}>
+          <div>
+            Sucesso
+            <button className={S.btnCadastrar} onClick={handleClick}>
+              Ir para login
+            </button>
+          </div>
+        </Popup>
       </form>
     </div>
   );
