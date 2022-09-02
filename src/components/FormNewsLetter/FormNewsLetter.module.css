@@ -1,24 +1,32 @@
 .container{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0ch;
+    height: 110px;
+   
+}
+.containerPai{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     align-items: center;
 }
 .imput{
     border-radius: 5px;
-    border: 1px solid #437a37;
+    border: 1px solid #808080;
     height: 30px;
     width: 200px;
     padding: 7px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: -20px;
+    margin-right: -60px;
+   }
+ 
+.button{
+    margin-top: -20px;
+
 }
-.botao{
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 1px solid #437a37;
-    height: 30px;
-    width: 100px;
-    padding: 7px;
+.texto{
+    margin-top: -20px;
 }
