@@ -33,8 +33,7 @@ export const Footer = () => {
         <Button href="#text-buttons"><AiOutlineYoutube size={20} className={S.icons}/></Button>
         <Button href="#text-buttons"><AiOutlineLinkedin size={20} className={S.icons}/></Button>
         <Button href="#text-buttons"><AiOutlineInstagram size={20} className={S.icons}/></Button>
-        <Button href="#text-buttons"><AiOutlineWhatsApp size={20} className={S.icons}/></Button>
-        </nav>
+        <Button href="#text-buttons"><AiOutlineWhatsApp size={20} className={S.icons}/></Button></nav>
         </div>
       </div>
   )
