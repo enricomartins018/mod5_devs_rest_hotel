@@ -31,7 +31,7 @@
 
 .content {
     grid-area: content;
-    background-color: white;
+    /* background-color: white; */
     padding: 2px;
     gap: 20px
 }

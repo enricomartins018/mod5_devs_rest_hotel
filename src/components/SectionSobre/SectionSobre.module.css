@@ -1,5 +1,5 @@
 .section {
-    width: 80%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,19 +8,18 @@
 
 .img {
   display: flex;
-  width: 350px;
+  width: 750px;
   height: 300px;
   align-items: center;
 }
 
 .p {
-    margin: 10px auto;
+  margin: 10px auto;
 }
 
 .divImg {
-    width: 800px;
-display: flex;
-gap: 50px;
-margin-top: 30px;
-
+  width: 800px;
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
 }

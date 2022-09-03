@@ -14,7 +14,7 @@ const Home = () => {
       </div>
       <div className={S.content}>
         Main
-        {/* <Main /> */}
+        <Main />
       </div>
 
       <div className={S.content}>Main</div>
