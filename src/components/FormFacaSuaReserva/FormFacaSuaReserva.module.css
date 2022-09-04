@@ -7,7 +7,7 @@
     height: 100vh;
     background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
     background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .form {
@@ -32,8 +32,7 @@
 }
 
 .titleForm{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: rgb(49, 48, 48)
 }
 
@@ -44,9 +43,18 @@
     align-items: center;
     text-align: center;
     color: rgb(49, 48, 48);
-    width: 30vw;
-    height: 80vh;
-    gap: 3rem;
+    width: 35vw;
+    height: 85vh;
+    
+}
+
+.containerDatas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    gap: 4rem;
 }
 
 .dataEntrada{
@@ -64,7 +72,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    width: 30vw;
+    width: 35vw;
     height: 70vh;
     color: rgb(49, 48, 48);
     margin-top: 3rem;
@@ -77,6 +85,10 @@
     border: solid 0.1rem black;
     text-align: left;
     background-color: #b5dea4;
+    border-radius: 0.5em;
+    border: solid 0.1rem black;
+    background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
+    background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
 }
 
 .dataSaida{
@@ -86,14 +98,17 @@
 }
 
 .inputPattern{
-    width: 20rem;
-    height: 4rem;
+    width: 10rem;
+    height: 2rem;
     color: rgb(49, 48, 48);
     border: solid 0.1rem black;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #b5dea4;
     font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border: solid 0.1rem black;
+    background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
+    background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
 }
 
 
@@ -103,6 +118,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    
 }
 
 .containerCodCorporativo{
@@ -112,6 +128,10 @@
     border: solid 0.1rem black;
     text-align: center;
     background-color: #b5dea4;
+    border-radius: 0.5rem;
+    border: solid 0.1rem black;
+    background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
+    background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
 }
 
 .containerCodGrupo{
@@ -121,6 +141,10 @@
     border: solid 0.1rem black;
     text-align: center;
     background-color: #b5dea4;
+    border-radius: 0.5rem;
+    border: solid 0.1rem black;
+    background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
+    background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
 }
 
 .btnEnviarReserva{
@@ -131,6 +155,10 @@
     border: solid 0.1rem black;
     background-color: #b5dea4;
     text-align: center;
+    border-radius: 0.5rem;
+    border: solid 0.1rem black;
+    background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
+    background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
 }
 
 
@@ -168,6 +196,7 @@
     height: 2rem;
     width: 2rem;
     margin-top: -5rem;
+    margin-left: -6rem;
 }
 
 .optionPattern{
