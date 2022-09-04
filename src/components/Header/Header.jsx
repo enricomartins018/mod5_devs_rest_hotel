@@ -6,13 +6,13 @@ import { RiUser3Line } from "react-icons/ri";
 
 export const Header = () => {
   return (
-    <header>
+    <header className={S.header}>
       <img className={S.logo} src={logo} alt="" />
-      <nav>
-        <a href="#">Sobre nós</a>
-        <a href="#">Acomodações</a>
-        <a href="#">Serviços</a>
-        <a href="#">Reservar</a>
+      <nav className={S.nav}>
+        <a className={S.a} href="#">Sobre nós</a>
+        <a className={S.a} href="#">Acomodações</a>
+        <a className={S.a} href="#">Serviços</a>
+        <a className={S.a} href="#">Reservar</a>
       </nav>
       <div className={S.btnReserva}>
         <RiUser3Line className={S.icon} />
