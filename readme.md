@@ -3,21 +3,22 @@
 <div id="inicio" align="center">
   <a href="#Projeto">Projeto  |</a>&nbsp;&nbsp;
   <a href="#Squad"> Squad  |</a>&nbsp;&nbsp;
-  <a href="#Api utilizada"> Api utilizada |</a>&nbsp;&nbsp;
+  <a href="#Api-utilizada"> Api utilizada |</a>&nbsp;&nbsp;
   <a href="#pré-requisitos"> Pré-requisitos  |</a>&nbsp;&nbsp;
   <a href="#packages"> Packages  |</a>&nbsp;&nbsp;
-  <a href="#Instalação da Aplicação">Instalação da Aplicação</a>&nbsp;&nbsp;
+  <a href="#Aplicação-de-forma-local">Aplicação de forma local</a>&nbsp;&nbsp;
 </div>
 
 <div id="inicio" align="center">
-  <a href="#Projeto">Como funciona o site  |</a>&nbsp;&nbsp;
+  <a href="#Implatação-da-aplicação">Implatação da aplicação  |</a>&nbsp;&nbsp;
 </div>
 
 
 # Projeto
 
 Desenvolver um website, estruturado com react e que consuma a Api.<br>
-Definimos que vamos utilizar as entidades reservas e hóspedes da Api Hotel, e implementamos utilizando o **CRUD** e a arquitetura do projeto em **MVC**. <br>
+Definimos que vamos utilizar as entidades reservas e hóspedes da Api Hotel, e implementamos utilizando o **CRUD**.
+Uma aplicação que simula um site de resevas de um hotel, onde você gera um novo cadastro, consegue consultar seus dados, excluir e atualizar.
 
 **Curso:** Web Dev FullStack <br> 
 **Instituição:** [Resilia Educação](https://www.resilia.com.br/)  <br>
@@ -87,7 +88,7 @@ Link GitHub: https://github.com/rosana-ctrl/projeto_final_m4
 `react-material-ui-carousel `<br>
 `react-hook-form`
 
-# Instalação da Aplicação
+# Aplicação de forma local
 
 Abra o terminal/Powershell e rode os comandos abaixo:
 
@@ -111,10 +112,49 @@ Rodando o projeto:
 npm run dev 
 ```
 
-# Como funciona o website:
+# Implatação da aplicação:
 
-Home - 
+### PAGES
 
-Cadastro - 
+### Home:
+()
 
-Login - 
+### CadastroHospede: /cadastro
+
+● Operação do Crud: Create
+
+Formulário de Cadastro hóspede:
+
+Usuário vai realizar preenche com as informações necessárias para ser feito o cadastro.
+
+### FacaSuaReserva: /facasuareserva
+
+● Operação do Crud: Create
+
+Formulário de Cadastro Reservas:
+
+Usuário preenche com as informações necessário para ser feita sua reserva.
+
+### Login:/login
+
+● Operação do Crud: Create
+
+Formulário de Login:
+
+Usuário preenche com as informações necessário para ser feito um login.
+
+()
+
+### SuasReservas: /suasreservas
+
+● Operação do Crud: Read
+
+Usuário vai realizar a busca da sua reserva pelo id.
+
+● Operação do Crud: Delete
+
+Usuário vai deletar sua reserva pelo id.
+
+(● Operação do Crud: Update: /atualizareserva
+
+Usuário vai realizar a atualização da sua reserva pelo id.)
