@@ -8,13 +8,13 @@
 
 .img {
   display: flex;
-  width: 750px;
-  height: 300px;
+  width: 400px;
+  height: 350px;
   align-items: center;
 }
 
-.p {
-  margin: 10px auto;
+.paragrafoInfo {
+  margin: 10px 
 }
 
 .divImg {
