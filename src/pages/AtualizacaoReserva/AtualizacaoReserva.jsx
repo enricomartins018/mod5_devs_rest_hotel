@@ -54,7 +54,6 @@ const AtualizacaoReserva = () => {
       <section>
         {
           <FormAtualizacaoReserva>
-            {/* <h1>{quarto}</h1> */}
             quarto={reserva.quarto}
             quantLeitos={reserva.quantLeitos}
             quantAdultos={reserva.quantAdultos}

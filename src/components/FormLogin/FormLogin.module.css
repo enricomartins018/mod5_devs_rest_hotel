@@ -36,15 +36,17 @@
     margin: 10px 0;
     border-color: #b5dea4;
     border-radius: 5px;
+    margin-top: 0px;
 }
 
 .linkCadastro {
     position: absolute;
     width: 288.09px;
     height: 51.22px;
-    margin-left: 120px;
-    margin-top: 200px;
+    margin-left: 150px;
+    margin-top: 230px;
     color: rgb(49, 48, 48);
+    font-size: 15px;
 }
 
 .banner {
@@ -84,8 +86,6 @@
     border-color: rgb(49, 48, 48);
 }
 
-/* 
-.cardLogin {
-    justify-content: space-between;
-    gap: 20px
-} */
+.validaSenha {
+    font-size: 9px;
+}

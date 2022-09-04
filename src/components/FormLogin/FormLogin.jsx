@@ -6,10 +6,12 @@ import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import { BsPerson } from "react-icons/bs";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
+import PasswordChecklist from "react-password-checklist";
 
 const FormLogin = () => {
   const navigate = useNavigate();
-  //1 - Crie um estado para o forms
+  const [erro, setErro] = useState();
+  const [password, setPassword] = useState("");
   const [dadosForm, setDadosForm] = useState({
     email: "",
     senha: "",
@@ -20,6 +22,7 @@ const FormLogin = () => {
       ...dadosForm,
       [nomeDaChave]: e.target.value,
     });
+    setPassword(e.target.value);
   }
 
   function handleClick(e) {
@@ -37,6 +40,9 @@ const FormLogin = () => {
         //console.log("teste: " + localStorage.getItem("id_Hospede"));
       });
     } catch (e) {
+      setErro({
+        erro,
+      });
       // usestate para guardar a mensagem do erro e depois chamar na div depois do button(fazer para cadastro tbm)
     }
   }
@@ -52,7 +58,6 @@ const FormLogin = () => {
       </div>
       <form className={S.formlogin}>
         <div className={S.cardLogin}>
-          {/* <label for="usuario">Email</label> */}
           <BsPerson />
           <label className={S.labelLogin}>Email</label>
           <input
@@ -62,16 +67,26 @@ const FormLogin = () => {
             onChange={(e) => handleChange(e, "email")}
           />
         </div>
-
         <div className={S.cardLogin}>
           <AiOutlineEyeInvisible />
           <label className={S.labelLogin}>Senha</label>
           <input
             className={S.input}
             type="password"
+            // onChange={(e) => setPassword(e.target.value)}
             // colocar botao para visualizar a senha, se der tempo
             value={dadosForm.senha}
             onChange={(e) => handleChange(e, "senha")}
+          />
+          <PasswordChecklist
+            className={S.validaSenha}
+            rules={["minLength", "capital"]}
+            minLength={8}
+            value={password}
+            messages={{
+              minLength: "A senha precisa ter mais de 8 caracteres.",
+              capital: "A senha precisa ter uma letra maiúscula.",
+            }}
           />
         </div>
 
@@ -79,8 +94,8 @@ const FormLogin = () => {
           Entrar
         </button>
         <div className={S.linkCadastro}>
-          <h5>Don`t have an account?</h5>
-          <Link to="/cadastro">Sign Up</Link>
+          <h5>Não possui um cadastro?</h5>
+          <Link to="/cadastro">Cadastre-se aqui!</Link>
         </div>
       </form>
     </section>

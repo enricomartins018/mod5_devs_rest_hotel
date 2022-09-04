@@ -57,7 +57,7 @@ const FormAtualizacaoReserva = ({
           <h2 className={S.titleForm}>
             <b>Selecione suas datas</b>
           </h2>
-
+          <h1>{dataSaida}</h1>
           <div className={S.dataEntrada}>
             <label>Data de Entrada</label>
             <input
@@ -87,7 +87,7 @@ const FormAtualizacaoReserva = ({
         <div className={S.containerSelectPattern}>
           <select
             className={S.selectPattern}
-            value={quarto}
+            value={dadosFormReserva.quarto}
             onChange={(e) => handleChange(e, "quarto")}
           >
             <option>Selecione a quantidade de quartos:</option>

@@ -11,7 +11,7 @@ const SuasReservas = () => {
     navigate("/login");
   }
 
-  const [reservas, setReservas] = useState({});
+  const [reservas, setReservas] = useState();
 
   useEffect(() => {
     try {

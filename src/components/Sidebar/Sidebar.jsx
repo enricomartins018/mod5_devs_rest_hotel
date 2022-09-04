@@ -1,6 +1,6 @@
 import S from "./Sidebar.module.css";
 import { Link } from "react-router-dom";
-import quarto from "../../assets/reserva.jpg";
+import quarto from "../../assets/esse.jpg";
 import React from "react";
 import {
   MDBCard,
