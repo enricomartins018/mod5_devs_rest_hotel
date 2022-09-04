@@ -39,17 +39,17 @@ const FormFacaSuaReserva = () => {
       console.log(e);
     }
   }
+
   return (
     <section className={S.section}>
       <form className={S.form}>
         <div className={S.selectDate}>
-          <h2 className={S.titleForm}>
-            <b>Selecione suas datas</b>
-          </h2>
+          <div>
+            <h1 className={S.titleForm}>Selecione suas datas</h1>
+          </div>
+          <div className={S.containerDatas}>
           <div className={S.dataEntrada}>
-            <label>
-              <b>ENTRADA</b>
-            </label>
+            <label><h2>Chegada</h2></label>
             <input
               className={S.inputPattern}
               type="date"
@@ -60,9 +60,7 @@ const FormFacaSuaReserva = () => {
             />
           </div>
           <div className={S.dataSaida}>
-            <label>
-              <b>SAÍDA</b>
-            </label>
+            <label><h2>Partida</h2></label>
             <input
               className={S.inputPattern}
               type="date"
@@ -72,12 +70,14 @@ const FormFacaSuaReserva = () => {
               onChange={(e) => handleChange(e, "dataSaida")}
             />
           </div>
+          </div>
+          
         </div>
         <img className={S.logo} src={logo} />
         <div className={S.containerSelectPattern}>
-        <div className={S.containerVoltar}>
-          <Link to="/"><img className={S.x_voltar} src={x_voltar} /></Link>
-        </div>
+          <div className={S.containerVoltar}>
+            <Link to="/"><img className={S.x_voltar} src={x_voltar} /></Link>
+          </div>
           <select
             className={S.selectPattern}
             value={dadosFormReserva.quarto}
