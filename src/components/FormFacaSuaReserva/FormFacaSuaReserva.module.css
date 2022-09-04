@@ -5,8 +5,8 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: -webkit-linear-gradient(0deg, #b5dea4, #8fbd80, rgba(255, 255, 255, 0.692));
-    background: linear-gradient(0deg, #b5dea4, #8fbd805b, rgba(255, 255, 255, 0.363));
+    background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
+    background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
     font-family: sans-serif;
 }
 
@@ -17,28 +17,18 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: -webkit-linear-gradient(0deg, #b5dea4, #8fbd80, rgba(255, 255, 255, 0.692));
-    background: linear-gradient(0deg, #b5dea4, #8fbd805b, rgba(255, 255, 255, 0.363));
-}
-
-.voltar{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    width: 100vw;
+    background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
+    background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
 }
 
 .btnVoltar{
-    cursor: pointer;
-    width: 10vw;
-    height: 3rem;
-    margin-top: 2rem;
-    margin-right: 5rem;
     color: rgb(49, 48, 48);
     border: solid 0.1rem black;
     background-color: #b5dea4;
     text-align: center;
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
 }
 
 .titleForm{
@@ -164,6 +154,20 @@
 
 .logo{
     height: 15rem;
+}
+
+.containerVoltar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 35rem;
+}
+
+.x_voltar{
+    height: 2rem;
+    width: 2rem;
+    margin-top: -5rem;
 }
 
 .optionPattern{
