@@ -3,6 +3,8 @@ import S from "./FormFacaSuaReserva.module.css";
 import logo from "../../assets/logo.svg";
 import { api } from "../../services/api";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import x_voltar from '../../assets/x_voltar.svg'
 
 const FormFacaSuaReserva = () => {
   const [open, setOpen] = useState(false);
@@ -39,13 +41,10 @@ const FormFacaSuaReserva = () => {
   }
   return (
     <section className={S.section}>
-      <div className={S.voltar}>
-        <button className={S.btnVoltar}>Voltar</button>
-      </div>
       <form className={S.form}>
         <div className={S.selectDate}>
           <h2 className={S.titleForm}>
-          <b>Selecione suas datas</b>
+            <b>Selecione suas datas</b>
           </h2>
           <div className={S.dataEntrada}>
             <label>
@@ -76,6 +75,9 @@ const FormFacaSuaReserva = () => {
         </div>
         <img className={S.logo} src={logo} />
         <div className={S.containerSelectPattern}>
+        <div className={S.containerVoltar}>
+          <Link to="/"><img className={S.x_voltar} src={x_voltar} /></Link>
+        </div>
           <select
             className={S.selectPattern}
             value={dadosFormReserva.quarto}
