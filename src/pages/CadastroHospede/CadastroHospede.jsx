@@ -2,6 +2,8 @@ import React from "react";
 import FormCadastroHospede from "../../components/FormCadastroHospede/FormCadastroHospede";
 import S from "./CadastroHospede.module.css";
 import quarto from "../../assets/quarto.jpg";
+import logo from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 const CadastroHospede = () => {
   return (
@@ -10,6 +12,7 @@ const CadastroHospede = () => {
 
       <div className={S.sectionContent}>
         <div className={S.sectionText}>
+          <img className={S.logo} src={logo} />
           <h2 className={S.h2Hospede}>
             O K-DRH Hotel está localizado no coração do Rio. São 12
             restaurantes, área de eventos, estacionamento 24h, lojas e serviços
@@ -20,6 +23,7 @@ const CadastroHospede = () => {
             wi-fi, TVs Smart em todos os apartamentos, serviços Pet Friendly e
             quartos conjugados para famílias.
           </h2>
+          <Link to="/">Voltar para página principal</Link>
         </div>
       </div>
 

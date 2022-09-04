@@ -11,46 +11,38 @@ const SuasReservas = () => {
     navigate("/login");
   }
 
-  const [reserva, setReserva] = useState([]);
-
-  // async function handleRequisicao() {
-  //   const url = `https://hotel-api-s3.herokuapp.com/reservas`;
-  //   const response = await fetch(url);
-  //   const json = await response.json();
-
-  //   if (json.reserva) {
-  //     setReserva(json.reserva);
-  //   }
-  //   console.log(reserva);
-  // }
+  const [reservas, setReservas] = useState();
 
   useEffect(() => {
-    //console.log("teste: " + localStorage.getItem("id_Hospede"));
-
     try {
       api
         .get("/reservas/hospede/" + localStorage.getItem("id_Hospede"))
         .then((response) => {
           console.log(response);
-          // para buscar por id
-          // const filtro = response.data.Reservas.filter((item) => {
-          //   return item.idhospede == localStorage.getItem("id_Hospede");
-          // });
-          setReserva(response.data.mensage);
+
+          if (response.data.mensage !== "undefined") {
+            setReservas(response.data.mensage);
+          }
+          console.log(reservas);
         });
     } catch (e) {
       console.log(e);
     }
-    //
-    // para buscar tudo
-    // setReserva(resoponse.data.Reservas)
   }, []);
+
+  if (!reservas) {
+    return (
+      <main>
+        <section>Nenhuma reserva encontrada</section>
+      </main>
+    );
+  }
+  // localStorage.clear();
 
   return (
     <main>
       <section>
-        {reserva.map((item, index) => {
-          console.log(reserva);
+        {reservas.map((item, index) => {
           return (
             <div className={S.loginPage}>
               <div className={S.overlay}></div>

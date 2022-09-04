@@ -5,10 +5,15 @@
     font-weight: 900;
     line-height: .75;
     padding: 50px;
+    margin-top: 50px;
 }
 
-.h2Side {
+.textSide {
     padding: 20px;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 10px;
+}
+
+.imageSide {
+    border-radius: 5px;
 }

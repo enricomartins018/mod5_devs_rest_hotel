@@ -5,21 +5,22 @@ import SuasReservas from "./pages/SuasReservas/SuasReservas";
 import FacaSuaReserva from "./pages/FacaSuaReserva/FacaSuaReserva";
 import Login from "./pages/Login/Login";
 import CadastroHospede from "./pages/CadastroHospede/CadastroHospede";
+import AtualizacaoReserva from "./pages/AtualizacaoReserva/AtualizacaoReserva";
 
 function App() {
-   return (
+  return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<CadastroHospede />} />
         <Route path="/suasreservas" element={<SuasReservas />} />
-        <Route path="/facasuareserva" element={<FacaSuaReserva/>} />
+        <Route path="/facasuareserva" element={<FacaSuaReserva />} />
+        <Route path="/atualizareserva/:id" element={<AtualizacaoReserva />} />
         <Route path="/reservas"></Route>
       </Routes>
     </Router>
   );
 }
-
 
 export default App;
