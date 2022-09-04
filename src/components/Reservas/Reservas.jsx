@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import S from "./Reservas.module.css";
 import { api } from "../../services/api";
 import { useNavigate } from "react-router-dom";
+import Popup from "reactjs-popup";
 import foto from "../../assets/quarto.jpg";
+import ModalDelete from "../ModalDelete/ModalDelete";
 
 const Reservas = ({
   id,
@@ -14,17 +16,31 @@ const Reservas = ({
   dataEntrada,
   dataSaida,
 }) => {
+  // const [open, setOpen] = useState(false);
+  // const closeModal = () => setOpen(false);
   const navigate = useNavigate();
+  const [openDelete, setOpenDelete] = useState(false);
 
-  function deletar() {
+  function abrirModal() {
+    setOpenDelete(true);
+  }
+
+  function fecharModal() {
+    setOpenDelete(false);
+  }
+
+  function deletaReserva() {
     api.delete(`reservas/${id}`).then((response) => {
       console.log(response);
+      fecharModal();
       navigate("/");
     });
   }
+
   function setAtualizar() {
-    navigate("/facasuareserva");
+    navigate(`/atualizareserva/${id}`);
   }
+
   return (
     <div>
       <div className={S.text}>
@@ -39,10 +55,15 @@ const Reservas = ({
         <button onClick={setAtualizar} className={S.btn}>
           Atualizar
         </button>
-        <button onClick={deletar} className={S.btnDelete}>
-          {/* colocar deletar dentro do pop up */}
+
+        <button type="button" className={S.btnDelete} onClick={abrirModal}>
           Deletar
         </button>
+        <ModalDelete
+          open={openDelete}
+          handleClose={fecharModal}
+          deletaReserva={deletaReserva}
+        />
       </div>
     </div>
   );

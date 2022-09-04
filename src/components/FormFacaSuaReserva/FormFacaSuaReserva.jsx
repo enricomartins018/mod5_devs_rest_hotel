@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import x_voltar from '../../assets/x_voltar.svg'
 
 const FormFacaSuaReserva = () => {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const [dadosFormReserva, setDadosReserva] = useState({
     id_Hospede: localStorage.getItem("id_Hospede"),

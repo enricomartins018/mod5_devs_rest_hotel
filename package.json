@@ -20,18 +20,34 @@
     "@mui/x-date-pickers": "^5.0.0",
     "axios": "^0.27.2",
     "date-fns": "^2.29.2",
+
     "dayjs": "^1.11.5",
+
+
+    "esbuild-windows-64": "^0.15.6",
+
+    "mdb-react-ui-kit": "^4.2.0",
+
+
     "react": "^18.2.0",
     "react-datepicker": "^4.8.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.34.2",
     "react-icons": "^4.4.0",
     "react-id-swiper": "^4.0.0",
+    "react-imask": "^6.4.2",
+    "react-input-mask": "^2.0.4",
     "react-material-ui-carousel": "^3.4.2",
+    "react-password-checklist": "^1.4.1",
     "react-router-dom": "^6.3.0",
     "reactjs-popup": "^2.0.5",
     "styled-components": "^5.3.5",
-    "swiper": "^8.3.2"
+
+
+    "swiper": "^8.3.2",
+    "validator": "^13.7.0"
+
+
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
