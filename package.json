@@ -17,14 +17,20 @@
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.10.3",
+    "@mui/x-date-pickers": "^5.0.0",
     "axios": "^0.27.2",
     "date-fns": "^2.29.2",
+
+    "dayjs": "^1.11.5",
+
 
     "esbuild-windows-64": "^0.15.6",
 
     "mdb-react-ui-kit": "^4.2.0",
 
+
     "react": "^18.2.0",
+    "react-datepicker": "^4.8.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.34.2",
     "react-icons": "^4.4.0",
@@ -37,8 +43,10 @@
     "reactjs-popup": "^2.0.5",
     "styled-components": "^5.3.5",
 
+
     "swiper": "^8.3.2",
     "validator": "^13.7.0"
+
 
   },
   "devDependencies": {
