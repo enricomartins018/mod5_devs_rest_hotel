@@ -27,7 +27,8 @@
 }
 
 ::placeholder {
-    color: rgb(49, 48, 48)
+    color: rgb(49, 48, 48);
+    border-color: rgb(49, 48, 48);
 }
 
 .btnCadastrar {
@@ -36,15 +37,8 @@
     height: 40px;
     background-color: #b5dea4;
     border: none;
-
     color: black;
-
     margin: 10px 0;
-    /* position: absolute; */
-    /* width: 288.09px;
-    height: 51.22px; */
-    /* margin-left: 15px;
-    margin-top: 140px; */
     border-color: #b5dea4;
     border-radius: 5px;
 

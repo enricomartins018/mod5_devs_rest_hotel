@@ -1,21 +1,30 @@
-import React, { useState } from "react";
-import S from "./FormFacaSuaReserva.module.css";
-import logo from "../../assets/logo.svg";
-import { api } from "../../services/api";
+import React, { useEffect } from "react";
+import { Button, TextField } from "@mui/material";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import S from "./FormAtualizacaoReserva.module.css";
 
-const FormFacaSuaReserva = () => {
-  // const [open, setOpen] = useState(false);
+const FormAtualizacaoReserva = ({
+  quarto,
+  quantLeitos,
+  quantAdultos,
+  quantCrian,
+  dataEntrada,
+  dataSaida,
+}) => {
   const navigate = useNavigate();
   const [dadosFormReserva, setDadosReserva] = useState({
-    id_Hospede: localStorage.getItem("id_Hospede"),
-    quarto: "",
-    quantLeitos: "",
-    quantAdultos: "",
-    quantCrian: "",
-    dataEntrada: "",
-    dataSaida: "",
+    id: localStorage.getItem("id"),
+    quarto: quarto,
+    quantLeitos: quantLeitos,
+    quantAdultos: quantAdultos,
+    quantCrian: quantCrian,
+    dataEntrada: dataEntrada,
+    dataSaida: dataSaida,
   });
+
+  const params = useParams();
 
   function handleChange(e, nomeDaChave) {
     setDadosReserva({
@@ -28,7 +37,7 @@ const FormFacaSuaReserva = () => {
     e.preventDefault();
     console.log(dadosFormReserva);
     try {
-      api.post("/reservas", dadosFormReserva).then((response) => {
+      api.put("/reservas", dadosFormReserva).then((response) => {
         console.log(response);
 
         navigate("/");
@@ -36,23 +45,28 @@ const FormFacaSuaReserva = () => {
     } catch (e) {
       console.log(e);
     }
+
+    useEffect(() => {
+      console.log(dataEntrada);
+    }, [dadosFormReserva]);
   }
   return (
     <section className={S.section}>
-      <img className={S.logo} src={logo} />
       <form className={S.form}>
         <div className={S.selectDate}>
           <h2 className={S.titleForm}>
             <b>Selecione suas datas</b>
           </h2>
+
           <div className={S.dataEntrada}>
             <label>Data de Entrada</label>
             <input
+              value={dadosFormReserva.dataEntrada}
               className={S.inputPattern}
               type="date"
               name="date"
               id="entrada"
-              value={dadosFormReserva.dataEntrada}
+              // value={dadosFormReserva.dataEntrada}
               onChange={(e) => handleChange(e, "dataEntrada")}
             />
           </div>
@@ -73,7 +87,7 @@ const FormFacaSuaReserva = () => {
         <div className={S.containerSelectPattern}>
           <select
             className={S.selectPattern}
-            value={dadosFormReserva.quarto}
+            value={quarto}
             onChange={(e) => handleChange(e, "quarto")}
           >
             <option>Selecione a quantidade de quartos:</option>
@@ -119,23 +133,14 @@ const FormFacaSuaReserva = () => {
             <option value="4">4 Crianças</option>
             <option value="5">5 Crianças</option>
           </select>
-          <div className={S.containerCheckBox}>
-            <input className={S.inputCheckBox} type="checkbox" name="" id="" />
-            <label className={S.labelCheckBox}>
-              Casas e apartamentos inteiros
-            </label>
-          </div>
-          <div className={S.containerCheckBox}>
-            <input className={S.inputCheckBox} type="checkbox" name="" id="" />
-            <label className={S.labelCheckBox}>Vou viajar a trabalho</label>
-          </div>
+
           <button
             className={S.btnEnviarReserva}
             type="submit"
             id="enviarReserva"
             onClick={handleClick}
           >
-            Reservar Agora
+            Atualizar a reserva
           </button>
         </div>
       </form>
@@ -143,4 +148,4 @@ const FormFacaSuaReserva = () => {
   );
 };
 
-export default FormFacaSuaReserva;
+export default FormAtualizacaoReserva;

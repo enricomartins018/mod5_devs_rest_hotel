@@ -5,6 +5,8 @@ import { api } from "../../services/api";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import { BsPerson } from "react-icons/bs";
+import { AiOutlineEyeInvisible } from "react-icons/ai";
+
 const FormLogin = () => {
   const navigate = useNavigate();
   //1 - Crie um estado para o forms
@@ -43,7 +45,7 @@ const FormLogin = () => {
     <section className={S.container}>
       <div className={S.banner}>
         <img className={S.logo} src={logo} />
-        <h4>
+        <h4 className={S.h4Login}>
           Bem vindo ao DEV's Rest Hotel! <br />
           Faça seu login para continuar a sua reserva!
         </h4>
@@ -52,7 +54,7 @@ const FormLogin = () => {
         <div className={S.cardLogin}>
           {/* <label for="usuario">Email</label> */}
           <BsPerson />
-          <label>Email</label>
+          <label className={S.labelLogin}>Email</label>
           <input
             className={S.input}
             type="text"
@@ -62,7 +64,8 @@ const FormLogin = () => {
         </div>
 
         <div className={S.cardLogin}>
-          <label>Senha</label>
+          <AiOutlineEyeInvisible />
+          <label className={S.labelLogin}>Senha</label>
           <input
             className={S.input}
             type="password"
@@ -72,8 +75,6 @@ const FormLogin = () => {
           />
         </div>
 
-        {/* <AiOutlineEyeInvisible />
-      </input> */}
         <button className={S.btnLogin} onClick={handleClick}>
           Entrar
         </button>

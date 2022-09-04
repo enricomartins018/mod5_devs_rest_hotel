@@ -4,7 +4,6 @@
     margin: auto;
     padding: auto;
     display: flex;
-
 }
 
 .quarto {
@@ -26,7 +25,6 @@
 .sectionFormHospede {
     flex: 70%;
     padding: 40px;
-    /* margin-left: 50px; */
     border-color: #b5dea4;
 }
 
@@ -56,11 +54,14 @@
     background: linear-gradient(0deg, #b5dea4, #8fbd805b, rgba(255, 255, 255, 0.15));
     gap: 20px;
     border-radius: 0.5em;
-
+    color: rgb(58, 57, 57);
+    padding: 70px;
+    font-size: 12px;
 }
 
-.h2Hospede {
-    color: rgb(58, 57, 57);
-    padding: 100px;
-    font-size: large;
+.logo {
+    width: 10vw;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
 }
