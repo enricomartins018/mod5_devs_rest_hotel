@@ -13,7 +13,7 @@ const Home = () => {
         <Sidebar />
       </div>
       <div className={S.content}>
-        Main
+    
         <Main />
       </div>
 
