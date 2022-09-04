@@ -9,16 +9,15 @@ export const SectionSobre = () => {
         Venha vivenciar uma experiêcia incrivél no Dev's Rest Hotel!
       </h2>
       <p className={S.p}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus eos non
-        hic iure laudantium earum consequuntur voluptatibus reprehenderit nemo
-        similique, eaque delectus odio doloremque sed minima beatae placeat ut
-        dignissimos!
+        O Hotel Dev's Rest está na melhor localização do Rio de Janeiro, no
+        Centro da cidade próximo às principais lojas, bares e restaurantes. O
+        Hotel Dev's Rest dispõe de excelente estrutura para hospedagem.
       </p>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus eos non
-        hic iure laudantium earum consequuntur voluptatibus reprehenderit nemo
-        similique, eaque delectus odio doloremque sed minima beatae placeat ut
-        dignissimos!
+        São 60 apartamentos, distribuídos em 8 andares. Todos os apartamentos
+        são equipados com TV a cabo, ar-condicionado split, frigobar, telefone,
+        cofre, mesa de trabalho, internet Wi-Fi de alta velocidade e camas box.
+        Venha vivenciar o que há de melhor no Dev's Rest!!!
       </p>
 
       <div className={S.divImg}>
