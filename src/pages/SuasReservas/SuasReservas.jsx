@@ -37,6 +37,7 @@ const SuasReservas = () => {
       </main>
     );
   }
+  // localStorage.clear();
 
   return (
     <main>

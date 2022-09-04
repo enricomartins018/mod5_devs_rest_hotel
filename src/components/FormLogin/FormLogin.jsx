@@ -7,10 +7,11 @@ import logo from "../../assets/logo.svg";
 import { BsPerson } from "react-icons/bs";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import PasswordChecklist from "react-password-checklist";
+import validator from "validator";
 
 const FormLogin = () => {
   const navigate = useNavigate();
-  const [erro, setErro] = useState();
+  const [emailError, setEmailError] = useState("");
   const [password, setPassword] = useState("");
   const [dadosForm, setDadosForm] = useState({
     email: "",
@@ -22,7 +23,11 @@ const FormLogin = () => {
       ...dadosForm,
       [nomeDaChave]: e.target.value,
     });
-    setPassword(e.target.value);
+    if (validator.isEmail(e.target.value)) {
+      setEmailError("Email válido :)");
+    } else {
+      setEmailError("Insira uma email válido!");
+    }
   }
 
   function handleClick(e) {
@@ -35,18 +40,22 @@ const FormLogin = () => {
           localStorage.setItem("id_Hospede", response.data.id);
           navigate("/");
         } else {
-          throw new Error("Login inválido");
+          alert("Login inválido");
         }
         //console.log("teste: " + localStorage.getItem("id_Hospede"));
       });
     } catch (e) {
-      setErro({
-        erro,
-      });
+      alert("Login inválido");
       // usestate para guardar a mensagem do erro e depois chamar na div depois do button(fazer para cadastro tbm)
     }
   }
-
+  function handleChangePassword(e, nomeDaChave) {
+    setDadosForm({
+      ...dadosForm,
+      [nomeDaChave]: e.target.value,
+    });
+    setPassword(e.target.value);
+  }
   return (
     <section className={S.container}>
       <div className={S.banner}>
@@ -66,6 +75,14 @@ const FormLogin = () => {
             value={dadosForm.nome}
             onChange={(e) => handleChange(e, "email")}
           />
+          <span
+            style={{
+              color: "black",
+              fontSize: "12px",
+            }}
+          >
+            {emailError}
+          </span>
         </div>
         <div className={S.cardLogin}>
           <AiOutlineEyeInvisible />
@@ -76,7 +93,7 @@ const FormLogin = () => {
             // onChange={(e) => setPassword(e.target.value)}
             // colocar botao para visualizar a senha, se der tempo
             value={dadosForm.senha}
-            onChange={(e) => handleChange(e, "senha")}
+            onChange={(e) => handleChangePassword(e, "senha")}
           />
           <PasswordChecklist
             className={S.validaSenha}

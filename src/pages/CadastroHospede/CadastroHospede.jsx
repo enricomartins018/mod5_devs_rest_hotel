@@ -3,6 +3,7 @@ import FormCadastroHospede from "../../components/FormCadastroHospede/FormCadast
 import S from "./CadastroHospede.module.css";
 import quarto from "../../assets/quarto.jpg";
 import logo from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 const CadastroHospede = () => {
   return (
@@ -22,7 +23,7 @@ const CadastroHospede = () => {
             wi-fi, TVs Smart em todos os apartamentos, serviços Pet Friendly e
             quartos conjugados para famílias.
           </h2>
-          <button>Voltar para página principal</button>
+          <Link to="/">Voltar para página principal</Link>
         </div>
       </div>
 

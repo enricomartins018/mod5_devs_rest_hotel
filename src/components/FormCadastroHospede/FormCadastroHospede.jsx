@@ -45,9 +45,9 @@ const FormCadastroHospede = () => {
       [nomeDaChave]: e.target.value,
     });
     if (validator.isEmail(e.target.value)) {
-      setEmailError("Valid Email :)");
+      setEmailError("Email válido :)");
     } else {
-      setEmailError("Enter valid Email!");
+      setEmailError("Insira uma email válido!");
     }
   }
 
@@ -60,17 +60,20 @@ const FormCadastroHospede = () => {
 
         if (response.data.hospede.id) {
           localStorage.setItem("id_Hospede", response.data.hospede.id);
+          alert("Cadastro concluído com sucesso");
           navigate("/login");
         }
       });
     } catch (e) {
       console.log(e);
+      alert("Cadastro não concluído");
     }
   }
 
   return (
     <div className={S.containerCadastro}>
       <form className={S.formCadastroHospede}>
+        <br></br> <h4>Preencha todos os campos para realizar seu cadastro!</h4>
         <TextField
           id="standard-basic"
           label="Nome"
@@ -117,8 +120,8 @@ const FormCadastroHospede = () => {
         />
         <span
           style={{
-            fontWeight: "bold",
-            color: "red",
+            color: "black",
+            fontSize: "12px",
           }}
         >
           {emailError}
@@ -159,8 +162,7 @@ const FormCadastroHospede = () => {
         />
         {/* <AiOutlineEyeInvisible />
           </input> */}
-
-        <button
+        {/* <button
           type="button"
           className={S.btnCadastrar}
           onClick={() => setOpen((o) => !o)}
@@ -169,12 +171,12 @@ const FormCadastroHospede = () => {
         </button>
         <Popup open={open} closeOnDocumentClick onClose={closeModal}>
           <div>
-            Sucesso
-            <button className={S.btnCadastrar} onClick={handleClick}>
-              Ir para login
-            </button>
-          </div>
-        </Popup>
+            Cadastro concluído com sucesso! */}
+        <button type="button" className={S.btnCadastrar} onClick={handleClick}>
+          Ir para login
+        </button>
+        {/* </div>
+        </Popup> */}
       </form>
     </div>
   );
