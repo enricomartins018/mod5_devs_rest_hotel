@@ -42,16 +42,17 @@ const SuasReservas = () => {
   return (
     <main>
       <section>
-        {reservas.map((item, index) => {
-          return (
-            <div className={S.loginPage}>
-              <div className={S.overlay}></div>
-              <video src={video} autoPlay loop muted />
-              <div className={S.cardContainer}>
-                <div className={S.imageContainer}>
-                  <img className={S.imgFoto} src={foto}></img>
-                </div>
-                <div className={S.cardTitle}>Suas reservas</div>
+        <div className={S.loginPage}>
+          <div className={S.overlay}></div>
+          <video src={video} autoPlay loop muted />
+          <div className={S.cardContainer}>
+            <div className={S.imageContainer}>
+              <img className={S.imgFoto} src={foto}></img>
+            </div>
+            <div className={S.cardTitle}>Suas reservas</div>
+
+            {reservas.map((item, index) => {
+              return (
                 <div className={S.cardBody}>
                   <Reservas
                     id={item.id}
@@ -65,10 +66,10 @@ const SuasReservas = () => {
                     key={index}
                   ></Reservas>
                 </div>
-              </div>
-            </div>
-          );
-        })}
+              );
+            })}
+          </div>
+        </div>
       </section>
     </main>
   );
