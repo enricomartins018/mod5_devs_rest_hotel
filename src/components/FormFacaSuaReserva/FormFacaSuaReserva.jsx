@@ -34,10 +34,11 @@ const FormFacaSuaReserva = () => {
       api.post("/reservas", dadosFormReserva).then((response) => {
         console.log(response);
         alert("Reserva inserida com sucesso");
-        //navigate("/");
+        navigate("/");
       });
     } catch (e) {
       console.log(e);
+      alert("Reserva não realizada");
     }
   }
 
