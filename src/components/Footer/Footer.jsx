@@ -19,27 +19,21 @@ export const Footer = () => {
         <img className={S.img} src={image} alt="logo" />
         <div className={S.containerTexto}>
           <p>
-            <b>
-              Horário de funcionamento:
-              <br />
-              Dom à Dom: 24 horas
-            </b>
+            Horário de funcionamento:
+            <br />
+            Dom à Dom: 24 horas
           </p>
           <p>
-            <b>
-              Endereço:
-              <br />
-              Rua 1, 100, Bairro:Leblon, Rio de Janeiro - RJ Cep 22441-020
-            </b>
+            Endereço:
+            <br />
+            Rua 1, 100, Bairro:Leblon, Rio de Janeiro - RJ Cep 22441-020
           </p>
           <p className={S.contato}>
-            <b>
-              Contato:
-              <br />
-              E-mail: DevsRestHotel@gmail.com
-              <br />
-              Telefone: 21 00000000
-            </b>
+            Contato:
+            <br />
+            E-mail: DevsRestHotel@gmail.com
+            <br />
+            Telefone: 21 00000000
           </p>
         </div>
       </div>

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { CarouselServicos } from '../SectionCarouselServicos/CarouselServicos'
 import { CarouselSobre } from '../SectionCarouselSobre/CarouselSobre'
@@ -5,6 +6,7 @@ import { Caroussel } from '../SectionCaroussel/Caroussel'
 import SectionServicos from '../SectionServicos/SectionServicos'
 import  {SectionSobre}  from '../SectionSobre/SectionSobre'
 import S from './Main.module.css'
+
 
 export const Main = () => {
   return (
@@ -15,7 +17,6 @@ export const Main = () => {
         <Caroussel />
         <SectionServicos />
       <CarouselServicos />
-       
     </main>
-  )
-}
+  );
+};

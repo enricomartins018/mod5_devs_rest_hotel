@@ -14,6 +14,7 @@
     flex-direction: column;
     align-items: center;
     padding: 100px;
+    color: rgb(49, 48, 48);
 }
 
 .input {
@@ -23,7 +24,8 @@
     border: none;
     border-bottom: 1px solid #e1e1e1;
     outline: none;
-    color: #777;
+    color: rgb(49, 48, 48);
+    ;
 
 }
 
@@ -32,7 +34,7 @@
     height: 35px;
     background-color: #b5dea4;
     border: none;
-    color: black;
+    color: rgb(49, 48, 48);
     margin: 10px 0;
     border-color: #b5dea4;
     border-radius: 5px;
@@ -83,9 +85,11 @@
     font-size: 15px;
     align-items: center;
     text-align: center;
-    border-color: rgb(49, 48, 48);
+    /* border-color: rgb(49, 48, 48); */
 }
 
 .validaSenha {
     font-size: 9px;
+    color: rgb(49, 48, 48);
+    ;
 }

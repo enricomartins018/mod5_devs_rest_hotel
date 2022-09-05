@@ -73,7 +73,10 @@ const FormCadastroHospede = () => {
   return (
     <div className={S.containerCadastro}>
       <form className={S.formCadastroHospede}>
-        <br></br> <h4>Preencha todos os campos para realizar seu cadastro!</h4>
+        <br></br>{" "}
+        <h4 className={S.h4TitleCasdastro}>
+          Preencha todos os campos para realizar seu cadastro!
+        </h4>
         <TextField
           id="standard-basic"
           label="Nome"
