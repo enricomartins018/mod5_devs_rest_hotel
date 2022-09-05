@@ -10,7 +10,7 @@ import imgQuarto7 from "../../assets/image/imgQuarto7.jpeg";
 
 export const Caroussel = () => {
   return (
-    <div className={S.slider}>
+    <div className={S.slider} id="acomodacoes">
       <h3 className={S.h3}>Confira algumas das nossas acomodações.</h3>
       <figure className={S.figure}>
         <img className={S.img} src={imgQuarto1} alt="" />
