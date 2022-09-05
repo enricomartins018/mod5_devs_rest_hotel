@@ -13,11 +13,10 @@ const Home = () => {
         <Sidebar />
       </div>
       <div className={S.content}>
-    
         <Main />
       </div>
 
-      <div className={S.content}>Main</div>
+      {/* <div className={S.content}>Main</div> */}
       <div className={S.footer}>
         <Footer />
       </div>

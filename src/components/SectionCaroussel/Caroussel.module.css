@@ -23,7 +23,7 @@
 
 .slider {
   overflow: hidden;
-  width: 90%;
+  width: 50%;
   margin: auto;
 }
 
@@ -34,7 +34,7 @@
 
 .img {
 	width: 450px;
-	height: 480px;
+	height: 340px;
 }
 .slider .figure .img {
   width: 20%;
