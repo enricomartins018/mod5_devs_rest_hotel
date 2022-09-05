@@ -1,0 +1,29 @@
+.section {
+    width: 800px;
+    margin: auto;
+}
+
+
+.img {
+    width: 255px;
+    height: 255px;
+}
+
+
+.lista {
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.spa.img {
+    width: 380px;
+    height: 100px;
+}
+
+.subtitulo, .pSevicos {
+    font-size: 22px;
+    margin: 20px;
+    text-align: center;
+    font-style: italic;
+}
+

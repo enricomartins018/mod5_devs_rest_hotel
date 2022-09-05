@@ -55,7 +55,7 @@
     grid-template-columns:
         300px auto 0px;
     grid-template-rows:
-        100px 300% 90px;
+        100px 100% 90px;
     grid-template-areas:
         "header header""sidenav content""footer footer"
 }
