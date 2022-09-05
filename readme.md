@@ -1,5 +1,19 @@
 # Dev´s Rest Hotel
 
+<p align="center">
+<img src="./src/assets/logo readme.svg"/>
+</p>
+
+<div align="center">
+
+### Tecnologias Utilizadas
+
+<img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" /><br>
+<img alt="Javascript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /><br>
+<img alt="MaterialUi" src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white" />
+
+</div>
+
 <div id="inicio" align="center">
   <a href="#Projeto">Projeto  |</a>&nbsp;&nbsp;
   <a href="#Squad"> Squad  |</a>&nbsp;&nbsp;
@@ -16,7 +30,7 @@
 
 # Projeto
 
-Desenvolver um website, estruturado com react e que consuma a Api.<br>
+Desenvolver uma aplicação, estruturado com react e que consuma a Api.<br>
 Definimos que vamos utilizar as entidades reservas e hóspedes da Api Hotel, e implementamos utilizando o **CRUD**.
 Uma aplicação que simula um site de resevas de um hotel, onde você gera um novo cadastro, consegue consultar seus dados, excluir e atualizar.
 
@@ -116,16 +130,13 @@ npm run dev
 
 ### PAGES
 
-### Home:
-()
-
 ### CadastroHospede: /cadastro
 
 ● Operação do Crud: Create
 
 Formulário de Cadastro hóspede:
 
-Usuário vai realizar preenche com as informações necessárias para ser feito o cadastro.
+Usuário vai preenche com as informações necessárias para ser feito o cadastro.
 
 ### FacaSuaReserva: /facasuareserva
 
@@ -143,8 +154,6 @@ Formulário de Login:
 
 Usuário preenche com as informações necessário para ser feito um login.
 
-()
-
 ### SuasReservas: /suasreservas
 
 ● Operação do Crud: Read
@@ -155,6 +164,8 @@ Usuário vai realizar a busca da sua reserva pelo id.
 
 Usuário vai deletar sua reserva pelo id.
 
-(● Operação do Crud: Update: /atualizareserva
+### AtualizacaoReserva: /atualizareserva
 
-Usuário vai realizar a atualização da sua reserva pelo id.)
+● Operação do Crud: Update
+
+Usuário vai realizar a atualização da sua reserva pelo id.
