@@ -1,12 +1,6 @@
 import React from "react";
 import foto from "../../assets/quarto.jpg";
-import C1 from "../../assets/C1.jpg";
-import C2 from "../../assets/C2.jpg";
-import C3 from "../../assets/C3.jpg";
-import C4 from "../../assets/C4.jpg";
-import C5 from "../../assets/C5.jpg";
-import C6 from "../../assets/C6.jpg";
-import C7 from "../../assets/C7.jpg";
+import side from "../../assets/separator.jpeg";
 import S from "../Card/Card.module.css";
 
 import {
@@ -25,82 +19,19 @@ export default function Sidebar() {
         <MDBCard>
           <MDBCardImage
             className={S.imageSide}
-            src={C1}
+            src={side}
             position="top"
             alt="..."
           />
           <MDBCardBody className={S.textSide}>
             <MDBCardTitle>Suas reservas</MDBCardTitle>
             <MDBCardText>
-              Acesse aqui todas as informações sobre as suas reservas!
-            </MDBCardText>
-            <MDBBtn href="#"></MDBBtn>
-          </MDBCardBody>
-        </MDBCard>
-      </div>
-      <div>
-        <MDBCard>
-          <MDBCardImage
-            className={S.imageSide}
-            src={C2}
-            position="top"
-            alt="..."
-          />
-          <MDBCardBody className={S.textSide}>
-            <MDBCardTitle>Suas reservas</MDBCardTitle>
-            <MDBCardText>
-              Acesse aqui todas as informações sobre as suas reservas!
-            </MDBCardText>
-            <MDBBtn href="#"></MDBBtn>
-          </MDBCardBody>
-        </MDBCard>
-      </div>
-      <div>
-        <MDBCard>
-          <MDBCardImage
-            className={S.imageSide}
-            src={C3}
-            position="top"
-            alt="..."
-          />
-          <MDBCardBody className={S.textSide}>
-            <MDBCardTitle>Suas reservas</MDBCardTitle>
-            <MDBCardText>
-              Acesse aqui todas as informações sobre as suas reservas!
-            </MDBCardText>
-            <MDBBtn href="#"></MDBBtn>
-          </MDBCardBody>
-        </MDBCard>
-      </div>
-      <div>
-        <MDBCard>
-          <MDBCardImage
-            className={S.imageSide}
-            src={C4}
-            position="top"
-            alt="..."
-          />
-          <MDBCardBody className={S.textSide}>
-            <MDBCardTitle>Suas reservas</MDBCardTitle>
-            <MDBCardText>
-              Acesse aqui todas as informações sobre as suas reservas!
-            </MDBCardText>
-            <MDBBtn href="#"></MDBBtn>
-          </MDBCardBody>
-        </MDBCard>
-      </div>
-      <div>
-        <MDBCard>
-          <MDBCardImage
-            className={S.imageSide}
-            src={C1}
-            position="top"
-            alt="..."
-          />
-          <MDBCardBody className={S.textSide}>
-            <MDBCardTitle>Suas reservas</MDBCardTitle>
-            <MDBCardText>
-              Acesse aqui todas as informações sobre as suas reservas!
+              <p>Responsabilidade Social Coorporativa</p>
+              <h2>Save the Bees </h2>O Palácio Tangará está comprometido com a
+              manutenção da fauna nativa, especialmente das abelhas sem ferrão,
+              que são fundamentais para uma melhor polinização da vegetação.
+              Desde 2019, temos duas colmeias de abelhas sem ferrão na área
+              externa de nosso Hotel.
             </MDBCardText>
             <MDBBtn href="#"></MDBBtn>
           </MDBCardBody>
