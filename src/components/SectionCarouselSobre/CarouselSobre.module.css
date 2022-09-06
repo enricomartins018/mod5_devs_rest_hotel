@@ -109,5 +109,14 @@
 }
 
 .separador {
-  margin-left: 250px;
+  width: 50%;
+  margin: auto;
+}
+
+@media(max-width:768px) {
+
+  .slider {
+    width: 340px;
+    height: 300px;
+  }
 }
