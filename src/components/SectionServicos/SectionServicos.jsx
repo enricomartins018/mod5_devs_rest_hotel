@@ -10,19 +10,19 @@ const SectionServicos = () => {
       </p>
       <p className={S.pSevicos}>Massagens</p>
       <ul>
-        <li className={S.lista}>Massagem com pedras quentes</li>
+        <h3 className={S.lista}>Massagem com pedras quentes</h3>
         <p className={S.paragrafoInfo}>
           O maravilhoso poder das pedras quentes, que atuam diretamente nos
           músculos e articulações, proporciona sensações inesquecíveis de
           bem-estar.
         </p>
-        <li className={S.lista}>Bambuterapia</li>
+        <h3 className={S.lista}>Bambuterapia</h3>
         <p>
           Massagem que proporciona profundo relaxamento, limpeza energética e
           drenagem de toxinas através do uso de barras de bambu de diversos
           tamanhos.
         </p>
-        <li className={S.lista}>Argiloterapia</li>
+        <h3 className={S.lista}>Argiloterapia</h3>
         <p>
           O poder desintoxicante, purificante, clareador de manchas, hidratante
           e rejuvenescedor das argilas em todo o corpo, para os vários tipos de
@@ -38,25 +38,27 @@ const SectionServicos = () => {
         conhecimento milenar da medicina indiana, o Ayurveda. Venha para o Dev's
         Rest e desfrute desta experiência terapêutica inesquecível.
       </p>
+      <br></br>
       <ul>
-        <li className={S.lista}>Esfoliação corporal</li>
-        <li className={S.lista}>Terapia dos Alongamentos</li>
-        <li className={S.lista}>Revitalização facial</li>
-        <li className={S.lista}>Banho de imersão com óleos essenciais</li>
+        <h5 className={S.lista1}>Esfoliação corporal</h5>
+        <h5 className={S.lista1}>Terapia dos Alongamentos</h5>
+        <h5 className={S.lista1}>Revitalização facial</h5>
+        <h5 className={S.lista1}>Banho de imersão com óleos essenciais</h5>
       </ul>
-
+      <br></br>
       <ul>
         <p className={S.pSevicos}>Outras opções de lazer.</p>
-        <li className={S.lista}> Sala de jogos</li>
+        <h5 className={S.lista2}> Sala de jogos</h5>
         <p>Sinucas, mesa de cartas pebolin, video games.</p>
-        <li className={S.lista}>Piscinas</li>
+        <h5 className={S.lista2}>Piscinas</h5>
         <p>2 piscinas (1 de uso infantil, 1 de uso adulto.)</p>
-        <li className={S.lista}>Espaço kids</li>
+        <h5 className={S.lista2}>Espaço kids</h5>
         <p>
-          Ambiênte com monitoramento, e varios briquedos para crianças entre 2 a
+          Ambiente com monitoramento, e varios briquedos para crianças entre 2 a
           7 anos.
         </p>
       </ul>
+      <br></br>
     </section>
   );
 };

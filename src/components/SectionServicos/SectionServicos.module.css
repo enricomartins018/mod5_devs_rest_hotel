@@ -1,6 +1,11 @@
 .section {
     width: 800px;
     margin: auto;
+    font-size: 1.0625rem;
+    text-align: center;
+    color: #373737;
+    line-height: 2rem;
+    letter-spacing: .05em;
 }
 
 
@@ -20,10 +25,10 @@
     height: 100px;
 }
 
-.subtitulo, .pSevicos {
+.subtitulo,
+.pSevicos {
     font-size: 22px;
     margin: 20px;
     text-align: center;
     font-style: italic;
 }
-
