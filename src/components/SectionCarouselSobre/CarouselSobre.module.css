@@ -76,19 +76,19 @@
 
 .slider {
   overflow: hidden;
-  width: 50%;
+  width: 70%;
   margin: auto;
 }
 
 .slider .h3 {
   text-align: center;
-  margin: 30px;
+  /* margin: 30px; */
 }
 
 .img {
 
-	width: 450px;
-	height: 340px;
+  width: 450px;
+  height: 340px;
 
 }
 
@@ -109,6 +109,7 @@
 }
 
 .separador {
+
   width: 50%;
   margin: auto;
 }
@@ -119,4 +120,5 @@
     width: 340px;
     height: 300px;
   }
+
 }

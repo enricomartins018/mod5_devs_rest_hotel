@@ -76,7 +76,7 @@
 
 .slider {
   overflow: hidden;
-  width: 50%;
+  width: 70%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -86,12 +86,17 @@
 .slider .h3 {
   text-align: center;
   margin: 30px;
+  font-size: 1.0625rem;
+  text-align: center;
+  color: #373737;
+  line-height: 2rem;
+  letter-spacing: .05em;
 }
 
 .img {
 
-	width: 450px;
-	height: 340px;
+  width: 450px;
+  height: 340px;
 
 }
 
@@ -113,6 +118,7 @@
 }
 
 .separador {
+
   width: 50%;
   margin: auto;
 }
@@ -124,4 +130,5 @@
     width: 340px;
     height: 300px;
   }
+
 }
