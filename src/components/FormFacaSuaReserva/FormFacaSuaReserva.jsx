@@ -81,7 +81,7 @@ const FormFacaSuaReserva = () => {
             </div>
           </div>
         </div>
-        {/* <img className={S.logo} src={logo} /> */}
+        <img className={S.logo} src={logo} />
         <div className={S.containerSelectPattern}>
           <div className={S.containerVoltar}>
             <Link to="/">
@@ -94,7 +94,7 @@ const FormFacaSuaReserva = () => {
             onChange={(e) => handleChange(e, "quarto")}
           >
             <option className={S.optionPattern} value="">
-              Selecione
+              Selecione a quantidade de Quartos:
             </option>
             <option className={S.optionPattern} value="1">
               1 Quarto
@@ -118,7 +118,7 @@ const FormFacaSuaReserva = () => {
             onChange={(e) => handleChange(e, "quantLeitos")}
           >
             <option className={S.optionPattern} value="">
-              Selecione
+            Selecione a quantidade de Leitos:
             </option>
             <option className={S.optionPattern} value="1">
               1 Leito
@@ -142,7 +142,7 @@ const FormFacaSuaReserva = () => {
             onChange={(e) => handleChange(e, "quantAdultos")}
           >
             <option className={S.optionPattern} value="">
-              Selecione
+              Selecione a quantidade de Adultos:
             </option>
             <option className={S.optionPattern} value="1">
               1 Adulto
@@ -166,7 +166,7 @@ const FormFacaSuaReserva = () => {
             onChange={(e) => handleChange(e, "quantCrian")}
           >
             <option className={S.optionPattern} value="0">
-              Selecione
+              Selecione a quantidade de Crianças:
             </option>
             <option className={S.optionPattern} value="1">
               1 Criança
