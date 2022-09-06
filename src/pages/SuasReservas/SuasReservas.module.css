@@ -79,3 +79,25 @@ video {
 .cardTitle {
     color: #777F;
 }
+
+@media(max-width:400px){
+    .cardContainer{width: 50%; margin-left: 25%;}
+    img {width: 50vw;}}
+
+@media(min-width:401px) and (max-width:600px){
+    .cardContainer{margin-left: 18%;}
+     img {width: 70vw;}}
+
+@media(min-width:910px) and (max-width:1000px){
+    .cardContainer{margin-left: 35%;margin-top: 50%;}
+    img {width: 28vw;}}
+
+@media(min-width:530px) and (max-width:700px){
+    .cardContainer{margin-left: 25%; margin-top: 30%;}
+     img {width: 53vw;}}
+
+@media(min-width:760px) and (max-width:820px){
+    .cardContainer{margin-left: 32%; margin-top: 50%;}
+                 img {width: 38vw;}}
+
+

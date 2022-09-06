@@ -19,14 +19,11 @@
     height: 30px;
     width: 200px;
     padding: 7px;
-    margin-top: -20px;
-    margin-right: -60px;
+    /*margin-top: -15px;*/
+    margin-right: 10px;
    }
- 
-.button{
-    margin-top: -20px;
 
-}
-.texto{
+/*.button{
     margin-top: -20px;
-}
+}*/
+
