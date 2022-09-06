@@ -5,6 +5,7 @@ export const SectionSobre = () => {
   return (
     <section className={S.section}>
       <h2 className={S.subtitulo}>Dev's Rest Hotel</h2>
+      <br></br>
       <p className={S.paragrafoInfo}>
         O Hotel Dev's Rest está na melhor localização do Rio de Janeiro, no
         Centro da cidade próximo às principais lojas, bares e restaurantes. O

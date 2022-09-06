@@ -34,11 +34,10 @@ const FormFacaSuaReserva = () => {
       api.post("/reservas", dadosFormReserva).then((response) => {
         console.log(response);
         if (response.data.error) {
-          throw new Error("Reserva não realizada");
+          localStorage.setItem("id_Hospede", response.data.hospede.id);
+          alert("Reserva inserida concluído com sucesso");
+          navigate("/login");
         }
-        console.log(response);
-        alert("Reserva inserida com sucesso");
-        navigate("/");
       });
     } catch (e) {
       console.log(e);
