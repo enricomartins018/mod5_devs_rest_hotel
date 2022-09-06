@@ -7,53 +7,105 @@ import C4 from "../../assets/C4.jpg";
 import C5 from "../../assets/C5.jpg";
 import C6 from "../../assets/C6.jpg";
 import C7 from "../../assets/C7.jpg";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
-const Card = () => {
+import S from "../Card/Card.module.css";
+
+import {
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCardImage,
+  MDBBtn,
+} from "mdb-react-ui-kit";
+
+export default function Sidebar() {
   return (
-    <div className={S.cardContainer}>
-      <div className={S.imageContainer}>
-        <img src={foto}></img>
+    <div className={S.containerCards}>
+      <div>
+        <MDBCard>
+          <MDBCardImage
+            className={S.imageSide}
+            src={C1}
+            position="top"
+            alt="..."
+          />
+          <MDBCardBody className={S.textSide}>
+            <MDBCardTitle>Suas reservas</MDBCardTitle>
+            <MDBCardText>
+              Acesse aqui todas as informações sobre as suas reservas!
+            </MDBCardText>
+            <MDBBtn href="#"></MDBBtn>
+          </MDBCardBody>
+        </MDBCard>
       </div>
-      <div className={S.swiper}>
-        <Swiper
-          spaceBetween={20}
-          slidesPerView={3}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <img src={C1}></img>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={C2}></img>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={C3}></img>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={C4}></img>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={C5}></img>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={C6}></img>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={C7}></img>
-          </SwiperSlide>
-        </Swiper>
+      <div>
+        <MDBCard>
+          <MDBCardImage
+            className={S.imageSide}
+            src={C2}
+            position="top"
+            alt="..."
+          />
+          <MDBCardBody className={S.textSide}>
+            <MDBCardTitle>Suas reservas</MDBCardTitle>
+            <MDBCardText>
+              Acesse aqui todas as informações sobre as suas reservas!
+            </MDBCardText>
+            <MDBBtn href="#"></MDBBtn>
+          </MDBCardBody>
+        </MDBCard>
       </div>
-      <div className={S.cardTitle}>Suas reservas</div>
-      <div className={S.cardBody}></div>
+      <div>
+        <MDBCard>
+          <MDBCardImage
+            className={S.imageSide}
+            src={C3}
+            position="top"
+            alt="..."
+          />
+          <MDBCardBody className={S.textSide}>
+            <MDBCardTitle>Suas reservas</MDBCardTitle>
+            <MDBCardText>
+              Acesse aqui todas as informações sobre as suas reservas!
+            </MDBCardText>
+            <MDBBtn href="#"></MDBBtn>
+          </MDBCardBody>
+        </MDBCard>
+      </div>
+      <div>
+        <MDBCard>
+          <MDBCardImage
+            className={S.imageSide}
+            src={C4}
+            position="top"
+            alt="..."
+          />
+          <MDBCardBody className={S.textSide}>
+            <MDBCardTitle>Suas reservas</MDBCardTitle>
+            <MDBCardText>
+              Acesse aqui todas as informações sobre as suas reservas!
+            </MDBCardText>
+            <MDBBtn href="#"></MDBBtn>
+          </MDBCardBody>
+        </MDBCard>
+      </div>
+      <div>
+        <MDBCard>
+          <MDBCardImage
+            className={S.imageSide}
+            src={C1}
+            position="top"
+            alt="..."
+          />
+          <MDBCardBody className={S.textSide}>
+            <MDBCardTitle>Suas reservas</MDBCardTitle>
+            <MDBCardText>
+              Acesse aqui todas as informações sobre as suas reservas!
+            </MDBCardText>
+            <MDBBtn href="#"></MDBBtn>
+          </MDBCardBody>
+        </MDBCard>
+      </div>
     </div>
   );
-};
-
-export default Card;
+}

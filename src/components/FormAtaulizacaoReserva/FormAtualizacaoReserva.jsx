@@ -6,8 +6,10 @@ import { useParams } from "react-router-dom";
 import S from "./FormAtualizacaoReserva.module.css";
 import { Link } from "react-router-dom";
 import x_voltar from "../../assets/x_voltar.svg";
+import { api } from "../../services/api";
 
 const FormAtualizacaoReserva = ({
+  id,
   quarto,
   quantLeitos,
   quantAdultos,
@@ -17,13 +19,14 @@ const FormAtualizacaoReserva = ({
 }) => {
   const navigate = useNavigate();
   const [dadosFormReserva, setDadosReserva] = useState({
-    id: localStorage.getItem("id"),
+    id: id,
+    id_Hospede: localStorage.getItem("id_Hospede"),
     quarto: quarto,
     quantLeitos: quantLeitos,
     quantAdultos: quantAdultos,
     quantCrian: quantCrian,
-    dataEntrada: dataEntrada,
-    dataSaida: dataSaida,
+    dataEntrada: dataEntrada.split("/").reverse().join("-"),
+    dataSaida: dataSaida.split("/").join("-"),
   });
 
   const params = useParams();
@@ -33,13 +36,14 @@ const FormAtualizacaoReserva = ({
       ...dadosFormReserva,
       [nomeDaChave]: e.target.value,
     });
+    console.log(dadosFormReserva);
   }
 
   function handleClick(e) {
     e.preventDefault();
     console.log(dadosFormReserva);
     try {
-      api.put("/reservas", dadosFormReserva).then((response) => {
+      api.put(`/reservas/${id}`, dadosFormReserva).then((response) => {
         console.log(response);
 
         navigate("/");

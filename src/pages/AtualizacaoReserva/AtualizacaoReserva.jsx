@@ -33,6 +33,7 @@ const AtualizacaoReserva = () => {
       <section>
         {
           <FormAtualizacaoReserva
+            id={reserva.id}
             quarto={reserva.quarto}
             quantLeitos={reserva.quantLeitos}
             quantAdultos={reserva.quantAdultos}
