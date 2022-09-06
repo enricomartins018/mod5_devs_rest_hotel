@@ -14,3 +14,37 @@ body {
   font-family: HelveticaNeue;
   src: url(./Font/Helvetica\ Neue\ W01\ 66\ Medium\ It.otf)
 } */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #8fbd80;
+}
+
+.logoLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 40vw;
+  height: 40vh;
+  -webkit-animation:logoLoading 1.5s linear infinite;
+  -moz-animation:logoLoading 1.5s linear infinite;
+  animation:logoLoading 1.5s linear infinite;
+}
+
+@-moz-keyframes logoLoading { 
+  100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes logoLoading { 
+  100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes logoLoading { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}

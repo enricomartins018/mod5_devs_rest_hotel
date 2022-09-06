@@ -55,7 +55,7 @@ const FormFacaSuaReserva = () => {
           <div className={S.containerDatas}>
             <div className={S.dataEntrada}>
               <label>
-                <h2>Chegada</h2>
+                <h4>Check-In</h4>
               </label>
               <input
                 className={S.inputPattern}
@@ -68,7 +68,7 @@ const FormFacaSuaReserva = () => {
             </div>
             <div className={S.dataSaida}>
               <label>
-                <h2>Partida</h2>
+                <h4>Check-Out</h4>
               </label>
               <input
                 className={S.inputPattern}
@@ -93,9 +93,7 @@ const FormFacaSuaReserva = () => {
             value={dadosFormReserva.quarto}
             onChange={(e) => handleChange(e, "quarto")}
           >
-            <option className={S.optionPattern} value="">
-              Selecione a quantidade de Quartos:
-            </option>
+
             <option className={S.optionPattern} value="1">
               1 Quarto
             </option>
@@ -117,9 +115,6 @@ const FormFacaSuaReserva = () => {
             value={dadosFormReserva.quantLeitos}
             onChange={(e) => handleChange(e, "quantLeitos")}
           >
-            <option className={S.optionPattern} value="">
-            Selecione a quantidade de Leitos:
-            </option>
             <option className={S.optionPattern} value="1">
               1 Leito
             </option>
@@ -141,9 +136,6 @@ const FormFacaSuaReserva = () => {
             value={dadosFormReserva.quantAdultos}
             onChange={(e) => handleChange(e, "quantAdultos")}
           >
-            <option className={S.optionPattern} value="">
-              Selecione a quantidade de Adultos:
-            </option>
             <option className={S.optionPattern} value="1">
               1 Adulto
             </option>
@@ -166,7 +158,7 @@ const FormFacaSuaReserva = () => {
             onChange={(e) => handleChange(e, "quantCrian")}
           >
             <option className={S.optionPattern} value="0">
-              Selecione a quantidade de Crianças:
+              0 Criança
             </option>
             <option className={S.optionPattern} value="1">
               1 Criança
@@ -188,13 +180,13 @@ const FormFacaSuaReserva = () => {
             <input
               className={S.containerCodCorporativo}
               type="text"
-              name="text"
+              name="number"
               placeholder="Código Corporativo/Promo"
             />
             <input
               className={S.containerCodGrupo}
               type="text"
-              name="text"
+              name="number"
               placeholder="Código De Grupo"
             />
           </div>
