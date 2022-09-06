@@ -11,10 +11,10 @@ export const Header = () => {
   const navigate = useNavigate();
 
   function handlechange() {
-    if (!localStorage.getItem("id_Hospede")) {
-      const navigate = useNavigate();
-      navigate("/login");
-    }
+    // if (!localStorage.getItem("id_Hospede")) {
+    //   navigate("/login");
+    // }
+    navigate("/login");
   }
 
   return (
