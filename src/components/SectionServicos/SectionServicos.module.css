@@ -27,3 +27,10 @@
     font-style: italic;
 }
 
+
+@media(max-width:768px) {
+
+    .section {
+        width: 75%;
+    }
+}
