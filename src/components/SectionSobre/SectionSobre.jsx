@@ -19,6 +19,7 @@ export const SectionSobre = () => {
         Venha vivenciar o que há de melhor no Dev's Rest!!!
       </p>
 
+
     </section>
   );
 };

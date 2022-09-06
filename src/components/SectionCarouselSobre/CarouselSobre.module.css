@@ -109,7 +109,16 @@
 }
 
 .separador {
-  margin-left: 185px;
-  margin-top: 0;
-  margin-bottom: 0;
+
+  width: 50%;
+  margin: auto;
+}
+
+@media(max-width:768px) {
+
+  .slider {
+    width: 340px;
+    height: 300px;
+  }
+
 }

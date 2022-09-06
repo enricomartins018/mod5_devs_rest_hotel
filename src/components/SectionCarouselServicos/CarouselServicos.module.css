@@ -78,8 +78,8 @@
   overflow: hidden;
   width: 70%;
   margin: auto;
-  /* margin-top: 30px; */
-  height: 450px;
+  margin-top: 30px;
+  height: 550px;
 }
 
 
@@ -104,4 +104,13 @@
   font-size: 0;
   animation: 10s slidy infinite;
   -webkit-animation: 10s slidy infinite;
+}
+
+
+@media(max-width:768px) {
+
+  .slider {
+    width: 340px;
+    height: 300px;
+  }
 }

@@ -80,6 +80,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
+  height: 550px;
 }
 
 .slider .h3 {
@@ -117,5 +118,17 @@
 }
 
 .separador {
-  margin-left: 185px;
+
+  width: 50%;
+  margin: auto;
+}
+
+
+@media(max-width:768px) {
+
+  .slider {
+    width: 340px;
+    height: 300px;
+  }
+
 }
