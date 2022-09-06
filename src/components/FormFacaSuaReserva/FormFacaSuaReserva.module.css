@@ -84,11 +84,9 @@
     color: rgb(49, 48, 48);
     border: solid 0.1rem black;
     text-align: left;
-    background-color: #b5dea4;
+    background-color: #c8e2bf;
     border-radius: 0.5em;
     border: solid 0.1rem black;
-    background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
-    background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
 }
 
 .dataSaida{
@@ -103,12 +101,11 @@
     color: rgb(49, 48, 48);
     border: solid 0.1rem black;
     text-align: center;
-    background-color: #b5dea4;
+    background-color: #c8e2bf;
     font-size: 1.2rem;
     border-radius: 0.5rem;
     border: solid 0.1rem black;
-    background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
-    background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
+    
 }
 
 
@@ -127,11 +124,9 @@
     color: rgb(49, 48, 48);
     border: solid 0.1rem black;
     text-align: center;
-    background-color: #b5dea4;
+    background-color: #c8e2bf;
     border-radius: 0.5rem;
     border: solid 0.1rem black;
-    background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
-    background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
 }
 
 .containerCodGrupo{
@@ -140,11 +135,9 @@
     color: rgb(49, 48, 48);
     border: solid 0.1rem black;
     text-align: center;
-    background-color: #b5dea4;
+    background-color: #c8e2bf;
     border-radius: 0.5rem;
     border: solid 0.1rem black;
-    background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
-    background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
 }
 
 .btnEnviarReserva{
@@ -153,12 +146,10 @@
     height: 4rem;
     color: rgb(49, 48, 48);
     border: solid 0.1rem black;
-    background-color: #b5dea4;
+    background-color: #c8e2bf;
     text-align: center;
     border-radius: 0.5rem;
     border: solid 0.1rem black;
-    background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
-    background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea455);
 }
 
 
@@ -200,7 +191,7 @@
 }
 
 .optionPattern{
-    background-color: #b5dea4;
+    background-color: #c8e2bf;
     color: rgb(49, 48, 48);
 }
 
