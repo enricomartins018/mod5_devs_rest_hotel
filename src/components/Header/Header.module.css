@@ -1,10 +1,11 @@
 .header {
-  width: 98vw;
+  width: 100vw;
   display: flex;
   align-items: center;
   background: #ffffff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1), 0px 10px 40px hwb(0 35% 45% / 0.06);
-  /* position: fixed; */
+  position: fixed;
+  margin: 0;
 }
 
 .header .logo {
@@ -27,7 +28,7 @@
   justify-content: flex-end;
 }
 
-.nav .a {
+.a {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;

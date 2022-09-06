@@ -2,8 +2,8 @@
     grid-area: header;
     background-color: white;
     color: black;
-    padding: 2px;
-    gap: 20px
+    gap: 20px;
+    z-index: 1;
 }
 
 .sideNav {
