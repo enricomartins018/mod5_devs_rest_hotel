@@ -3,7 +3,7 @@ import S from "./SectionSobre.module.css";
 
 export const SectionSobre = () => {
   return (
-    <section className={S.section}>
+    <section className={S.section} id="sobre">
       <h2 className={S.subtitulo}>Dev's Rest Hotel</h2>
       <br></br>
       <p className={S.paragrafoInfo}>
@@ -19,18 +19,6 @@ export const SectionSobre = () => {
         Venha vivenciar o que há de melhor no Dev's Rest!!!
       </p>
 
-      {/* <div className={S.divImg}>
-        <img
-          className={S.img}
-          src="https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt="imagemHotel"
-        />
-        <img
-          className={S.img}
-          src="https://images.pexels.com/photos/53464/sheraton-palace-hotel-lobby-architecture-san-francisco-53464.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt="imagemHotel"
-        />
-      </div> */}
     </section>
   );
 };

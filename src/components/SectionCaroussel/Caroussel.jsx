@@ -13,7 +13,7 @@ import Card from "../Card/Card";
 
 export const Caroussel = () => {
   return (
-    <div className={S.slider}>
+    <div className={S.slider} id="acomodacoes">
       <h3 className={S.h3}>Confira algumas das nossas acomodações.</h3>
 
       <figure className={S.figure}>

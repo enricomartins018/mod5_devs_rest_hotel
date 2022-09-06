@@ -2,7 +2,7 @@ import React from "react";
 import S from "./SectionServicos.module.css";
 const SectionServicos = () => {
   return (
-    <section className={S.section}>
+    <section className={S.section} id="servicos">
       <h2 className={S.subtitulo}>Conheça nossos serviços.</h2>
       <p className={S.subtitulo}>
         Venha vivenciar maravilhosas experiências de puro relaxamento e

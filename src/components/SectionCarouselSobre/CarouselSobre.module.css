@@ -76,7 +76,7 @@
 
 .slider {
   overflow: hidden;
-  width: 80%;
+  width: 50%;
   margin: auto;
 }
 
@@ -86,8 +86,10 @@
 }
 
 .img {
-  width: 20vw;
-  height: 50vh;
+
+	width: 450px;
+	height: 340px;
+
 }
 
 .slider .figure .img {

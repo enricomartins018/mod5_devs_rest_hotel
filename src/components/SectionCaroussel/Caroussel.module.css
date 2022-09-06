@@ -76,7 +76,7 @@
 
 .slider {
   overflow: hidden;
-  width: 80%;
+  width: 50%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -88,8 +88,10 @@
 }
 
 .img {
-  width: 450px;
-  height: 480px;
+
+	width: 450px;
+	height: 340px;
+
 }
 
 .slider .figure .img {
