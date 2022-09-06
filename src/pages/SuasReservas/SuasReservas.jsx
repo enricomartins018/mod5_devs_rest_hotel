@@ -1,19 +1,20 @@
-import React, { useState, useEffect, useNavigate } from "react";
+import React, { useState, useEffect } from "react";
 import Reservas from "../../components/Reservas/Reservas";
 import { api } from "../../services/api";
 import S from "./SuasReservas.module.css";
 import video from "../../assets/video.mp4";
 import foto from "../../assets/logo.svg";
+import { useNavigate } from "react-router-dom";
 
 const SuasReservas = () => {
-  if (!localStorage.getItem("id_Hospede")) {
-    const navigate = useNavigate();
-    navigate("/login");
-  }
-
   const [reservas, setReservas] = useState();
+  const navigate = useNavigate();
 
   useEffect(() => {
+    if (!localStorage.getItem("id_Hospede")) {
+      navigate("/login");
+    }
+
     try {
       api
         .get("/reservas/hospede/" + localStorage.getItem("id_Hospede"))
