@@ -8,7 +8,9 @@ import S from "./Home.module.css";
 const Home = () => {
   return (
     <div className={S.container}>
-      <Header />
+      <div className={S.header}>
+        <Header />
+      </div>
       <div className={S.sideNav}>
         <Sidebar />
       </div>
