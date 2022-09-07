@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import x_voltar from "../../assets/x_voltar.svg";
 import Separator from '../../assets/separator.svg'
 const FormFacaSuaReserva = () => {
-  // const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const [dadosFormReserva, setDadosReserva] = useState({
     id_Hospede: localStorage.getItem("id_Hospede"),
@@ -30,19 +29,19 @@ const FormFacaSuaReserva = () => {
     e.preventDefault();
     console.log(dadosFormReserva);
 
-    // try {
-    //   api.post("/reservas", dadosFormReserva).then((response) => {
-    //     console.log(response);
-    //     if (response.data.error) {
-    //       localStorage.setItem("id_Hospede", response.data.hospede.id);
-    //       alert("Reserva inserida concluído com sucesso");
-    //       navigate("/login");
-    //     }
-    //   });
-    // } catch (e) {
-    //   console.log(e);
-    //   alert("Reserva não realizada");
-    // }
+    try {
+      api.post("/reservas", dadosFormReserva).then((response) => {
+        console.log(response);
+        if (response.data.error) {
+          localStorage.setItem("id_Hospede", response.data.hospede.id);
+          alert("Reserva inserida concluído com sucesso");
+          navigate("/login");
+        }
+      });
+    } catch (e) {
+      console.log(e);
+      alert("Reserva não realizada");
+    }
   }
 
   return (
