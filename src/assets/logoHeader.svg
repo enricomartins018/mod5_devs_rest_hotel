@@ -2,11 +2,11 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="200.000000pt" height="200.000000pt" viewBox="0 0 500.000000 500.000000"
+ width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
+fill="#fff" stroke="none">
 <path d="M2380 4041 c0 -5 12 -11 28 -13 l27 -3 -2 -77 c-1 -61 1 -78 12 -78
 11 0 15 19 17 72 3 72 3 73 33 78 55 9 31 25 -42 28 -43 2 -73 -1 -73 -7z"/>
 <path d="M2169 4027 c-47 -36 -48 -111 -2 -147 35 -27 75 -25 112 6 64 54 27
