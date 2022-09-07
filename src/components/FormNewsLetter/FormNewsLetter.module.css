@@ -5,9 +5,11 @@
     align-items: center;
     border: 0ch;
     height: 110px;
+    
    
 }
 .containerPai{
+    margin-top: 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +21,6 @@
     height: 30px;
     width: 200px;
     padding: 7px;
-    /*margin-top: -15px;*/
     margin-right: 10px;
    }
 
@@ -27,3 +28,6 @@
     margin-top: -20px;
 }*/
 
+.texto{
+    margin-bottom: 1px;
+}

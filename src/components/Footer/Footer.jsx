@@ -10,13 +10,19 @@ import { AiOutlineWhatsApp } from "react-icons/ai";
 import { FormNewsLetter } from "../FormNewsLetter/FormNewsLetter";
 import Button from "@mui/material/Button";
 import { Carrossel } from "../Carrosselfooter/Carrosselfooter";
+import Link from "@mui/material/Link";
+
+
+
 
 export const Footer = () => {
   return (
     <div className={S.footer}>
-      <Carrossel />
+      <div className={S.primeiraDivisao} >
+      <img className={S.img} src={image} alt="logo" />
+      <Carrossel/>
+      </div>
       <div className={S.container}>
-        <img className={S.img} src={image} alt="logo" />
         <div className={S.containerTexto}>
           <p>
             Horário de funcionamento:
@@ -36,8 +42,8 @@ export const Footer = () => {
             Telefone: 21 00000000
           </p>
         </div>
+        <FormNewsLetter/> 
       </div>
-      {/* <FormNewsLetter/> */}
       <div className={S.redes}>
         <p className={S.direitos}>
           <b>2022 © Direitos Reservados - Dev´s Rest Hotel</b>
@@ -63,6 +69,11 @@ export const Footer = () => {
           </Button>
         </nav>
       </div>
-    </div>
+<div className={S.politica}>
+<Link href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" color="inherit"
+variant="body2">Politica de privacidade</Link>
+</div>
+
+</div>
   );
 };
