@@ -116,23 +116,21 @@
 
 .containerCodCorporativo{
     width: 15vw;
-    height: 4rem;
+    height: 2rem;
     color: rgb(49, 48, 48);
     border: solid 0.1rem black;
     text-align: center;
     background-color: #c8e2bf;
-    border-radius: 0.5rem;
     border: solid 0.1rem black;
 }
 
 .containerCodGrupo{
     width: 15vw;
-    height: 4rem;
+    height: 2rem;
     color: rgb(49, 48, 48);
     border: solid 0.1rem black;
     text-align: center;
     background-color: #c8e2bf;
-    border-radius: 0.5rem;
     border: solid 0.1rem black;
 }
 
@@ -146,6 +144,10 @@
     text-align: center;
     border-radius: 0.5rem;
     border: solid 0.1rem black;
+}
+
+.btnEnviarReserva:hover{
+    transform: scale(1.1);
 }
 
 
