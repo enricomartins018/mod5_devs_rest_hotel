@@ -21,7 +21,8 @@
     padding: 2px;
     grid-column: 1 /2;
     border-radius: 5px;
-    
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1), 0px 10px 40px hwb(0 35% 45% / 0.06);
+
 }
 
 .content {

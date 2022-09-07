@@ -7,7 +7,7 @@ import FacaSuaReserva from "./pages/FacaSuaReserva/FacaSuaReserva";
 import Login from "./pages/Login/Login";
 import CadastroHospede from "./pages/CadastroHospede/CadastroHospede";
 import AtualizacaoReserva from "./pages/AtualizacaoReserva/AtualizacaoReserva";
-
+import Quartos from "./pages/Quartos/Quartos";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -29,12 +29,12 @@ const App = () => {
           <Route path="/suasreservas" element={<SuasReservas />} />
           <Route path="/facasuareserva" element={<FacaSuaReserva />} />
           <Route path="/atualizareserva/:id" element={<AtualizacaoReserva />} />
+          <Route path="/quartos" element={<Quartos />}></Route>
           <Route path="/reservas"></Route>
         </Routes>
       </Router>
     )
-
   );
-}
+};
 
 export default App;
