@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import x_voltar from "../../assets/x_voltar.svg";
 import Separator from '../../assets/separator.svg'
+import {Alert} from '@mui/material';
 const FormFacaSuaReserva = () => {
   const navigate = useNavigate();
   const [dadosFormReserva, setDadosReserva] = useState({
@@ -28,6 +29,9 @@ const FormFacaSuaReserva = () => {
   function handleClick(e) {
     e.preventDefault();
     console.log(dadosFormReserva);
+    alert("Reserva concluída com sucesso!");
+    navigate("/");
+
 
     try {
       api.post("/reservas", dadosFormReserva).then((response) => {
@@ -212,14 +216,14 @@ const FormFacaSuaReserva = () => {
             <input className={S.inputCheckBox} type="checkbox" name="" id="" />
             <label className={S.labelCheckBox}>Vou viajar a trabalho</label>
           </div>
-          <button
-            className={S.btnEnviarReserva}
-            type="submit"
-            id="enviarReserva"
-            onClick={handleClick}
-          >
-            Reservar Agora
-          </button>
+            <button
+              className={S.btnEnviarReserva}
+              type="submit"
+              id="enviarReserva"
+              onClick={handleClick}
+            >
+              Reservar Agora
+            </button>
         </div>
       </form>
     </section>
