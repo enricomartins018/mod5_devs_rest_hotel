@@ -25,9 +25,9 @@ export default function Sidebar() {
           />
           <MDBCardBody className={S.textSide}>
             <MDBCardTitle>Suas reservas</MDBCardTitle>
-            <MDBCardText>
+            <MDBCardText className={S.textCardSocial}>
               <p>Responsabilidade Social Coorporativa</p>
-              <h2>Save the Bees </h2>O Palácio Tangará está comprometido com a
+              <h2>Save the Bees </h2>O Dev`s Rest Hotel está comprometido com a
               manutenção da fauna nativa, especialmente das abelhas sem ferrão,
               que são fundamentais para uma melhor polinização da vegetação.
               Desde 2019, temos duas colmeias de abelhas sem ferrão na área

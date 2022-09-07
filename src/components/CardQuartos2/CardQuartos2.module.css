@@ -1,0 +1,45 @@
+.sectionTextQuartos {
+    height: 200px;
+    border-width: 30px;
+    float: left;
+    margin-top: 100px;
+
+}
+
+.containerQuartos2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 100%;
+    padding: auto;
+    gap: 80px;
+}
+
+
+.cardQuarto {
+    height: 500px;
+    width: 360px;
+    box-shadow: 0 0 5px 0 rgba(22, 22, 26, .25);
+    border-radius: 5px solid black;
+    border-width: 30px;
+    float: left;
+    margin-top: 100px;
+}
+
+.cardTitleQ {
+    width: 360px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cardTextQ {
+    width: 360px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cardImgTop {
+    width: 25vw;
+    height: 35vh;
+}

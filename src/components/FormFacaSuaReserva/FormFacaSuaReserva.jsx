@@ -35,7 +35,7 @@ const FormFacaSuaReserva = () => {
         console.log(response);
         if (response.data.error) {
           localStorage.setItem("id_Hospede", response.data.hospede.id);
-          alert("Reserva inserida concluído com sucesso");
+          alert("Reserva inserida com sucesso");
           navigate("/login");
         }
       });
@@ -93,7 +93,9 @@ const FormFacaSuaReserva = () => {
             value={dadosFormReserva.quarto}
             onChange={(e) => handleChange(e, "quarto")}
           >
-
+            <option className={S.optionPattern} value="">
+              Selecione
+            </option>
             <option className={S.optionPattern} value="1">
               1 Quarto
             </option>
@@ -115,6 +117,9 @@ const FormFacaSuaReserva = () => {
             value={dadosFormReserva.quantLeitos}
             onChange={(e) => handleChange(e, "quantLeitos")}
           >
+            <option className={S.optionPattern} value="">
+              Selecione
+            </option>
             <option className={S.optionPattern} value="1">
               1 Leito
             </option>
@@ -136,6 +141,9 @@ const FormFacaSuaReserva = () => {
             value={dadosFormReserva.quantAdultos}
             onChange={(e) => handleChange(e, "quantAdultos")}
           >
+            <option className={S.optionPattern} value="">
+              Selecione
+            </option>
             <option className={S.optionPattern} value="1">
               1 Adulto
             </option>
@@ -157,6 +165,9 @@ const FormFacaSuaReserva = () => {
             value={dadosFormReserva.quantCrian}
             onChange={(e) => handleChange(e, "quantCrian")}
           >
+            <option className={S.optionPattern} value="">
+              Selecione
+            </option>
             <option className={S.optionPattern} value="0">
               0 Criança
             </option>

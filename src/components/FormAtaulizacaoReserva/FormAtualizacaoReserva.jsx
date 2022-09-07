@@ -46,7 +46,7 @@ const FormAtualizacaoReserva = ({
       api.put(`/reservas/${id}`, dadosFormReserva).then((response) => {
         console.log(response);
 
-        navigate("/");
+        navigate("/suasreservas");
       });
     } catch (e) {
       console.log(e);
