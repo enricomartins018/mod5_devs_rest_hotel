@@ -10,21 +10,18 @@
     grid-area: sidenav;
     position: fixed;
     margin-left: 0;
-    margin-top: 200px;
-    height: 40%;
+    margin-top: 100px;
+    height: 60vh;
     width: 300px;
     padding-top: 20px;
     text-align: center;
-    /* background-color: #8fbd802f; */
-    /* background: -webkit-linear-gradient(0deg, #b5dea4, #8fbd80, rgba(255, 255, 255, 0.692));
-    background: linear-gradient(0deg, #b5dea4, #8fbd805b, rgba(255, 255, 255, 0.15)); */
-    /* opacity: 50; */
     background-size: 175%;
     justify-content: start;
     align-items: center;
     padding: 2px;
     grid-column: 1 /2;
     border-radius: 5px;
+    
 }
 
 .content {
@@ -37,8 +34,9 @@
 .footer {
     grid-area: footer;
     background-color: white;
-    padding: 2px;
+    padding: 20px;
     grid-column: 1 /4;
+    margin-top: 20px;
     gap: 20px
 }
 

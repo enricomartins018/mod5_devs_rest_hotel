@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
 import S from "./Header.module.css";
-import logo from "../../assets/logo.svg";
+import logoHeader from "../../assets/logoHeader.svg";
 import { RiUser3Line } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -29,7 +29,7 @@ export const Header = () => {
 
   return (
     <header className={S.header}>
-      <img className={S.logo} src={logo} alt="" />
+      <img className={S.logoHeader} src={logoHeader} alt="" />
       <nav className={S.nav}>
         <Scroll className={S.a} to="sobre" smooth={true} duration={1000}>
           Sobre nós

@@ -25,15 +25,13 @@ export default function Sidebar() {
         <MDBCardTitle>Responsabilidade Social Coorporativa</MDBCardTitle>
         <br></br>
         <MDBCardText>
-          <h3>Save the Bees</h3> <br></br>O Dev`s Rest hotel está comprometido
+          <h3 className={S.h3}>Save the Bees</h3>O Dev`s Rest hotel está comprometido
           com a manutenção da fauna nativa, especialmente das abelhas sem
           ferrão, que são fundamentais para uma melhor polinização da vegetação.
           Desde 2019, temos duas colmeias de abelhas sem ferrão na área externa
           de nosso Hotel.
         </MDBCardText>
-        <br></br>
-        <h3>Hora do Planeta</h3>
-        <br></br>
+        <h3 className={S.cardText}>Hora do Planeta</h3>
         <MDBCardText>
           Anualmente, durante a Hora do Planeta, velas são acesas nas áreas
           comuns do Hotel e nossa fachada também tem sua iluminação desligada. A
