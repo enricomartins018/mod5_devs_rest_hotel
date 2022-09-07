@@ -1,10 +1,11 @@
 .header {
-  width: 98vw;
+  width: 100vw;
   display: flex;
   align-items: center;
-  background: #ffffff;
+  background: #447a37;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1), 0px 10px 40px hwb(0 35% 45% / 0.06);
-  /* position: fixed; */
+  position: fixed;
+  margin: 0;
 }
 
 .header .logo {
@@ -12,11 +13,14 @@
   margin: 0;
 }
 
-.logo {
+.logoHeader {
+  margin-left: 15px;
   width: 86px;
   height: 83px;
   top: 21px;
   left: 62px;
+  color: #fff;
+  transform: scale(1.5);
 }
 
 .nav {
@@ -27,26 +31,33 @@
   justify-content: flex-end;
 }
 
-.nav .a {
+.a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: #fff;
   cursor: pointer;
 }
 
 .a:hover {
-  color: #447a37;
+  color: #000000;
 }
 
 .Button {
   width: 100px;
   height: 35px;
   border-radius: 3px;
+  border: 1px solid #fff;
   align-items: center;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
   background-color: #447a37;
+  color: #fff;
+}
+
+.Button:hover {
+  background-color: #ffff;
+  color: #447a37;
 }
 
 .btnReserva {
@@ -57,6 +68,7 @@
 
 .icon {
   margin-left: 15px;
+  color: #fff;
 }
 
 
