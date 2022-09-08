@@ -1,7 +1,7 @@
 .header {
     grid-area: header;
     background-color: white;
-    color: black;
+    color: #373737;
     gap: 20px;
     z-index: 1;
 }

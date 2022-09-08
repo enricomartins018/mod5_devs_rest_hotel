@@ -5,7 +5,7 @@ import { api } from "../../services/api";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import x_voltar from "../../assets/x_voltar.svg";
-import Separator from '../../assets/separator.svg'
+import Separator from "../../assets/separator.svg";
 
 const FormFacaSuaReserva = () => {
   const navigate = useNavigate();
@@ -29,17 +29,15 @@ const FormFacaSuaReserva = () => {
   function handleClick(e) {
     e.preventDefault();
     console.log(dadosFormReserva);
-    alert("Reserva concluída com sucesso!");
-    navigate("/");
-
 
     try {
       api.post("/reservas", dadosFormReserva).then((response) => {
         console.log(response);
-        if (response.data.error) {
-          localStorage.setItem("id_Hospede", response.data.hospede.id);
+        if (!response.data.erro) {
           alert("Reserva inserida com sucesso");
-          navigate("/login");
+          navigate("/suasreservas");
+        } else {
+          alert("Reserva não realizada");
         }
       });
     } catch (e) {
@@ -99,9 +97,7 @@ const FormFacaSuaReserva = () => {
             onChange={(e) => handleChange(e, "quarto")}
           >
             <option className={S.optionPattern} value="">
-
               Selecione a quantidade de Quartos:
-
             </option>
             <option className={S.optionPattern} value="1">
               1 Quarto
@@ -125,9 +121,7 @@ const FormFacaSuaReserva = () => {
             onChange={(e) => handleChange(e, "quantLeitos")}
           >
             <option className={S.optionPattern} value="">
-
               Selecione a quantidade de Leitos:
-
             </option>
             <option className={S.optionPattern} value="1">
               1 Leito
@@ -151,9 +145,7 @@ const FormFacaSuaReserva = () => {
             onChange={(e) => handleChange(e, "quantAdultos")}
           >
             <option className={S.optionPattern} value="">
-
               Selecione a quantidade de Adultos:
-
             </option>
             <option className={S.optionPattern} value="1">
               1 Adulto
@@ -225,14 +217,14 @@ const FormFacaSuaReserva = () => {
             <input className={S.inputCheckBox} type="checkbox" name="" id="" />
             <label className={S.labelCheckBox}>Vou viajar a trabalho</label>
           </div>
-            <button
-              className={S.btnEnviarReserva}
-              type="submit"
-              id="enviarReserva"
-              onClick={handleClick}
-            >
-              Reservar Agora
-            </button>
+          <button
+            className={S.btnEnviarReserva}
+            type="submit"
+            id="enviarReserva"
+            onClick={handleClick}
+          >
+            Reservar Agora
+          </button>
         </div>
       </form>
     </section>

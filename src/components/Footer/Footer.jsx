@@ -34,9 +34,9 @@ export const Footer = () => {
           <p className={S.contato}>
             Contato:
             <br />
-            E-mail: DevsRestHotel@gmail.com
+            E-mail: devsresthotel@devsresthotel.com
             <br />
-            Telefone: 21 00000000
+            Telefone: + 55 21 0000-0000
           </p>
         </div>
         <FormNewsLetter />

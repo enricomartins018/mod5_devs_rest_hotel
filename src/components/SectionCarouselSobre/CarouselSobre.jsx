@@ -1,9 +1,9 @@
 import React from "react";
 import S from "./CarouselSobre.module.css";
-import imgHotel1 from "../../assets/image/imgHotel1.jpg";
-import imgHotel2 from "../../assets/image/imgHotel2.jpg";
-import imgHotel3 from "../../assets/image/imgHotel3.jpg";
-import imgHotel4 from "../../assets/image/imgHotel4.jpg";
+import imgHotel1 from "../../assets/image/exterior9.jpeg";
+import imgHotel2 from "../../assets/image/exteriorpool.jpeg";
+import imgHotel3 from "../../assets/image/burlebardining.jpeg";
+import imgHotel4 from "../../assets/image/saogreenery.jpeg";
 import separador from "../../assets/separator.svg";
 
 export const CarouselSobre = () => {
