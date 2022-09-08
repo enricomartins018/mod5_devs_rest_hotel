@@ -47,7 +47,7 @@
     width: 288.09px;
     height: 51.22px;
     margin-left: 150px;
-    margin-top: 230px;
+    margin-top: 260px;
     color: rgb(49, 48, 48);
     font-size: 15px;
 }
@@ -83,14 +83,137 @@
 
 .h4Login,
 .labelLogin {
-    font-size: 15px;
-    align-items: center;
+    margin: 10px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     text-align: center;
-    /* border-color: rgb(49, 48, 48); */
+    color: #373737;
 }
 
 .validaSenha {
     font-size: 9px;
     color: #000000 bold;
-    ;
+
+}
+
+@media(max-width:375px) {
+    .section2 {
+        flex-direction: row;
+        position: relative;
+    }
+
+    .h4Login,
+    .labelLogin {
+        margin: 10px;
+        font-size: 13px;
+        line-height: 1.5rem;
+        text-align: center;
+        color: #373737;
+    }
+
+    .h4Login {
+        color: rgb(218, 214, 214);
+    }
+
+    .banner {
+        position: relative;
+        width: 65%;
+        height: 80%;
+        margin-left: 300px;
+        padding: 20px;
+    }
+
+    .container {
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logo {
+        width: 10vw;
+        height: 10vh;
+        align-items: center;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+    .formlogin {
+        position: relative;
+        margin-left: 60px;
+        height: 200%
+    }
+
+    .linkCadastro {
+        margin-top: 250px;
+    }
+}
+
+@media(max-width:426px) and (min-width:375px) {
+    .section2 {
+        flex-direction: row;
+        position: absolute;
+    }
+
+    .h4Login,
+    .labelLogin {
+        /* margin: 10px; */
+        font-size: 12px;
+        line-height: 1.5rem;
+        text-align: center;
+        color: rgb(218, 214, 214);
+    }
+
+    .banner {
+        position: relative;
+        width: 65%;
+        height: 100%;
+        margin-left: 335px;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .logo {
+        width: 10vw;
+        height: 10vh;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+    }
+
+    .formlogin {
+        position: relative;
+        margin-left: 60px;
+        height: 100%;
+        background: -webkit-linear-gradient(0deg, #447a37, #8fbd80, #b5dea4);
+        background: linear-gradient(0deg, #447a3771, #8fbd80, #b6dea4e5);
+    }
+
+    .linkCadastro {
+        margin-top: 250px;
+    }
+}
+
+@media(max-width:768px) and (min-width: 426px) {
+
+    .h4Login,
+    .labelLogin {
+        margin: 10px;
+        font-size: 13px;
+        line-height: 1.5rem;
+        text-align: center;
+        color: #373737;
+    }
+
+    .banner {
+        width: 65%;
+        height: 111%;
+        margin-left: 300px;
+        padding: 20px;
+    }
 }

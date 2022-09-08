@@ -53,3 +53,10 @@
     color: rgb(58, 57, 57);
     font-size: 15px;
 }
+
+@media (max-width: 375px) {
+    .formCadastroHospede {
+        position: unset;
+        width: 100%;
+    }
+}

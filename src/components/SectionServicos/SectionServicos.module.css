@@ -6,11 +6,17 @@
     color: #373737;
     line-height: 2rem;
     letter-spacing: .05em;
+    margin-top: 50px;
 }
 
+.separador {
+    width: 50%;
+    margin-bottom: 10px;
+    margin-left: 200px;
+}
 
 .img {
-    width: 255px;
+    width: 50%;
     height: 255px;
 }
 

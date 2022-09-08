@@ -5,7 +5,7 @@
     padding: auto;
 }
 
-video {
+.videoLogin {
     object-fit: cover;
     width: 100vw;
     height: 100vh;
@@ -23,4 +23,53 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+@media(max-width:375px) {
+    .section2 {
+        flex-direction: row;
+        position: relative;
+    }
+
+    .videoLogin {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media(max-width:426px) and (min-width: 375px) {
+    .section2 {
+        flex-direction: row;
+        position: relative;
+    }
+
+    .videoLogin {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media(max-width:768px) and (min-width: 426px) {
+    .section2 {
+        flex-direction: row;
+        position: relative;
+    }
+
+    .videoLogin {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
 }

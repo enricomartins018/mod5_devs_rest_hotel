@@ -9,25 +9,15 @@ export const SectionSobre = () => {
       <p className={S.paragrafoInfo}>
         Bem-vindo ao Dev's Rest Hotel. O Hotel possui 141 espaçosos
         apartamentos, sendo 59 suítes, todos com lindas vistas para o parque.
-        Ele ainda oferece nove salas funcionais – sendo um salão de festas com
-        capacidade para até 400 convidados – um Spa e um fitness center, além de
+        Ele ainda oferece nove salas funcionais, sendo um salão de festas com
+        capacidade para até 400 convidados, um Spa e um fitness center, além de
         piscinas interna e externa e um Kids Club.
       </p>
       <p className={S.paragrafoInfo}>
         O Hotel Dev's Rest está na melhor localização do Rio de Janeiro, no
         Centro da cidade próximo às principais lojas, bares e restaurantes. O
         Hotel Dev's Rest dispõe de excelente estrutura para hospedagem.
-        {/* <br />
-        Venha vivenciar o que há de melhor no Dev's Rest!!! */}
       </p>
-
-      <p className={S.paragrafoInfo}>
-        São 120 apartamentos, distribuídos em 12 andares. Todos os apartamentos
-        são equipados com TV a cabo, ar-condicionado split, frigobar, telefone,
-        cofre, mesa de trabalho, internet Wi-Fi de alta velocidade e camas box.
-      </p>
-
-
     </section>
   );
 };

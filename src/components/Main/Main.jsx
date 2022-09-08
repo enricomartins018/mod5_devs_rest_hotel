@@ -13,7 +13,7 @@ export const Main = () => {
       <CarouselSobre />
       <Caroussel />
       <SectionServicos />
-      <CarouselServicos />
+      {/* <CarouselServicos /> */}
     </main>
   );
 };

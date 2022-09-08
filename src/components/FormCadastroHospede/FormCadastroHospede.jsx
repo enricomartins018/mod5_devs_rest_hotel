@@ -135,13 +135,11 @@ const FormCadastroHospede = () => {
           variant="standard"
           className={S.input1}
           type="text"
-          placeholder="celular"
+          placeholder="(xx) xxxxx - xxxx"
           required
           value={dadosForm.celular}
           onChange={(e) => handleChange(e, "celular")}
         />
-        {/* <BsPerson />
-          </input> */}
         <TextField
           id="standard-basic"
           label="Senha"
@@ -163,23 +161,9 @@ const FormCadastroHospede = () => {
             capital: "A senha precisa ter uma letra maiúscula.",
           }}
         />
-        {/* <AiOutlineEyeInvisible />
-          </input> */}
-        {/* <button
-          type="button"
-          className={S.btnCadastrar}
-          onClick={() => setOpen((o) => !o)}
-        >
-          Cadastrar
-        </button>
-        <Popup open={open} closeOnDocumentClick onClose={closeModal}>
-          <div>
-            Cadastro concluído com sucesso! */}
         <button type="button" className={S.btnCadastrar} onClick={handleClick}>
           Ir para login
         </button>
-        {/* </div>
-        </Popup> */}
       </form>
     </div>
   );
