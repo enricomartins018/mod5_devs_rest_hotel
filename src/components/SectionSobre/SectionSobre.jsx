@@ -12,7 +12,7 @@ export const SectionSobre = () => {
         Hotel Dev's Rest dispõe de excelente estrutura para hospedagem.
       </p>
       <p className={S.paragrafoInfo}>
-        São 60 apartamentos, distribuídos em 8 andares. Todos os apartamentos
+        São 120 apartamentos, distribuídos em 12 andares. Todos os apartamentos
         são equipados com TV a cabo, ar-condicionado split, frigobar, telefone,
         cofre, mesa de trabalho, internet Wi-Fi de alta velocidade e camas box.
         <br />

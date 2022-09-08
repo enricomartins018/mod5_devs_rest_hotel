@@ -1,59 +1,90 @@
 .header {
-    grid-area: header;
-    background-color: white;
-    color: black;
-    gap: 20px;
-    z-index: 1;
+  grid-area: header;
+  background-color: white;
+  color: black;
+  gap: 20px;
+  z-index: 1;
 }
 
 .sideNav {
-    grid-area: sidenav;
-    position: fixed;
-    margin-left: 0;
-    margin-top: 100px;
-    height: 60vh;
-    width: 300px;
-    padding-top: 20px;
-    text-align: center;
-    background-size: 175%;
-    justify-content: start;
-    align-items: center;
-    padding: 2px;
-    grid-column: 1 /2;
-    border-radius: 5px;
-    
+  grid-area: sidenav;
+  /* position: fixed; */
+  margin-left: 0;
+  margin-top: 100px;
+  height: 60vh;
+  width: 300px;
+  padding-top: 20px;
+  text-align: center;
+  background-size: 175%;
+  justify-content: start;
+  align-items: center;
+  padding: 2px;
+  grid-column: 1 /2;
+  border-radius: 5px;
 }
 
 .content {
-    grid-area: content;
-    /* background-color: white; */
-    padding: 2px;
-    gap: 20px
+  grid-area: content;
+  padding: 2px;
+  gap: 20px;
 }
 
 .footer {
-    grid-area: footer;
-    background-color: white;
-    padding: 20px;
-    grid-column: 1 /4;
-    margin-top: 20px;
-    gap: 20px
+  grid-area: footer;
+  background-color: white;
+  padding: 20px;
+  grid-column: 1 /4;
+  margin-top: 20px;
+  gap: 20px;
 }
 
 .container {
-    grid-template-areas: "header header header"
-        "sidenav ",
-        "content "
-        "footer footer ";
+  grid-template-areas: "header header header" "sidenav ",
+    "content " "footer footer ";
 }
 
 .container {
-    display:
-        grid;
-    grid-template-columns:
-        300px auto 0px;
-    grid-template-rows:
-        100px 100% 90px;
-    grid-template-areas:
-        "header header""sidenav content""footer footer"
+  display: grid;
+  grid-template-columns: 300px auto 0px;
+  grid-template-rows: 100px 100% 90px;
+  grid-template-areas: "header header" "sidenav content" "footer footer";
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        grid-template-areas: "header" "sidenav content" "footer";
+        
+    }
+  .container {
+    display: grid;
+    grid-template-columns: 0px auto 0px;
+    grid-template-rows: 60px 90% 175px;
+}
+
+   .content {
+    width: 95vw;
+  }
+
+  .header {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        grid-template-areas: "header" "sidenav content" "footer";
+        
+    }
+  .container {
+    display: grid;
+    grid-template-columns: 0px auto 0px;
+    grid-template-rows: 60px 90% 175px;
+}
+
+   .content {
+    width: 100%;
+  }
 }

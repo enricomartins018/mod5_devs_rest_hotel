@@ -4,7 +4,22 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    /* background-color: #437a37 */
-    ;
+    
 } 
 
+
+
+@media(max-width:1024px) {
+    .main {
+        width: 60%;
+        margin-left: 260px;
+    }
+}
+
+
+@media(max-width:768px) {
+    .main {
+        width: 50%;
+        /* margin-left: 260px; */
+    }
+}
