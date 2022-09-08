@@ -5,7 +5,7 @@ import logoHeader from "../../assets/logoHeader.svg";
 import { RiUser3Line } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-// import { Link as Scroll } from "react-scroll";
+import { Link as Scroll } from "react-scroll";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -31,7 +31,7 @@ export const Header = () => {
     <header className={S.header}>
       <img className={S.logoHeader} src={logoHeader} alt="" />
       <nav className={S.nav}>
-        {/* <Scroll className={S.a} to="sobre" smooth={true} duration={1000}>
+        <Scroll className={S.a} to="sobre" smooth={true} duration={1000}>
           Sobre nós
         </Scroll>
         <Scroll className={S.a} to="acomodacoes" smooth={true} duration={1000}>
@@ -39,7 +39,7 @@ export const Header = () => {
         </Scroll>
         <Scroll className={S.a} to="servicos" smooth={true} duration={1000}>
           Serviços
-        </Scroll> */}
+        </Scroll>
         <Link to="/facasuareserva" className={S.a} href="#">
           Reservar
         </Link>

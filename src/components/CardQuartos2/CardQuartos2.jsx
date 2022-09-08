@@ -9,8 +9,14 @@ import juniorTerrace from "../../assets/image/junior-suite-terrace.jpg";
 import suitePrestige from "../../assets/image/prestige-suite-7.jpg";
 import suitePanamby from "../../assets/image/suite-panamby.jpeg";
 import grandSuite from "../../assets/image/granSuitesp.jpg";
+import { useNavigate } from "react-router-dom";
 
 const CardQuartos2 = () => {
+  const navigate = useNavigate();
+  function handleClick(e) {
+    e.preventDefault();
+    navigate("/facasuareserva");
+  }
   return (
     <div className={S.containerQuartos2}>
       <div className={S.sectionTextQuartos}>
@@ -36,7 +42,9 @@ const CardQuartos2 = () => {
           materiais contemporâneos inspirados na natureza.
         </p>
         <p className={S.price}>R$ 2.827,00 / noite</p>
-        <button className={S.btnPrice}>RESERVE</button>
+        <button className={S.btnPrice} onClick={handleClick}>
+          RESERVE
+        </button>
       </div>
 
       <div className={S.cardQuarto}>
@@ -49,7 +57,9 @@ const CardQuartos2 = () => {
           elegante e suave.
         </p>
         <p className={S.price}>R$ 2.830,00 / noite</p>
-        <button className={S.btnPrice}>RESERVE</button>
+        <button className={S.btnPrice} onClick={handleClick}>
+          RESERVE
+        </button>
       </div>
 
       <div className={S.cardQuarto}>
@@ -60,7 +70,9 @@ const CardQuartos2 = () => {
           contemporânea.
         </p>
         <p className={S.price}>R$ 3.150,00 / noite</p>
-        <button className={S.btnPrice}>RESERVE</button>
+        <button className={S.btnPrice} onClick={handleClick}>
+          RESERVE
+        </button>
       </div>
 
       <div className={S.cardQuarto}>
@@ -71,7 +83,9 @@ const CardQuartos2 = () => {
           contemporânea.
         </p>
         <p className={S.price}>R$ 3.551,00 / noite</p>
-        <button className={S.btnPrice}>RESERVE</button>
+        <button className={S.btnPrice} onClick={handleClick}>
+          RESERVE
+        </button>
       </div>
 
       <div className={S.cardQuarto}>
@@ -82,7 +96,9 @@ const CardQuartos2 = () => {
           com área de estar e quarto principal integrados.
         </p>
         <p className={S.price}>R$ 3.150,00 / noite</p>
-        <button className={S.btnPrice}>RESERVE</button>
+        <button className={S.btnPrice} onClick={handleClick}>
+          RESERVE
+        </button>
       </div>
 
       <div className={S.cardQuarto}>
@@ -93,7 +109,9 @@ const CardQuartos2 = () => {
           particular com decoração aconchegante e em grande estilo.
         </p>
         <p className={S.price}>R$ 3.536,00 / noite</p>
-        <button className={S.btnPrice}>RESERVE</button>
+        <button className={S.btnPrice} onClick={handleClick}>
+          RESERVE
+        </button>
       </div>
 
       <div className={S.cardQuarto}>
@@ -104,7 +122,9 @@ const CardQuartos2 = () => {
           closet e vista para a piscina externa em 109 m² de elegância.
         </p>
         <p className={S.price}>R$ 6.718,00 / noite</p>
-        <button className={S.btnPrice}>RESERVE</button>
+        <button className={S.btnPrice} onClick={handleClick}>
+          RESERVE
+        </button>
       </div>
       <div className={S.cardQuarto}>
         <img src={suitePanamby} className={S.cardImgTop} />
@@ -114,7 +134,9 @@ const CardQuartos2 = () => {
           214 m² de luxo e sofisticação em acomodação e 30 m² de terraço.
         </p>
         <p className={S.price}>R$ 27.000,00 / noite</p>
-        <button className={S.btnPrice}>RESERVE</button>
+        <button className={S.btnPrice} onClick={handleClick}>
+          RESERVE
+        </button>
       </div>
 
       <div className={S.cardQuarto}>
@@ -125,7 +147,9 @@ const CardQuartos2 = () => {
           há de mais luxuoso oferecido pelo Dev`s Rest Hotel.
         </p>
         <p className={S.price}>R$ 38.000,00 / noite</p>
-        <button className={S.btnPrice}>RESERVE</button>
+        <button className={S.btnPrice} onClick={handleClick}>
+          RESERVE
+        </button>
       </div>
       <footer className={S.footerQuarto}>
         <div>+ 55 21 0000-0000</div>

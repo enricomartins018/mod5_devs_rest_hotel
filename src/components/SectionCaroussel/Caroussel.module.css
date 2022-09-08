@@ -101,6 +101,13 @@
   color: #373737;
 }
 
+.linkQuarto {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 35px;
+  color: #373737;
+  font-size: 1.0625rem;
+}
 
 .img {
 
@@ -126,11 +133,7 @@
 
 }
 
-.separador {
 
-  width: 50%;
-  margin: auto;
-}
 
 
 @media(max-width:768px) {
