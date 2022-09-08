@@ -48,12 +48,15 @@ const FormFacaSuaReserva = () => {
 
   return (
     <section className={S.section}>
+      <div className={S.containerVoltar}>
+        <Link to="/">
+          <img className={S.x_voltar} src={x_voltar} />
+        </Link>
+      </div>
       <form className={S.form}>
         <div className={S.selectDate}>
-          <div>
-            <img className={S.separator} src={Separator}></img>
-            <h1 className={S.titlesForms}>Selecione suas datas</h1>
-          </div>
+          <img className={S.separator} src={Separator}></img>
+          <h1 className={S.titlesForms}>Selecione suas datas</h1>
           <div className={S.containerDatas}>
             <div className={S.dataEntrada}>
               <label>
@@ -86,11 +89,6 @@ const FormFacaSuaReserva = () => {
         </div>
         <img className={S.logo} src={logo} />
         <div className={S.containerSelectPattern}>
-          <div className={S.containerVoltar}>
-            <Link to="/">
-              <img className={S.x_voltar} src={x_voltar} />
-            </Link>
-          </div>
           <select
             className={S.selectPattern}
             value={dadosFormReserva.quarto}
