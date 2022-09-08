@@ -20,6 +20,14 @@ export const SectionSobre = () => {
         {/* <br />
         Venha vivenciar o que há de melhor no Dev's Rest!!! */}
       </p>
+
+      <p className={S.paragrafoInfo}>
+        São 120 apartamentos, distribuídos em 12 andares. Todos os apartamentos
+        são equipados com TV a cabo, ar-condicionado split, frigobar, telefone,
+        cofre, mesa de trabalho, internet Wi-Fi de alta velocidade e camas box.
+      </p>
+
+
     </section>
   );
 };

@@ -35,6 +35,15 @@
 }
 
 
+
+
+@media(max-width:1024px) {
+    .section {
+        width: 50%;
+    }
+}
+
+
 @media(max-width:768px) {
 
     .section {
