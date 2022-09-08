@@ -12,15 +12,12 @@ import Button from "@mui/material/Button";
 import { Carrossel } from "../Carrosselfooter/Carrosselfooter";
 import Link from "@mui/material/Link";
 
-
-
-
 export const Footer = () => {
   return (
     <div className={S.footer}>
-      <div className={S.primeiraDivisao} >
-      <img className={S.img} src={image} alt="logo" />
-      <Carrossel/>
+      <div className={S.primeiraDivisao}>
+        <img className={S.img} src={image} alt="logo" />
+        <Carrossel />
       </div>
       <div className={S.container}>
         <div className={S.containerTexto}>
@@ -37,18 +34,25 @@ export const Footer = () => {
           <p className={S.contato}>
             Contato:
             <br />
-            E-mail: DevsRestHotel@gmail.com
+            E-mail: devsresthotel@devsresthotel.com
             <br />
-            Telefone: 21 00000000
+            Telefone: + 55 21 0000-0000
           </p>
         </div>
-        <FormNewsLetter/> 
+        <FormNewsLetter />
       </div>
       <div className={S.redes}>
         <p className={S.direitos}>
           <b>2022 © Direitos Reservados - Dev´s Rest Hotel</b>
         </p>
         <nav className={S.nav}>
+          <Link
+            href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+            color="inherit"
+            variant="body2"
+          >
+            Política de privacidade
+          </Link>
           <Button href="#text-buttons">
             <AiOutlineFacebook size={20} className={S.icons} />
           </Button>
@@ -69,11 +73,7 @@ export const Footer = () => {
           </Button>
         </nav>
       </div>
-<div className={S.politica}>
-<Link href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" color="inherit"
-variant="body2">Politica de privacidade</Link>
-</div>
-
-</div>
+      <div className={S.politica}></div>
+    </div>
   );
 };

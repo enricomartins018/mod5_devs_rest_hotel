@@ -5,9 +5,9 @@ import { api } from "../../services/api";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import x_voltar from "../../assets/x_voltar.svg";
+import Separator from "../../assets/separator.svg";
 
 const FormFacaSuaReserva = () => {
-  // const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const [dadosFormReserva, setDadosReserva] = useState({
     id_Hospede: localStorage.getItem("id_Hospede"),
@@ -33,10 +33,11 @@ const FormFacaSuaReserva = () => {
     try {
       api.post("/reservas", dadosFormReserva).then((response) => {
         console.log(response);
-        if (response.data.error) {
-          localStorage.setItem("id_Hospede", response.data.hospede.id);
-          alert("Reserva inserida concluído com sucesso");
-          navigate("/login");
+        if (!response.data.erro) {
+          alert("Reserva inserida com sucesso");
+          navigate("/suasreservas");
+        } else {
+          alert("Reserva não realizada");
         }
       });
     } catch (e) {
@@ -50,12 +51,13 @@ const FormFacaSuaReserva = () => {
       <form className={S.form}>
         <div className={S.selectDate}>
           <div>
-            <h1 className={S.titleForm}>Selecione suas datas</h1>
+            <img className={S.separator} src={Separator}></img>
+            <h1 className={S.titlesForms}>Selecione suas datas</h1>
           </div>
           <div className={S.containerDatas}>
             <div className={S.dataEntrada}>
               <label>
-                <h4>Check-In</h4>
+                <h4 className={S.titleDate}>Check-In</h4>
               </label>
               <input
                 className={S.inputPattern}
@@ -68,7 +70,7 @@ const FormFacaSuaReserva = () => {
             </div>
             <div className={S.dataSaida}>
               <label>
-                <h4>Check-Out</h4>
+                <h4 className={S.titleDate}>Check-Out</h4>
               </label>
               <input
                 className={S.inputPattern}
@@ -80,6 +82,7 @@ const FormFacaSuaReserva = () => {
               />
             </div>
           </div>
+          <img className={S.separator} src={Separator}></img>
         </div>
         <img className={S.logo} src={logo} />
         <div className={S.containerSelectPattern}>
@@ -93,7 +96,9 @@ const FormFacaSuaReserva = () => {
             value={dadosFormReserva.quarto}
             onChange={(e) => handleChange(e, "quarto")}
           >
-
+            <option className={S.optionPattern} value="">
+              Selecione a quantidade de Quartos:
+            </option>
             <option className={S.optionPattern} value="1">
               1 Quarto
             </option>
@@ -115,6 +120,9 @@ const FormFacaSuaReserva = () => {
             value={dadosFormReserva.quantLeitos}
             onChange={(e) => handleChange(e, "quantLeitos")}
           >
+            <option className={S.optionPattern} value="">
+              Selecione a quantidade de Leitos:
+            </option>
             <option className={S.optionPattern} value="1">
               1 Leito
             </option>
@@ -136,6 +144,9 @@ const FormFacaSuaReserva = () => {
             value={dadosFormReserva.quantAdultos}
             onChange={(e) => handleChange(e, "quantAdultos")}
           >
+            <option className={S.optionPattern} value="">
+              Selecione a quantidade de Adultos:
+            </option>
             <option className={S.optionPattern} value="1">
               1 Adulto
             </option>
@@ -157,7 +168,13 @@ const FormFacaSuaReserva = () => {
             value={dadosFormReserva.quantCrian}
             onChange={(e) => handleChange(e, "quantCrian")}
           >
+            <option className={S.optionPattern} value="">
+              Selecione
+            </option>
             <option className={S.optionPattern} value="0">
+              Selecione a quantidade de Crianças:
+            </option>
+            <option className={S.optionPattern} value="">
               0 Criança
             </option>
             <option className={S.optionPattern} value="1">
@@ -181,7 +198,7 @@ const FormFacaSuaReserva = () => {
               className={S.containerCodCorporativo}
               type="text"
               name="number"
-              placeholder="Código Corporativo/Promo"
+              placeholder="Código Corporativo / Promo"
             />
             <input
               className={S.containerCodGrupo}

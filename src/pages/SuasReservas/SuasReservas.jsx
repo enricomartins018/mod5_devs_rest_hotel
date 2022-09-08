@@ -4,7 +4,8 @@ import { api } from "../../services/api";
 import S from "./SuasReservas.module.css";
 import video from "../../assets/video.mp4";
 import foto from "../../assets/logo.svg";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Header } from "../../components/Header/Header";
 
 const SuasReservas = () => {
   const [reservas, setReservas] = useState();
@@ -42,6 +43,7 @@ const SuasReservas = () => {
 
   return (
     <main>
+      <Header />
       <section>
         <div className={S.loginPage}>
           <div className={S.overlay}></div>
@@ -66,6 +68,7 @@ const SuasReservas = () => {
                     dataSaida={item.dataSaida}
                     key={index}
                   ></Reservas>
+                  <Link to="/">Voltar para a Home</Link>
                 </div>
               );
             })}

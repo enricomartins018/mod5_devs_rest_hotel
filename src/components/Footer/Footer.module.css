@@ -10,23 +10,23 @@
     width: 6%;
     height: 6%;
     margin-top: 1px;
-    
+
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: right;
 }
 
 .containerTexto {
     width: 70%;
-    margin-left:15%;
+    margin-left: 15%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-family: 10px;
-    
+
 }
 
 .contato {
@@ -52,13 +52,13 @@
     margin-left: 10px;
 }
 
-.politica{
+/* .politica{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.primeiraDivisao{
+} */
+.primeiraDivisao {
     display: flex;
     flex-direction: row;
 }
