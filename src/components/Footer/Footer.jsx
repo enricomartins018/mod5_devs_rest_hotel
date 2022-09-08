@@ -63,7 +63,7 @@ export const Footer = () => {
             <AiOutlineYoutube size={20} className={S.icons} />
           </Button>
           <Button href="#text-buttons">
-            <AiOutlineLinkedin size={20} className={S.icons} />
+          <AiOutlineLinkedin size={20} className={S.icons} />
           </Button>
           <Button href="#text-buttons">
             <AiOutlineInstagram size={20} className={S.icons} />
@@ -71,9 +71,8 @@ export const Footer = () => {
           <Button href="#text-buttons">
             <AiOutlineWhatsApp size={20} className={S.icons} />
           </Button>
-        </nav>
+         </nav>
       </div>
-      <div className={S.politica}></div>
     </div>
   );
 };

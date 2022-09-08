@@ -15,7 +15,7 @@ export const FormNewsLetter = () => {
       {errors.Email && <p>Digite um e-mail válido</p>}
       <div className={S.button}>
       <Button onClick={handleSubmit(onSubmit)} style={{
-        backgroundColor: "#ffff",color:"#000000",}}variant="contained">Enviar</Button>
+        backgroundColor: "#437a37",color:"#fff",}}variant="contained">Enviar</Button>
       </div>
       {/*<input type="submit" value="Enviar" />*/}
      </form>
