@@ -83,15 +83,24 @@
   height: 550px;
 }
 
-.slider .h3 {
+.pTitleHomeQuarto {
+  align-items: center;
   text-align: center;
+}
+
+.slider .pCarrossel {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   margin: 30px;
   font-size: 1.0625rem;
-  text-align: center;
   color: #373737;
   line-height: 2rem;
   letter-spacing: .05em;
+  line-height: 1.5rem;
+  color: #373737;
 }
+
 
 .img {
 
