@@ -4,27 +4,21 @@
 
 .cardSpa {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1), 0px 10px 40px hwb(0 35% 45% / 0.06);
-
     display: flex;
     flex-direction: row;
 }
 
 .pTitleSpa {
     text-align: center;
-    /* align-items: flex-start; */
     justify-content: center;
-    /* margin: 30px; */
     font-size: 15px;
     color: #373737;
-    /* line-height: 2rem;
-    line-height: 1.5rem; */
     color: #373737;
     margin-top: 10px;
 }
 
 .bodySpa {
     width: 500px;
-
 }
 
 

@@ -1,5 +1,4 @@
 import React from "react";
-import foto from "../../assets/quarto.jpg";
 import side from "../../assets/separator.jpeg";
 import S from "../Card/Card.module.css";
 

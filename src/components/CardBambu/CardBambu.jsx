@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  MDBCard,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardBody,
-  MDBCardImage,
-  MDBRow,
-  MDBCol,
-} from "mdb-react-ui-kit";
+import { MDBCard, MDBCardImage } from "mdb-react-ui-kit";
 import S from "./CardBambu.module.css";
 import bambu from "../../assets/image/bambu.jpeg";
 

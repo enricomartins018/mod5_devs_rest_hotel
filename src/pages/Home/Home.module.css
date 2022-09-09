@@ -9,7 +9,6 @@
 
 .sideNav {
   grid-area: sidenav;
-  /* position: fixed; */
   margin-left: 0;
   margin-top: 100px;
   height: 80vh;
@@ -42,30 +41,31 @@
 }
 
 .container {
-  grid-template-areas: "header header header" "sidenav ",
-    "content " "footer footer ";
+  grid-template-areas: "header header header""sidenav ",
+    "content ""footer footer ";
 }
 
 .container {
   display: grid;
   grid-template-columns: 300px auto 0px;
   grid-template-rows: 100px 100% 90px;
-  grid-template-areas: "header header" "sidenav content" "footer footer";
+  grid-template-areas: "header header""sidenav content""footer footer";
 }
 
 @media (max-width: 1024px) {
 
-    .container {
-        grid-template-areas: "header" "sidenav content" "footer";
-        
-    }
+  .container {
+    grid-template-areas: "header""sidenav content""footer";
+
+  }
+
   .container {
     display: grid;
     grid-template-columns: 0px auto 0px;
     grid-template-rows: 60px 90% 175px;
-}
+  }
 
-   .content {
+  .content {
     width: 95vw;
   }
 
@@ -81,17 +81,18 @@
 
 @media (max-width: 768px) {
 
-    .container {
-        grid-template-areas: "header" "sidenav content" "footer";
-        
-    }
+  .container {
+    grid-template-areas: "header""sidenav content""footer";
+
+  }
+
   .container {
     display: grid;
     grid-template-columns: 0px auto 0px;
     grid-template-rows: 60px 90% 175px;
-}
+  }
 
-   .content {
+  .content {
     width: 100%;
   }
 
