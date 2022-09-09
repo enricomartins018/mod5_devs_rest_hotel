@@ -1,6 +1,6 @@
 # Dev´s Rest Hotel
 
-<p align="center">
+<p align="center" width="100%>
 <img src="./src/assets/logo readme.svg"/>
 </p>
 
