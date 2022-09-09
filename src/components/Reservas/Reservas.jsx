@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import S from "./Reservas.module.css";
 import { api } from "../../services/api";
 import { useNavigate } from "react-router-dom";
-import Popup from "reactjs-popup";
-import foto from "../../assets/quarto.jpg";
 import ModalDelete from "../ModalDelete/ModalDelete";
 
 const Reservas = ({
@@ -16,8 +14,6 @@ const Reservas = ({
   dataEntrada,
   dataSaida,
 }) => {
-  // const [open, setOpen] = useState(false);
-  // const closeModal = () => setOpen(false);
   const navigate = useNavigate();
   const [openDelete, setOpenDelete] = useState(false);
 

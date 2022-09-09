@@ -90,8 +90,6 @@ const FormLogin = () => {
           <input
             className={S.input}
             type="password"
-            // onChange={(e) => setPassword(e.target.value)}
-            // colocar botao para visualizar a senha, se der tempo
             value={dadosForm.senha}
             onChange={(e) => handleChangePassword(e, "senha")}
           />

@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  MDBCard,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardBody,
-  MDBCardImage,
-  MDBRow,
-  MDBCol,
-} from "mdb-react-ui-kit";
+import { MDBCard, MDBCardImage } from "mdb-react-ui-kit";
 import S from "./CardSpa.module.css";
 import pedras from "../../assets/image/pedras.jpg";
 

@@ -2,11 +2,9 @@ import React from "react";
 import { useState } from "react";
 import S from "./FormCadastroHospede.module.css";
 import { api } from "../../services/api";
-import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import TextField from "@mui/material/TextField";
 import { useNavigate } from "react-router-dom";
-import { IMaskInput } from "react-imask";
 import PasswordChecklist from "react-password-checklist";
 import validator from "validator";
 

@@ -80,7 +80,6 @@
     text-align: center;
     align-items: center;
     margin-left: 140px;
-    /* color: #373737; */
     width: 100px;
     height: 35px;
     border-radius: 3px;
@@ -111,7 +110,6 @@
         height: 100%;
         max-width: 100%;
         padding: auto;
-        /* gap: 80px; */
         margin-left: 40px;
     }
 
@@ -166,7 +164,6 @@
         text-align: center;
         align-items: center;
         margin-left: 100px;
-        /* color: #373737; */
         width: 100px;
         height: 35px;
         border-radius: 3px;
@@ -218,7 +215,6 @@
         height: 100%;
         max-width: 100%;
         padding: auto;
-        /* gap: 80px; */
         margin-left: 40px;
     }
 
@@ -231,7 +227,6 @@
         align-items: center;
         text-align: center;
         font-size: 10px;
-
     }
 
     .cardTitleQ {
@@ -241,7 +236,6 @@
         margin-bottom: 20px;
         color: #373737;
         font-size: 10px;
-
     }
 
     .cardTextQ {
@@ -258,7 +252,6 @@
         text-align: center;
         color: #373737;
         font-size: 10px;
-
     }
 
     .cardImgTop {
@@ -273,7 +266,6 @@
         text-align: center;
         align-items: center;
         margin-left: 100px;
-        /* color: #373737; */
         width: 100px;
         height: 35px;
         border-radius: 3px;
@@ -325,7 +317,6 @@
         height: 100%;
         max-width: 100%;
         padding: auto;
-        /* gap: 80px; */
         margin-left: 40px;
     }
 
@@ -338,7 +329,6 @@
         align-items: center;
         text-align: center;
         font-size: 10px;
-
     }
 
     .cardTitleQ {
@@ -348,7 +338,6 @@
         margin-bottom: 20px;
         color: #373737;
         font-size: 10px;
-
     }
 
     .cardTextQ {
@@ -365,7 +354,6 @@
         text-align: center;
         color: #373737;
         font-size: 10px;
-
     }
 
     .cardImgTop {
@@ -380,7 +368,6 @@
         text-align: center;
         align-items: center;
         margin-left: 100px;
-        /* color: #373737; */
         width: 100px;
         height: 35px;
         border-radius: 3px;
@@ -433,7 +420,6 @@
         height: 100%;
         max-width: 100%;
         padding: auto;
-        /* gap: 80px; */
         margin-left: 40px;
     }
 
@@ -456,8 +442,6 @@
         margin-bottom: 20px;
         color: #373737;
         font-size: 15px;
-
-
     }
 
     .cardTextQ {
@@ -474,8 +458,6 @@
         text-align: center;
         color: #373737;
         font-size: 15px;
-
-
     }
 
     .cardImgTop {
@@ -490,7 +472,6 @@
         text-align: center;
         align-items: center;
         margin-left: 100px;
-        /* color: #373737; */
         width: 100px;
         height: 35px;
         border-radius: 3px;
@@ -543,7 +524,6 @@
         height: 100%;
         max-width: 100%;
         padding: auto;
-        /* gap: 80px; */
         margin-left: 40px;
     }
 
@@ -566,8 +546,6 @@
         margin-bottom: 20px;
         color: #373737;
         font-size: 15px;
-
-
     }
 
     .cardTextQ {
@@ -584,8 +562,6 @@
         text-align: center;
         color: #373737;
         font-size: 15px;
-
-
     }
 
     .cardImgTop {
@@ -600,7 +576,6 @@
         text-align: center;
         align-items: center;
         margin-left: 100px;
-        /* color: #373737; */
         width: 100px;
         height: 35px;
         border-radius: 3px;

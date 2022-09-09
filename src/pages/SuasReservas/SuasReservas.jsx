@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Reservas from "../../components/Reservas/Reservas";
-import { api } from "../../services/api";
 import S from "./SuasReservas.module.css";
 import video from "../../assets/video.mp4";
 import foto from "../../assets/logo.svg";
@@ -34,7 +33,6 @@ const SuasReservas = () => {
       </main>
     );
   }
-  // localStorage.clear();
 
   return (
     <main>
