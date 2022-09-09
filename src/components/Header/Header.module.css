@@ -233,7 +233,7 @@
 
 @media (max-width: 321px) {
   .header {
-    width: 318vw;
+    width: 100%;
     height: 68vh;
   }
 }
