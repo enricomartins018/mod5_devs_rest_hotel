@@ -8,8 +8,9 @@
 
 ### Tecnologias Utilizadas
 
-<img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" /><br>
-<img alt="Javascript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /><br>
+<img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+<img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+<img alt="Javascript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
 <img alt="MaterialUi" src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white" />
 
 </div>
@@ -33,6 +34,7 @@
 Desenvolver uma aplicação, estruturado com react e que consuma a Api.<br>
 Definimos que vamos utilizar as entidades reservas e hóspedes da Api Hotel, e implementamos utilizando o **CRUD**.
 Uma aplicação que simula um site de resevas de um hotel, onde você gera um novo cadastro, consegue consultar seus dados, excluir e atualizar.
+Toda a temática do projeto foi em torno de um hotel de luxo com cores que remetessem à brasilidades.
 
 **Curso:** Web Dev FullStack <br> 
 **Instituição:** [Resilia Educação](https://www.resilia.com.br/)  <br>
@@ -62,22 +64,22 @@ Link GitHub: https://github.com/rosana-ctrl/projeto_final_m4
 Abra o terminal/Powershell e rode os comandos abaixo:
 
 Clonando o repositório:
-```
+```bash
 git clone https://github.com/enricomartins018/mod5_devs_rest_hotel.git
 ```
 
 Entrando na pasta:
-```
+```bash
 cd mod5_devs_rest_hotel
 ```
 
 Instalando os pacotes:
-```
+```bash
 npm install
 ```
 
 Rodando o projeto:
-```
+```bash
 npm run dev 
 ```
 
@@ -85,21 +87,22 @@ npm run dev
 
 ### PAGES
 
+### Home: /
+
+A página inicial do site possui informações sobre o hotel, alguns serviçoes disponíveis, acesso aos quartos disponíveis e acesso para realizar as reservas. Para realizar as reservas o usuário precisa realizar o login. Caso ele não possua, ele deverá realizar o cadastro previamente.
+
+### Quartos: /quartos
+
+Essa página possui todos os modelos e informaçoes das acomodações disponíveis. nela é possível ser direcionada para a página de reservas.
+
 ### CadastroHospede: /cadastro
 
 ● Operação do Crud: Create
 
 Formulário de Cadastro hóspede:
 
-Usuário vai preenche com as informações necessárias para ser feito o cadastro.
+O usuário irá preencher o formulário de cadastro com suas informações pessoais, como nome completo, data de nascimento, celular, gênero, email e senha.
 
-### FacaSuaReserva: /facasuareserva
-
-● Operação do Crud: Create
-
-Formulário de Cadastro Reservas:
-
-Usuário preenche com as informações necessário para ser feita sua reserva.
 
 ### Login:/login
 
@@ -107,23 +110,33 @@ Usuário preenche com as informações necessário para ser feita sua reserva.
 
 Formulário de Login:
 
-Usuário preenche com as informações necessário para ser feito um login.
+Usuário preenche com as informações de email e senha para logar no site e ter acessos para fazer, atualizar e deletar reservas.
+
+### FacaSuaReserva: /facasuareserva
+
+● Operação do Crud: Create
+
+Formulário de Cadastro Reservas:
+
+Usuário preenche com as informações de data, de checkin e checkout, quantidade de quartos, de leitos, de adultoe e crianças, para efetuar a reserva.
+
 
 ### SuasReservas: /suasreservas
 
 ● Operação do Crud: Read
 
-Usuário vai realizar a busca da sua reserva pelo id.
+Usuário vai realizar a busca da sua reserva pelo seu id. É o local para ser direcionado a atualizar ou deletar a reserva existente.
 
 ● Operação do Crud: Delete
 
-Usuário vai deletar sua reserva pelo id.
+Usuário vai deletar sua reserva pelo id da reserva.
 
 ### AtualizacaoReserva: /atualizareserva
 
 ● Operação do Crud: Update
 
-Usuário vai realizar a atualização da sua reserva pelo id.
+Usuário vai realizar a atualização da sua reserva pelo id da reserva.
+
 # Squad 
 
 <table>
