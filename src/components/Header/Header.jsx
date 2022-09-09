@@ -31,8 +31,10 @@ export const Header = () => {
     <header className={S.header}>
       <img className={S.logoHeader} src={logoHeader} alt="" />
       <nav className={S.nav}>
+
         <Link className={S.a} to="/">Home</Link>
         <Link className={S.a} to="/quartos">Acomodações</Link>
+
         <Link to="/facasuareserva" className={S.a} href="#">
           Reservar
         </Link>

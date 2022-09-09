@@ -3,17 +3,16 @@
     background: linear-gradient(0deg, #b5dea4, #8fbd805b, rgba(255, 255, 255, 0.363));
     position: absolute;
     z-index: 1;
-    right: 0;
     border-radius: 0.5em;
-    width: 65%;
+    width: 30%;
     height: 80%;
+    margin-top: -270px;
     opacity: 9;
     font-weight: bold;
     gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 100px; */
 }
 
 .input1 {
@@ -56,7 +55,44 @@
 
 @media (max-width: 375px) {
     .formCadastroHospede {
-        position: unset;
+        position: relative;
         width: 100%;
+        display: flex;
+        margin-right: 500px;
+    }
+
+    .h4TitleCasdastro {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .formCadastroHospede {
+        position: relative;
+        width: 100%;
+        display: flex;
+        margin-right: 500px;
+    }
+
+    .h4TitleCasdastro {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 820px) {
+    .formCadastroHospede {
+        position: relative;
+        width: 100%;
+        display: flex;
+        margin-right: 500px;
+    }
+
+    .h4TitleCasdastro {
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
     }
 }
