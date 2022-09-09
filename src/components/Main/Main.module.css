@@ -12,7 +12,7 @@
 @media(max-width:1024px) {
     .main {
         width: 60%;
-        margin-left: 260px;
+        margin-left: 370px;
     }
 }
 
@@ -20,6 +20,17 @@
 @media(max-width:768px) {
     .main {
         width: 50%;
-        /* margin-left: 260px; */
+        margin-top: 260px;
+    }
+}
+@media(max-width:426px) {
+    .main {
+        width: 33%;
+        margin-top: 50px;
+    }
+}
+@media(max-width:321px) {
+    .main {
+        margin-bottom: 50px;
     }
 }
