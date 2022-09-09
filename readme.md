@@ -28,7 +28,6 @@
   <a href="#Implatação-da-aplicação">Implatação da aplicação  |</a>&nbsp;&nbsp;
 </div>
 
-
 # Projeto
 
 Desenvolver uma aplicação, estruturado com react e que consuma a Api desenvolvida no módulo 4.<br>
@@ -36,24 +35,27 @@ As entidades escolhidas foram, login, reservas e hóspedes da Api Hotel, elas fo
 Esta é uma aplicação que simula um site de resevas de um hotel, onde você gera um novo cadastro, consegue consultar seus dados, excluir e atualizar.
 Toda a temática do projeto foi em torno de um hotel de luxo com cores que remetessem à brasilidade.
 
-**Curso:** Web Dev FullStack <br> 
-**Instituição:** [Resilia Educação](https://www.resilia.com.br/)  <br>
+**Curso:** Web Dev FullStack <br>
+**Instituição:** [Resilia Educação](https://www.resilia.com.br/) <br>
 **Projeto:** Final - Módulo 5 <br>
 
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="" title="" src="./assets/image/readme.mp4">
+</p>
 
-
-
-# Api utilizada 
+# Api utilizada
 
 Link GitHub: https://github.com/rosana-ctrl/projeto_final_m4.
 Link Heroku Reservas: https://hotel-api-s3.herokuapp.com/reservas
 Link Heroku Cadastro hóspede: https://hotel-api-s3.herokuapp.com/hospede
 
 # Pré-requisitos
+
 `Node.js` <sup> v.16.15.1 </sup><br>
 `NPM` <sup>v.8.11.0 </sup><br>
 
 # Packages
+
 `react`<br>
 `react-icons `<br>
 `@mui/material`<br>
@@ -65,23 +67,27 @@ Link Heroku Cadastro hóspede: https://hotel-api-s3.herokuapp.com/hospede
 Abra o terminal/Powershell e rode os comandos abaixo:
 
 Clonando o repositório:
+
 ```bash
 git clone https://github.com/enricomartins018/mod5_devs_rest_hotel.git
 ```
 
 Entrando na pasta:
+
 ```bash
 cd mod5_devs_rest_hotel
 ```
 
 Instalando os pacotes:
+
 ```bash
 npm install
 ```
 
 Rodando o projeto:
+
 ```bash
-npm run dev 
+npm run dev
 ```
 
 # Implatação da aplicação:
@@ -104,7 +110,6 @@ Formulário de Cadastro hóspede:
 
 O usuário irá preencher o formulário de cadastro com suas informações pessoais, como nome completo, data de nascimento, celular, gênero, email e senha.
 
-
 ### Login:/login
 
 ● Operação do Crud: Create
@@ -120,7 +125,6 @@ Usuário preenche com as informações de email e senha para logar no site e ter
 Formulário de Cadastro Reservas:
 
 Usuário preenche com as informações de data, de checkin e checkout, quantidade de quartos, de leitos, de adultoe e crianças, para efetuar a reserva.
-
 
 ### SuasReservas: /suasreservas
 
@@ -138,7 +142,7 @@ Usuário vai deletar sua reserva pelo id da reserva.
 
 Usuário vai realizar a atualização da sua reserva pelo id da reserva.
 
-# Squad 
+# Squad
 
 <table>
   <tr>
