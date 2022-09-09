@@ -45,8 +45,8 @@ Toda a temática do projeto foi em torno de um hotel de luxo com cores que remet
 
 # Api utilizada
 
-Link GitHub: https://github.com/rosana-ctrl/projeto_final_m4.
-Link Heroku Reservas: https://hotel-api-s3.herokuapp.com/reservas
+Link GitHub: https://github.com/rosana-ctrl/projeto_final_m4.</br>
+Link Heroku Reservas: https://hotel-api-s3.herokuapp.com/reservas</br>
 Link Heroku Cadastro hóspede: https://hotel-api-s3.herokuapp.com/hospede
 
 # Pré-requisitos
