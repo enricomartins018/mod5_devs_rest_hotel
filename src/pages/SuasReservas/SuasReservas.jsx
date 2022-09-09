@@ -6,31 +6,26 @@ import video from "../../assets/video.mp4";
 import foto from "../../assets/logo.svg";
 import { Link, useNavigate } from "react-router-dom";
 import { Header } from "../../components/Header/Header";
+import { getReservas } from "/src/services/api.js";
 
 const SuasReservas = () => {
   const [reservas, setReservas] = useState();
   const navigate = useNavigate();
 
-  useEffect(() => {
+  async function handleRequest() {
     if (!localStorage.getItem("id_Hospede")) {
       navigate("/login");
     }
+    setReservas(await getReservas());
+  }
 
-    try {
-      api
-        .get("/reservas/hospede/" + localStorage.getItem("id_Hospede"))
-        .then((response) => {
-          console.log(response);
-
-          if (response.data.mensage !== "undefined") {
-            setReservas(response.data.mensage);
-          }
-          console.log(reservas);
-        });
-    } catch (e) {
-      console.log(e);
-    }
+  useEffect(() => {
+    handleRequest();
   }, []);
+
+  useEffect(() => {
+    console.log(reservas);
+  }, [reservas]);
 
   if (!reservas) {
     return (
@@ -54,24 +49,25 @@ const SuasReservas = () => {
             </div>
             <div className={S.cardTitle}>Suas reservas</div>
 
-            {reservas.map((item, index) => {
-              return (
-                <div className={S.cardBody}>
-                  <Reservas
-                    id={item.id}
-                    id_Hospede={item.id_Hospede}
-                    quarto={item.quarto}
-                    quantLeitos={item.quantLeitos}
-                    quantAdultos={item.quantAdultos}
-                    quantCrian={item.quantCrian}
-                    dataEntrada={item.dataEntrada}
-                    dataSaida={item.dataSaida}
-                    key={index}
-                  ></Reservas>
-                  <Link to="/">Voltar para a Home</Link>
-                </div>
-              );
-            })}
+            {reservas &&
+              reservas.map((item, index) => {
+                return (
+                  <div className={S.cardBody}>
+                    <Reservas
+                      id={item.id}
+                      id_Hospede={item.id_Hospede}
+                      quarto={item.quarto}
+                      quantLeitos={item.quantLeitos}
+                      quantAdultos={item.quantAdultos}
+                      quantCrian={item.quantCrian}
+                      dataEntrada={item.dataEntrada}
+                      dataSaida={item.dataSaida}
+                      key={index}
+                    ></Reservas>
+                    <Link to="/">Voltar para a Home</Link>
+                  </div>
+                );
+              })}
           </div>
         </div>
       </section>
