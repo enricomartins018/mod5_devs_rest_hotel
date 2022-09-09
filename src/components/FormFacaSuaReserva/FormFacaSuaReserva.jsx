@@ -166,9 +166,6 @@ const FormFacaSuaReserva = () => {
             value={dadosFormReserva.quantCrian}
             onChange={(e) => handleChange(e, "quantCrian")}
           >
-            <option className={S.optionPattern} value="">
-              Selecione
-            </option>
             <option className={S.optionPattern} value="0">
               Selecione a quantidade de Crianças:
             </option>
