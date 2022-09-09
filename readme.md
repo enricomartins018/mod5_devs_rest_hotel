@@ -1,7 +1,7 @@
 # Dev´s Rest Hotel
 
 <p align="center" width="100%">
-<img src="./src/assets/logo readme.svg"/>
+<img src="https://user-images.githubusercontent.com/83434769/189400894-f27d8ca6-adf2-49f3-b422-c27443eb3b16.mp4"/>
 </p>
 
 <div align="center">
@@ -40,7 +40,7 @@ Toda a temática do projeto foi em torno de um hotel de luxo com cores que remet
 **Projeto:** Final - Módulo 5 <br>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <video alt="" title="" src="./src/assets/image/readme.mp4">
+  <img alt="" title="" src="./src/assets/image/readme.mp4">
 </p>
 
 # Api utilizada
@@ -87,7 +87,7 @@ npm install
 Rodando o projeto:
 
 ```bash
-npm run dev
+npm start
 ```
 
 # Implatação da aplicação:
@@ -96,11 +96,11 @@ npm run dev
 
 ### Home: /
 
-A página inicial do site possui informações sobre o hotel, alguns serviçoes disponíveis, acesso aos quartos disponíveis e acesso para realizar as reservas. Para realizar as reservas o usuário precisa realizar o login. Caso ele não possua, ele deverá realizar o cadastro previamente.
+A página inicial do site possui informações sobre o hotel, alguns serviços disponíveis, acesso aos quartos disponíveis e acesso para realizar as reservas. Para realizar as reservas o usuário precisa realizar o login. Caso ele não possua, ele deverá realizar o cadastro previamente.
 
 ### Quartos: /quartos
 
-Essa página possui todos os modelos e informaçoes das acomodações disponíveis. nela é possível ser direcionada para a página de reservas.
+Essa página possui todos os modelos e informações das acomodações disponíveis. Nela é possível ser direcionado para a página de reservas.
 
 ### CadastroHospede: /cadastro
 
@@ -124,7 +124,7 @@ Usuário preenche com as informações de email e senha para logar no site e ter
 
 Formulário de Cadastro Reservas:
 
-Usuário preenche com as informações de data, de checkin e checkout, quantidade de quartos, de leitos, de adultoe e crianças, para efetuar a reserva.
+Usuário preenche com as informações de data, de checkin e checkout, quantidade de quartos, de leitos, de adultos e crianças, para efetuar a reserva.
 
 ### SuasReservas: /suasreservas
 
