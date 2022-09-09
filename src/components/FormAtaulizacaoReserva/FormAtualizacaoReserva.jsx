@@ -7,6 +7,8 @@ import S from "./FormAtualizacaoReserva.module.css";
 import { Link } from "react-router-dom";
 import x_voltar from "../../assets/x_voltar.svg";
 import { api } from "../../services/api";
+import Separator from "../../assets/separator.svg";
+import logo from "../../assets/logo.svg";
 
 const FormAtualizacaoReserva = ({
   id,
@@ -55,15 +57,19 @@ const FormAtualizacaoReserva = ({
 
   return (
     <section className={S.section}>
+      <div className={S.containerVoltar}>
+        <Link to="/">
+          <img className={S.x_voltar} src={x_voltar} />
+        </Link>
+      </div>
       <form className={S.form}>
         <div className={S.selectDate}>
-          <div>
-            <h1 className={S.titleForm}>Selecione suas datas</h1>
-          </div>
+          <img className={S.separator} src={Separator}></img>
+          <h1 className={S.titlesForms}>Selecione suas datas</h1>
           <div className={S.containerDatas}>
             <div className={S.dataEntrada}>
               <label>
-                <h2>Chegada</h2>
+                <h4 className={S.titleDate}>Check-In</h4>
               </label>
               <input
                 className={S.inputPattern}
@@ -76,7 +82,7 @@ const FormAtualizacaoReserva = ({
             </div>
             <div className={S.dataSaida}>
               <label>
-                <h2>Partida</h2>
+                <h4 className={S.titleDate}>Check-Out</h4>
               </label>
               <input
                 className={S.inputPattern}
@@ -88,21 +94,17 @@ const FormAtualizacaoReserva = ({
               />
             </div>
           </div>
+          <img className={S.separator} src={Separator}></img>
         </div>
-        {/* <img className={S.logo} src={logo} /> */}
+        <img className={S.logo} src={logo} />
         <div className={S.containerSelectPattern}>
-          <div className={S.containerVoltar}>
-            <Link to="/">
-              <img className={S.x_voltar} src={x_voltar} />
-            </Link>
-          </div>
           <select
             className={S.selectPattern}
             value={dadosFormReserva.quarto}
             onChange={(e) => handleChange(e, "quarto")}
           >
             <option className={S.optionPattern} value="">
-              Selecione
+              Selecione a quantidade de Quartos:
             </option>
             <option className={S.optionPattern} value="1">
               1 Quarto
@@ -126,7 +128,7 @@ const FormAtualizacaoReserva = ({
             onChange={(e) => handleChange(e, "quantLeitos")}
           >
             <option className={S.optionPattern} value="">
-              Selecione
+              Selecione a quantidade de Leitos:
             </option>
             <option className={S.optionPattern} value="1">
               1 Leito
@@ -150,7 +152,7 @@ const FormAtualizacaoReserva = ({
             onChange={(e) => handleChange(e, "quantAdultos")}
           >
             <option className={S.optionPattern} value="">
-              Selecione
+              Selecione a quantidade de Adultos:
             </option>
             <option className={S.optionPattern} value="1">
               1 Adulto
@@ -173,8 +175,11 @@ const FormAtualizacaoReserva = ({
             value={dadosFormReserva.quantCrian}
             onChange={(e) => handleChange(e, "quantCrian")}
           >
-            <option className={S.optionPattern} value="0">
+            <option className={S.optionPattern} value="">
               Selecione
+            </option>
+            <option className={S.optionPattern} value="0">
+              Selecione a quantidade de Crianças:
             </option>
             <option className={S.optionPattern} value="1">
               1 Criança
@@ -196,13 +201,13 @@ const FormAtualizacaoReserva = ({
             <input
               className={S.containerCodCorporativo}
               type="text"
-              name="text"
+              name="number"
               placeholder="Código Corporativo/Promo"
             />
             <input
               className={S.containerCodGrupo}
               type="text"
-              name="text"
+              name="number"
               placeholder="Código De Grupo"
             />
           </div>
