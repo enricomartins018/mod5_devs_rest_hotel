@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import S from "./FormFacaSuaReserva.module.css";
 import logo from "../../assets/logo.svg";
 import { api } from "../../services/api";
@@ -18,6 +18,12 @@ const FormFacaSuaReserva = () => {
     dataEntrada: 0,
     dataSaida: 0,
   });
+
+  useEffect(() => {
+    if (!localStorage.getItem("id_Hospede")) {
+      navigate("/login");
+    }
+  }, []);
 
   function handleChange(e, nomeDaChave) {
     setDadosReserva({
