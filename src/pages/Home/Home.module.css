@@ -12,7 +12,7 @@
   /* position: fixed; */
   margin-left: 0;
   margin-top: 100px;
-  height: 60vh;
+  height: 80vh;
   width: 300px;
   padding-top: 20px;
   text-align: center;
@@ -72,6 +72,10 @@
   .header {
     width: 100%;
   }
+
+  .sideNav {
+    height: 120vh;
+  }
 }
 
 
@@ -89,5 +93,9 @@
 
    .content {
     width: 100%;
+  }
+
+  .sideNav {
+    margin-top: 270px;
   }
 }

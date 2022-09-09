@@ -45,7 +45,11 @@
 
 @media(max-width:1024px) {
     .section {
-        width: 50%;
+        width: 100%;
+    }
+
+    .imageContainerSeparator {
+        width: 80%;
     }
 }
 
@@ -54,6 +58,23 @@
 
     .section {
         width: 75%;
+    }
+
+    .imageContainerSeparator {
+        width: 100%;
+        margin-left: -90px;
+    }
+
+}
+@media(max-width:426px) {
+
+    .section {
+        width: 100%;
+    }
+
+    .imageContainerSeparator {
+        width: 100%;
+        margin-left: -90px;
     }
 
 }
