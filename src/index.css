@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* height: 100%; */
+ 
 }
 
 body {
@@ -50,3 +50,4 @@ body {
     transform: rotate(360deg);
   }
 }
+
