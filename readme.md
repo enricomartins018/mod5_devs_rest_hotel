@@ -31,10 +31,10 @@
 
 # Projeto
 
-Desenvolver uma aplicação, estruturado com react e que consuma a Api.<br>
-Definimos que vamos utilizar as entidades reservas e hóspedes da Api Hotel, e implementamos utilizando o **CRUD**.
-Uma aplicação que simula um site de resevas de um hotel, onde você gera um novo cadastro, consegue consultar seus dados, excluir e atualizar.
-Toda a temática do projeto foi em torno de um hotel de luxo com cores que remetessem à brasilidades.
+Desenvolver uma aplicação, estruturado com react e que consuma a Api desenvolvida no módulo 4.<br>
+As entidades escolhidas foram, login, reservas e hóspedes da Api Hotel, elas foram implementadas com todas as operaçoes **CRUD**.
+Esta é uma aplicação que simula um site de resevas de um hotel, onde você gera um novo cadastro, consegue consultar seus dados, excluir e atualizar.
+Toda a temática do projeto foi em torno de um hotel de luxo com cores que remetessem à brasilidade.
 
 **Curso:** Web Dev FullStack <br> 
 **Instituição:** [Resilia Educação](https://www.resilia.com.br/)  <br>
@@ -45,8 +45,9 @@ Toda a temática do projeto foi em torno de um hotel de luxo com cores que remet
 
 # Api utilizada 
 
-Link GitHub: https://github.com/rosana-ctrl/projeto_final_m4
-
+Link GitHub: https://github.com/rosana-ctrl/projeto_final_m4.
+Link Heroku Reservas: https://hotel-api-s3.herokuapp.com/reservas
+Link Heroku Cadastro hóspede: https://hotel-api-s3.herokuapp.com/hospede
 
 # Pré-requisitos
 `Node.js` <sup> v.16.15.1 </sup><br>
