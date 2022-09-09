@@ -40,51 +40,6 @@ Uma aplicação que simula um site de resevas de um hotel, onde você gera um no
 
 
 
-# Squad 
-
-<table>
-  <tr>
-    <td align="center"  width="180px;"> <br>
-      <img src="https://avatars.githubusercontent.com/u/93949826?v=4" width="80px;">
-       <h4>Igor Diego</h4> 
-       <a href="https://github.com/igor-diego">
-          <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" width="30px;">
-       </a>
-       <a href="https://www.linkedin.com/in/igord-reis/">
-          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="28px;">
-       </a>
-    </td>   
-    <td align="center" width="180px;"> <br>
-    <img src="https://avatars.githubusercontent.com/u/102865744?v=4" width="80px;">
-      <h4>Élica Dias</h4>
-       <a href="https://github.com/elicadv">
-          <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" width="30px;">
-       </a>
-       <a href="https://www.linkedin.com/in/%C3%A9lica-dias-a4989116b/">
-               <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="28px;">
-       </a>
-    </td>   
-    <td align="center" width="180px;">  <br>
-      <img src="https://avatars.githubusercontent.com/u/102622514?v=4" width="80px;">
-      <h4>Enrico Martins</h4>
-      <a href="https://github.com/enricomartins018">
-         <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" width="30px;">
-      </a>
-      <a href="https://www.linkedin.com/in/enricomartins018/">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="28px;">
-      </a>
-    </td>   
-    <td align="center" width="180px;"> <br>
-    <img src="https://avatars.githubusercontent.com/u/83434769?v=4" width="80px;">
-        <h4>Rosana Ribeiro</h4>
-          <a href="https://github.com/rosana-ctrl">
-      <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" width="30px;">
-      </a>
-      <a href="https://www.linkedin.com/in/rosana-ribeiro-39364a35/">
-               <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="28px;">
-      </a>
-    </tr>
-    </table>
 
 # Api utilizada 
 
@@ -169,3 +124,48 @@ Usuário vai deletar sua reserva pelo id.
 ● Operação do Crud: Update
 
 Usuário vai realizar a atualização da sua reserva pelo id.
+# Squad 
+
+<table>
+  <tr>
+    <td align="center"  width="180px;"> <br>
+      <img src="https://avatars.githubusercontent.com/u/93949826?v=4" width="80px;">
+       <h4>Igor Diego</h4> 
+       <a href="https://github.com/igor-diego">
+          <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" width="30px;">
+       </a>
+       <a href="https://www.linkedin.com/in/igord-reis/">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="28px;">
+       </a>
+    </td>   
+    <td align="center" width="180px;"> <br>
+    <img src="https://avatars.githubusercontent.com/u/102865744?v=4" width="80px;">
+      <h4>Élica Dias</h4>
+       <a href="https://github.com/elicadv">
+          <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" width="30px;">
+       </a>
+       <a href="https://www.linkedin.com/in/%C3%A9lica-dias-a4989116b/">
+               <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="28px;">
+       </a>
+    </td>   
+    <td align="center" width="180px;">  <br>
+      <img src="https://avatars.githubusercontent.com/u/102622514?v=4" width="80px;">
+      <h4>Enrico Martins</h4>
+      <a href="https://github.com/enricomartins018">
+         <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" width="30px;">
+      </a>
+      <a href="https://www.linkedin.com/in/enricomartins018/">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="28px;">
+      </a>
+    </td>   
+    <td align="center" width="180px;"> <br>
+    <img src="https://avatars.githubusercontent.com/u/83434769?v=4" width="80px;">
+        <h4>Rosana Ribeiro</h4>
+          <a href="https://github.com/rosana-ctrl">
+      <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" width="30px;">
+      </a>
+      <a href="https://www.linkedin.com/in/rosana-ribeiro-39364a35/">
+               <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="28px;">
+      </a>
+    </tr>
+    </table>
