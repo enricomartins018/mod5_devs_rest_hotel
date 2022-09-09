@@ -40,7 +40,7 @@ Toda a temática do projeto foi em torno de um hotel de luxo com cores que remet
 **Projeto:** Final - Módulo 5 <br>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="" title="" src="./assets/image/readme.mp4">
+  <img alt="" title="" src="./src/assets/image/readme.mp4"/>
 </p>
 
 # Api utilizada
