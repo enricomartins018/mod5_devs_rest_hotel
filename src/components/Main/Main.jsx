@@ -1,5 +1,4 @@
 import React from "react";
-import { CarouselServicos } from "../SectionCarouselServicos/CarouselServicos";
 import { CarouselSobre } from "../SectionCarouselSobre/CarouselSobre";
 import { Caroussel } from "../SectionCaroussel/Caroussel";
 import SectionServicos from "../SectionServicos/SectionServicos";
@@ -13,7 +12,6 @@ export const Main = () => {
       <CarouselSobre />
       <Caroussel />
       <SectionServicos />
-      {/* <CarouselServicos /> */}
     </main>
   );
 };
