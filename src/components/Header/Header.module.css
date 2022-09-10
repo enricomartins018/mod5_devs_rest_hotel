@@ -113,7 +113,7 @@
 @media (max-width: 768px) {
   .header {
     width: 100%;
-    height: 295px;
+    height: 60vh;
     display: flex;
     flex-direction: column;
   }
@@ -127,7 +127,7 @@
 
 @media (max-width: 426px) {
   .header {
-    width: 240vw;
+    width: 190vw;
     flex-direction: column;
     
   }
@@ -231,9 +231,9 @@
   }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 376px) {
   .header {
-    width: 100%;
+    width: 75%;
     height: 68vh;
   }
 }

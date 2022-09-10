@@ -54,7 +54,24 @@
 
 @media (max-width: 1024px) {
 
-  .container {
+.container {
+  display: grid;
+  grid-template-columns: 10% 100% 10%;
+  grid-template-areas: "header header" "sidenav content" "footer footer";
+  overflow-x: hidden;
+}
+.header{
+  width: 100%;
+}
+.content {
+  width: 80%;
+}
+.sideNav {
+  width: 30vw;
+    height: 110vh;
+    margin-left: 225px;
+}
+  /* .container {
     grid-template-areas: "header""sidenav content""footer";
 
   }
@@ -75,7 +92,7 @@
 
   .sideNav {
     height: 120vh;
-  }
+  } */
 }
 
 
@@ -98,5 +115,30 @@
 
   .sideNav {
     margin-top: 270px;
+    margin-left: 195px;
+    height: 145vh;
+
+  }
+}
+
+
+@media(max-width:426px) {
+  .sideNav {
+    display: none;
+  }
+
+  .content {
+    width: 70%;
+    margin-left: -60px;
+  }
+}
+@media(max-width:376px) {
+  .sideNav {
+    display: none;
+  }
+
+  .content {
+    width: 70%;
+    margin-left: -60px;
   }
 }

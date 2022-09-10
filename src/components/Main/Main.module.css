@@ -11,7 +11,7 @@
 
 @media(max-width:1024px) {
     .main {
-        width: 60%;
+        width: 100%;
         margin-left: 370px;
     }
 }
@@ -29,8 +29,9 @@
         margin-top: 50px;
     }
 }
-@media(max-width:321px) {
+@media(max-width:376px) {
     .main {
         margin-bottom: 50px;
+        width: 55%;
     }
 }
