@@ -110,7 +110,7 @@ O usuário irá preencher o formulário de cadastro com suas informações pesso
 
 Formulário de Login:
 
-Usuário preenche com as informações de email e senha para logar no site e ter acessos para fazer, atualizar e deletar reservas.
+Usuário preenche com as informações de email e senha para logar no site e ter acessos para fazer, atualizar e deletar reservas. Usuário teste: login: gloria@gmail.com e senha: cD@aJ34826
 
 ### FacaSuaReserva: /facasuareserva
 
