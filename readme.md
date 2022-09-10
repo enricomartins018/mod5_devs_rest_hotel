@@ -30,7 +30,7 @@
 # Projeto
 
 Desenvolver uma aplicação, estruturado com react e que consuma a Api desenvolvida no módulo 4.<br>
-As entidades escolhidas foram, login, reservas e hóspedes da Api Hotel, elas foram implementadas com todas as operaçoes **CRUD**.
+As entidades escolhidas foram, reservas e hóspedes, da Api Hotel, elas foram implementadas com todas as operaçoes **CRUD**.
 Esta é uma aplicação que simula um site de resevas de um hotel, onde você gera um novo cadastro, consegue consultar seus dados, excluir e atualizar.
 Toda a temática do projeto foi em torno de um hotel de luxo com cores que remetessem à brasilidade.
 
