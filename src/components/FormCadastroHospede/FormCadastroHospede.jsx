@@ -103,7 +103,7 @@ const FormCadastroHospede = () => {
           variant="standard"
           className={S.input1}
           type="text"
-          placeholder="data de nascimento"
+          placeholder="data de nasc. (xx/xx/xxxx)"
           required
           value={dadosForm.nasc}
           onChange={(e) => handleChange(e, "nasc")}
